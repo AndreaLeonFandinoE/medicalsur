@@ -1,0 +1,15 @@
+button{
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border: 0.31rem;
+    border-radius: 0.43rem;
+    text-align: center;
+    background-color: $button;
+    padding: 0.5rem;
+    margin-top: 0.3rem;
+    &:hover, & a:hover{
+        background-color: $button-hover;
+        color: white;
+    }
+}

@@ -1,0 +1,189 @@
+header {
+  display: flex;
+  flex-wrap: wrap;
+  top: 0px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #000000;
+  position: sticky; }
+  header a {
+    color: #c41718; }
+    header a img {
+      height: 8vh; }
+    header a:hover {
+      color: #00395a; }
+  header ul {
+    list-style: none;
+    font-size: 0;
+    align-items: center; }
+    header ul li:hover ul {
+      display: block;
+      background-color: #000000;
+      text-align: center; }
+    header ul ul {
+      position: absolute;
+      display: none; }
+      header ul ul li {
+        display: block; }
+
+footer .footer__container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  background-color: black;
+  align-items: center;
+  color: #c41718; }
+  footer .footer__container span {
+    display: flex;
+    flex-flow: column wrap;
+    text-align: left;
+    align-items: flex-start;
+    padding: 0.3rem; }
+  footer .footer__container .footer__redes {
+    padding: 1rem; }
+
+.chat {
+  position: fixed;
+  bottom: 0.62rem;
+  right: 1.25rem; }
+
+button {
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border: 0.31rem;
+  border-radius: 0.43rem;
+  text-align: center;
+  background-color: #00395a;
+  padding: 0.5rem;
+  margin-top: 0.3rem; }
+  button:hover, button a:hover {
+    background-color: #c41718;
+    color: white; }
+
+@font-face {
+  font-family: "Medical Sur";
+  src: url("../tipografia/latha.ttf"); }
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Medical Sur";
+  text-align: justify;
+  line-height: 1.5rem;
+  letter-spacing: 0.05rem;
+  font-size: 1rem; }
+
+a {
+  text-decoration: none; }
+
+li {
+  list-style-type: none;
+  padding: 0.5rem;
+  position: relative;
+  font-size: 0.87rem; }
+
+/*
+a::selection, button::selection, img::selection, span::selection, p::selection, h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection{
+    background-color: $color-azul-terciario;
+    color: black;
+}
+*/
+.italic {
+  font-style: italic; }
+
+.section {
+  justify-content: center;
+  padding-top: 0.31rem; }
+  .section__container {
+    margin: 2rem; }
+
+.center {
+  align-items: center;
+  text-align: center; }
+
+/*
+.fondo{
+    background-image: url("../recursos/logo//logo1.png");
+    background-repeat: no-repeat;
+}
+*/
+.contacto {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas: "contacto__form contacto__container";
+  align-items: center;
+  gap: 1rem;
+  margin: 3rem; }
+  .contacto__form {
+    grid-area: contacto__form;
+    display: flex;
+    flex-direction: column;
+    gap: 0.63rem;
+    padding: 1rem;
+    border-radius: 0.43rem;
+    background-image: #008ad1; }
+  .contacto__container {
+    grid-area: contacto__container;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem; }
+  .contacto__datos {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "contacto__img contacto__info";
+    text-align: center;
+    align-items: center;
+    justify-items: center; }
+  .contacto__img {
+    grid-area: contacto__img;
+    height: 20vh;
+    border-radius: 1rem; }
+  .contacto__info {
+    grid-area: contacto__info; }
+
+.servicios__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "servicios__uno servicios__dos servicios__tres servicios__cuatro servicios__cinco"  "servicios__seis servicios__siete servicios__ocho servicios__nueve servicios__diez";
+  gap: 1rem;
+  margin-bottom: 2rem; }
+
+.servicios__contenido {
+  display: flex;
+  flex-direction: column;
+  gap: 0.30rem; }
+
+.servicios__uno {
+  grid-area: servicios__uno; }
+
+.servicios__dos {
+  grid-area: servicios__dos; }
+
+.servicios__tres {
+  grid-area: servicios__tres; }
+
+.servicios__cuatro {
+  grid-area: servicios__cuatro; }
+
+.servicios__cinco {
+  grid-area: servicios__cinco; }
+
+.servicios__seis {
+  grid-area: servicios__seis; }
+
+.servicios__siete {
+  grid-area: servicios__siete; }
+
+.servicios__ocho {
+  grid-area: servicios__ocho; }
+
+.servicios__nueve {
+  grid-area: servicios__nueve; }
+
+.servicios__diez {
+  grid-area: servicios__diez; }

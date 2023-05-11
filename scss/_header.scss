@@ -1,0 +1,35 @@
+header{
+    display: flex;
+    flex-wrap: wrap;
+    top: 0px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $fondo-header;
+    position: sticky;
+    a{
+        color: $color-rojo;
+        img{
+            height: 8vh;
+        }
+        &:hover{
+            color: $color-azul-principal;
+        }
+    }
+    ul{
+        list-style: none;
+        font-size: 0;
+        align-items: center;
+        & li:hover ul{
+            display: block;
+            background-color: $fondo-header;
+            text-align: center;
+        }
+        & ul{
+            position: absolute;
+            display: none;
+            & li{
+                display: block;
+            }
+        }
+    }
+}

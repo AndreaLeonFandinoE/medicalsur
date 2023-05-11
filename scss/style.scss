@@ -1,0 +1,151 @@
+@import 'variables';
+@import 'header';
+@import 'footer';
+@import 'button';
+@import 'mediaqueries';
+
+@font-face {
+    font-family: "Medical Sur";
+    src: url("../tipografia/latha.ttf");
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: $font-family;
+    text-align: justify;
+    line-height: 1.5rem;
+    letter-spacing: 0.05rem;
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none; 
+}
+
+li {
+    list-style-type: none;
+    padding: 0.5rem;
+    position: relative;
+    font-size: 0.87rem; 
+}
+/*
+a::selection, button::selection, img::selection, span::selection, p::selection, h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection{
+    background-color: $color-azul-terciario;
+    color: black;
+}
+*/
+
+.italic{
+    font-style: italic;
+}
+
+.section{
+    justify-content: center;
+    padding-top: 0.31rem;
+    &__container{
+        margin: 2rem;
+    }
+}
+
+.center{
+    align-items: center;
+    text-align: center;
+}
+/*
+.fondo{
+    background-image: url("../recursos/logo//logo1.png");
+    background-repeat: no-repeat;
+}
+*/
+.contacto{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas:"contacto__form contacto__container"; 
+    align-items: center;
+    gap: 1rem;
+    margin: 3rem;
+    &__form{
+        grid-area: contacto__form;
+        display: flex;
+        flex-direction: column;
+        gap: 0.63rem;
+        padding: 1rem;
+        border-radius: 0.43rem;
+        background-image: $background-form;
+    }
+    &__container{
+        grid-area: contacto__container;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+    &__datos{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas:"contacto__img contacto__info"; 
+        text-align: center;
+        align-items: center;
+        justify-items: center;
+    }
+    &__img{
+        grid-area: contacto__img;
+        height: 20vh;
+        border-radius: 1rem;
+    }
+    &__info{
+        grid-area: contacto__info;
+    }
+}
+
+.servicios{
+    &__container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+                            "servicios__uno servicios__dos servicios__tres servicios__cuatro servicios__cinco" 
+                            "servicios__seis servicios__siete servicios__ocho servicios__nueve servicios__diez";
+        gap: 1rem;
+        margin-bottom: 2rem;
+    }
+    &__contenido{
+        display: flex;
+        flex-direction: column;
+        gap: 0.30rem;
+    }
+    &__uno{
+        grid-area: servicios__uno;
+    }
+    &__dos{
+        grid-area: servicios__dos;
+    }
+    &__tres{
+        grid-area: servicios__tres;
+    }
+    &__cuatro{
+        grid-area: servicios__cuatro;
+    }
+    &__cinco{
+        grid-area: servicios__cinco;
+    }
+    &__seis{
+        grid-area: servicios__seis;
+    }
+    &__siete{
+        grid-area: servicios__siete;
+    }
+    &__ocho{
+        grid-area: servicios__ocho;
+    }
+    &__nueve{
+        grid-area: servicios__nueve;
+    }
+    &__diez{
+        grid-area: servicios__diez;
+    }
+}
