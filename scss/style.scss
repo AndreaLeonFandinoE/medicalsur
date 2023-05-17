@@ -2,7 +2,6 @@
 @import 'header';
 @import 'footer';
 @import 'button';
-@import 'mediaqueries';
 
 @font-face {
     font-family: "Medical Sur";
@@ -19,7 +18,7 @@ body {
     font-family: $font-family;
     text-align: justify;
     line-height: 1.5rem;
-    letter-spacing: 0.05rem;
+    letter-spacing: 0.1rem;
     font-size: 1rem;
 }
 
@@ -33,12 +32,6 @@ li {
     position: relative;
     font-size: 0.87rem; 
 }
-/*
-a::selection, button::selection, img::selection, span::selection, p::selection, h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection{
-    background-color: $color-azul-terciario;
-    color: black;
-}
-*/
 
 .italic{
     font-style: italic;
@@ -55,13 +48,25 @@ a::selection, button::selection, img::selection, span::selection, p::selection, 
 .center{
     align-items: center;
     text-align: center;
+    justify-content: center;
 }
-/*
-.fondo{
-    background-image: url("../recursos/logo//logo1.png");
-    background-repeat: no-repeat;
+/**/
+.principal{
+    background-image: url("");
+    background-size: cover;
+    &__container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:"principal__mision principal__vision principal__valores";
+    }
+    &__fondo{
+        border: 2px solid $color-azul-terciario;
+        padding: 1rem;
+        margin: 1rem;
+        border-radius: 1rem;
+    }
 }
-*/
+
 .contacto{
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -70,9 +75,10 @@ a::selection, button::selection, img::selection, span::selection, p::selection, 
     gap: 1rem;
     margin: 3rem;
     &__form{
-        grid-area: contacto__form;
         display: flex;
         flex-direction: column;
+        flex-wrap: wrap;
+        grid-area: contacto__form;
         gap: 0.63rem;
         padding: 1rem;
         border-radius: 0.43rem;
@@ -111,41 +117,93 @@ a::selection, button::selection, img::selection, span::selection, p::selection, 
                             "servicios__uno servicios__dos servicios__tres servicios__cuatro servicios__cinco" 
                             "servicios__seis servicios__siete servicios__ocho servicios__nueve servicios__diez";
         gap: 1rem;
-        margin-bottom: 2rem;
     }
     &__contenido{
         display: flex;
         flex-direction: column;
-        gap: 0.30rem;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: center;
+        padding: 0.5rem;
+        color: white;
     }
     &__uno{
         grid-area: servicios__uno;
+        background-image: linear-gradient(to right, rgba(158, 180, 198, 0.4), rgba(148, 153, 159, 0.764)), url("../recursos/img/pexels-zakir-rushanly-11748826.jpg");
+        background-size: contain;
+        border-radius: 1rem;
+        border: 1px solid $color-azul-terciario;
     }
     &__dos{
         grid-area: servicios__dos;
+        background-image: linear-gradient(to right, rgba(158, 180, 198, 0.4), rgba(148, 153, 159, 0.764)), url("../recursos/img/pexels-zakir-rushanly-11748826.jpg");
+        background-size: contain;
+        border-radius: 1rem;
+        border: 1px solid $color-azul-terciario;
     }
     &__tres{
         grid-area: servicios__tres;
+        background-image: linear-gradient(to right, rgba(158, 180, 198, 0.4), rgba(148, 153, 159, 0.764)), url("../recursos/img/pexels-zakir-rushanly-11748826.jpg");
+        background-size: contain;
+        border-radius: 1rem;
+        border: 1px solid $color-azul-terciario;
     }
     &__cuatro{
         grid-area: servicios__cuatro;
+        background-image: linear-gradient(to right, rgba(158, 180, 198, 0.4), rgba(148, 153, 159, 0.764)), url("../recursos/img/pexels-zakir-rushanly-11748826.jpg");
+        background-size: contain;
+        border-radius: 1rem;
+        border: 1px solid $color-azul-terciario;
     }
     &__cinco{
         grid-area: servicios__cinco;
+        background-image: linear-gradient(to right, rgba(158, 180, 198, 0.4), rgba(148, 153, 159, 0.764)), url("../recursos/img/pexels-zakir-rushanly-11748826.jpg");
+        background-size: contain;
+        border-radius: 1rem;
+        border: 1px solid $color-azul-terciario;
     }
     &__seis{
         grid-area: servicios__seis;
+        background-image: linear-gradient(to right, rgba(158, 180, 198, 0.4), rgba(148, 153, 159, 0.764)), url("../recursos/img/pexels-zakir-rushanly-11748826.jpg");
+        background-size: contain;
+        border-radius: 1rem;
+        border: 1px solid $color-azul-terciario;
     }
     &__siete{
         grid-area: servicios__siete;
+        background-image: linear-gradient(to right, rgba(158, 180, 198, 0.4), rgba(148, 153, 159, 0.764)), url("../recursos/img/pexels-zakir-rushanly-11748826.jpg");
+        background-size: contain;
+        border-radius: 1rem;
+        border: 1px solid $color-azul-terciario;
     }
     &__ocho{
         grid-area: servicios__ocho;
+        background-image: linear-gradient(to right, rgba(158, 180, 198, 0.4), rgba(148, 153, 159, 0.764)), url("../recursos/img/pexels-zakir-rushanly-11748826.jpg");
+        background-size: contain;
+        border-radius: 1rem;
+        border: 1px solid $color-azul-terciario;
     }
     &__nueve{
         grid-area: servicios__nueve;
+        background-image: linear-gradient(to right, rgba(158, 180, 198, 0.4), rgba(148, 153, 159, 0.764)), url("../recursos/img/pexels-zakir-rushanly-11748826.jpg");
+        background-size: contain;
+        border-radius: 1rem;
+        border: 1px solid $color-azul-terciario;
     }
     &__diez{
         grid-area: servicios__diez;
+        background-image: linear-gradient(to right, rgba(158, 180, 198, 0.4), rgba(148, 153, 159, 0.764)), url("../recursos/img/pexels-zakir-rushanly-11748826.jpg");
+        background-size: contain;
+        border-radius: 1rem;
+        border: 1px solid $color-azul-terciario;
     }
 }
+
+
+.cards{ /*servicios */
+    width: $img-cards;
+    border-radius: 0.50rem;
+}
+
+
+@import 'mediaqueries';

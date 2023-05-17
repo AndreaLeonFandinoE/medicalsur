@@ -9,25 +9,36 @@
   <meta name="description" content="Somos una empresa que cuenta con más de dieciocho años de experiencia en el rubro de la salud, brindando a todos nuestros clientes la mejor calidad de servicio médico.">
   <!--Icono web-->
   <link rel="shortcut icon" href="../recursos/favicon/favicon-16x16.png" type="image/x-icon">
-  <!--TIPOGRAFIA--> 
-  
   <!-- Bootstrap-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   <!--CSS-->
   <link rel="stylesheet" href="../css/style.css">
 
-  <title>Quiénes somos</title>
+  <title>Nosotros</title>
 
 </head>
 <body>
+
+  <!--Barra-->
+  <section class="barra">
+    <div class="barra__top">
+      <h5 class="barra__texto">Si es una emergencia llama al +54 2964 427100</h5>
+      <ul class="barra__redes">
+        <li><a href="https://www.instagram.com/medicalsur/"><img src="../recursos/icono/instagram-barra.png" alt="instagram" ></a></li>
+        <li><a href="https://www.facebook.com/search/top?q=medical%20sur"><img src="../recursos/icono/facebook-barra.png" alt="facebook"></a></li>
+      </ul>
+    </div>
+  </section>
+  
   <!--Header-->
   <header>
+    
     <!-- Logo -->
     <a class="navbar-brand" href="../index.html">
-      <img src="../recursos/logo/logo1.png" alt="Logo de Medical Sur">
+      <img class="logo" src="../recursos/logo/logo1.png" alt="Logo de Medical Sur">
     </a>
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg ">
       <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -35,24 +46,39 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="../index.html">Inicio</a>
+              <a href="../index.html">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="quienes-somos.html">Quiénes somos?</a>
+              <a href="nosotros.html">Nosotros</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="dropdown-toggle" aria-current="page" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Servicios
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><a href="servicios.html#uno">Urgencias y emergencias médicas</a></li>
+                
+                <li><a href="servicios.html#dos">Servicio de guardia</a></li>
+                
+                <li><a href="servicios.html#tres">Translados médicos</a></li>
+                
+                <li><a href="servicios.html#cuatro">Servicio de area protegida</a></li>
+                
+                <li><a href="servicios.html#cinco">Cobertura medica en eventos</a></li>
+                
+                <li><a href="servicios.html#seis">Medical Sur - Medicina laboral o empresarial</a></li>
+               
+                <li><a href="servicios.html#siete">Internación domiciliaria</a></li>
+                
+                <li><a href="servicios.html#ocho">Hogar protegido</a></li>
+                
+                <li><a href="servicios.html#nueve">Red SIEM</a></li>
+                
+                <li><a href="servicios.html#diez">Departamento de capacitaciones</a></li>
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contacto.html">Contacto</a>
+              <a href="contacto.html">Contacto</a>
             </li>
           </ul>
         </div>
@@ -103,23 +129,36 @@
 
   <!-- Footer -->
   <footer>
-    <section class="footer__container">
-      <img src="../recursos/logo/logo2.png" alt="Logo de Medical Sur">
-        <!--Slogan-->
+    <section class="footer">
+      <div class="footer__contenido">
+        <span>Piedrabuena 641 Rio Grande, Tierra del Fuego</span>
+        <span>info@medicalsur.com.ar</span>
+        <span>Copyright 2023 © Medical Sur</span> 
+        <span>Todos los derechos reservados.</span>
+      </div>
+
+      <div class="footer__contenido">
+        <span>Emergencia: +54 2964 427100</span>
+        <span>Turnos: +54 2964 425835</span>
+        <span>Whatsapp Turnos: +54 2964 622865</span>
+      </div>
+
+      <!--Slogan-->
+      <div class="footer__contenido">
+        <a href="../index.html">
+          <img class="logo" src="../recursos/logo/logo2.png" alt="Logo de Medical Sur">
+        </a>
         <span>Salud a tu alcance</span>
-        <span>Copyright 2023 - Medical Sur
-            <span>Todos los derechos reservados.</span>
-        </span> 
-        <div>
-            <ul >
-                <li class="footer__redes"><a href="https://www.instagram.com/medicalsur/"><img src="../recursos/img/icon-redes/instagram.png" alt="instagram" ></a></li>
-                <li class="footer__redes"><a href="https://www.facebook.com/search/top?q=medical%20sur"><img src="../recursos/img/icon-redes/facebook.png" alt="facebook"></a></li>
-            </ul>
-        </div>
+        <ul class="footer__redes">
+          <li><a href="https://www.instagram.com/medicalsur/"><img src="../recursos/icono/instagram.png" alt="instagram" ></a></li>
+          <li><a href="https://www.facebook.com/search/top?q=medical%20sur"><img src="../recursos/icono/facebook.png" alt="facebook"></a></li>
+        </ul>
+      </div>
+      </div>
     </section>
     
     <div> <!--Chat-->
-        <a href="https://wa.me/542964622865?text=Hola%20Medical%20Sur.%20Quisiera%20agendar%20un%20turno,%20%C2%BFqu%C3%A9%20d%C3%ADa%20ten%C3%A9s%20disponible?"><img class="chat" src="./recursos/img/icon-chat/chat-lila-64.png" alt="Whatsapp"></a>
+        <a href="https://wa.me/542964622865?text=Hola%20Medical%20Sur.%20Quisiera%20agendar%20un%20turno,%20%C2%BFqu%C3%A9%20d%C3%ADa%20ten%C3%A9s%20disponible?"><img class="chat" src="../recursos/icono/whatsapp.png" alt="Whatsapp"></a>
     </div>
   </footer>
 

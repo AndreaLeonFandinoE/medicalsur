@@ -1,0 +1,128 @@
+/* TABLET */
+@media (min-width:541px) and (max-width:720px){
+    header a img{
+        height: 10vh;
+    }
+
+    /*.img__cards{  .logos 5vh
+        height: $img-cards/6;
+    }*/
+
+    .servicios__container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+                            "servicios__uno"
+                            "servicios__dos" 
+                            "servicios__tres"
+                            "servicios__cuatro" 
+                            "servicios__cinco"
+                            "servicios__seis"
+                            "servicios__siete"
+                            "servicios__ocho"
+                            "servicios__nueve"
+                            "servicios__diez";
+    }
+
+
+    .contacto{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:"contactanos__form" 
+                            "contactanos__container"; 
+        margin: 1rem;
+        &__img{
+            height: 10vh;
+        }
+    }
+
+    .error{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:"error__404"
+                            "error__img"; 
+        margin: 0 5rem 0 5rem;
+        &__img{
+            grid-area: error__img;
+            height: 20rem;
+            margin-left: 5rem;
+        }
+    }
+}
+
+/* celular */
+@media (min-width:320px) and (max-width:540px){
+    header a img{
+        height: 10vh;
+    }
+
+    footer .footer__container{
+        font-size: small;
+        margin: 0%;
+        padding: 0%;
+        .footer__redes{
+            padding: 0.3rem;
+        }    
+    }
+
+    .chat{
+        bottom: 1.72rem;
+        right: 0.6rem;
+    }
+
+    .logos{
+        display: none
+    }
+
+    .servicios{
+        padding: 0.5rem;
+        &__container{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-areas:
+                                "servicios__uno"
+                                "servicios__dos" 
+                                "servicios__tres"
+                                "servicios__cuatro " 
+                                "servicios__cinco"
+                                "servicios__seis"
+                                "servicios__siete"
+                                "servicios__ocho"
+                                "servicios__nueve"
+                                "servicios__diez";
+            margin: 0rem;
+        }
+    }
+
+    .contacto{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:"contactanos__form" 
+                            "contactanos__container"; 
+        margin: 0;
+        &__img{
+            height: 7vh;
+        }
+    }
+
+    .error{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:"error__404"
+                            "error__img"; 
+        margin: 0;
+        &__img{
+            grid-area: error__img;
+            height: 12rem;
+            margin-left: 6rem;
+        }
+    }
+
+}
+
+@media print {
+    p, h1, h2, h3, h4, h5, h6{
+        color: black;
+        background-color: white;
+    }
+}

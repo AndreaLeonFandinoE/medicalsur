@@ -1,19 +1,21 @@
-footer .footer__container{
+.footer{
     display: flex;
-    flex-flow: row wrap ;
+    flex-flow: row wrap;
     justify-content: space-around;
-    background-color: black;
+    background-color: $fondo-header;
     align-items: center;
-    color: $color-rojo;
-    & span{
+    color: $color-azul-principal;
+    &__contenido{
         display: flex;
         flex-flow: column wrap ;
-        text-align: left;
-        align-items: flex-start;
-        padding: 0.3rem;
-    }
-    .footer__redes{
+        align-items: center;
         padding: 1rem;
+    }
+    & span{
+        padding: 0.5rem;
+    }
+    &__redes{
+        display: flex;
     }
 }
 

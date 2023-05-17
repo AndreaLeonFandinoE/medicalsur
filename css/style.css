@@ -2,14 +2,11 @@ header {
   display: flex;
   flex-wrap: wrap;
   top: 0px;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #000000;
+  justify-content: space-around;
+  background-color: #cdcdcd;
   position: sticky; }
   header a {
     color: #c41718; }
-    header a img {
-      height: 8vh; }
     header a:hover {
       color: #00395a; }
   header ul {
@@ -18,29 +15,41 @@ header {
     align-items: center; }
     header ul li:hover ul {
       display: block;
-      background-color: #000000;
-      text-align: center; }
-    header ul ul {
-      position: absolute;
-      display: none; }
-      header ul ul li {
-        display: block; }
+      background-color: #cdcdcd;
+      text-align: center;
+      min-width: 21.5rem; }
 
-footer .footer__container {
+.barra {
+  background-color: #00395a;
+  max-height: 2.5rem; }
+  .barra__top {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+  .barra__redes {
+    display: flex; }
+  .barra__texto {
+    color: white; }
+
+.logo {
+  height: 8vh; }
+
+.footer {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
-  background-color: black;
+  background-color: #cdcdcd;
   align-items: center;
-  color: #c41718; }
-  footer .footer__container span {
+  color: #00395a; }
+  .footer__contenido {
     display: flex;
     flex-flow: column wrap;
-    text-align: left;
-    align-items: flex-start;
-    padding: 0.3rem; }
-  footer .footer__container .footer__redes {
+    align-items: center;
     padding: 1rem; }
+  .footer span {
+    padding: 0.5rem; }
+  .footer__redes {
+    display: flex; }
 
 .chat {
   position: fixed;
@@ -61,6 +70,10 @@ button {
     background-color: #c41718;
     color: white; }
 
+a::selection, button::selection, img::selection, span::selection, p::selection, h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection {
+  background-color: #9fd7f5;
+  color: black; }
+
 @font-face {
   font-family: "Medical Sur";
   src: url("../tipografia/latha.ttf"); }
@@ -74,7 +87,7 @@ body {
   font-family: "Medical Sur";
   text-align: justify;
   line-height: 1.5rem;
-  letter-spacing: 0.05rem;
+  letter-spacing: 0.1rem;
   font-size: 1rem; }
 
 a {
@@ -86,12 +99,6 @@ li {
   position: relative;
   font-size: 0.87rem; }
 
-/*
-a::selection, button::selection, img::selection, span::selection, p::selection, h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection{
-    background-color: $color-azul-terciario;
-    color: black;
-}
-*/
 .italic {
   font-style: italic; }
 
@@ -103,14 +110,23 @@ a::selection, button::selection, img::selection, span::selection, p::selection, 
 
 .center {
   align-items: center;
-  text-align: center; }
+  text-align: center;
+  justify-content: center; }
 
-/*
-.fondo{
-    background-image: url("../recursos/logo//logo1.png");
-    background-repeat: no-repeat;
-}
-*/
+/**/
+.principal {
+  background-image: url("");
+  background-size: cover; }
+  .principal__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "principal__mision principal__vision principal__valores"; }
+  .principal__fondo {
+    border: 2px solid #9fd7f5;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 1rem; }
+
 .contacto {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -119,9 +135,10 @@ a::selection, button::selection, img::selection, span::selection, p::selection, 
   gap: 1rem;
   margin: 3rem; }
   .contacto__form {
-    grid-area: contacto__form;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    grid-area: contacto__form;
     gap: 0.63rem;
     padding: 1rem;
     border-radius: 0.43rem;
@@ -150,40 +167,160 @@ a::selection, button::selection, img::selection, span::selection, p::selection, 
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas: "servicios__uno servicios__dos servicios__tres servicios__cuatro servicios__cinco"  "servicios__seis servicios__siete servicios__ocho servicios__nueve servicios__diez";
-  gap: 1rem;
-  margin-bottom: 2rem; }
+  gap: 1rem; }
 
 .servicios__contenido {
   display: flex;
   flex-direction: column;
-  gap: 0.30rem; }
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  padding: 0.5rem;
+  color: white; }
 
 .servicios__uno {
-  grid-area: servicios__uno; }
+  grid-area: servicios__uno;
+  background-image: linear-gradient(to right, rgba(158, 180, 198, 0.4), rgba(148, 153, 159, 0.764)), url("../recursos/img/pexels-zakir-rushanly-11748826.jpg");
+  background-size: contain;
+  border-radius: 1rem;
+  border: 1px solid #9fd7f5; }
 
 .servicios__dos {
-  grid-area: servicios__dos; }
+  grid-area: servicios__dos;
+  background-image: linear-gradient(to right, rgba(158, 180, 198, 0.4), rgba(148, 153, 159, 0.764)), url("../recursos/img/pexels-zakir-rushanly-11748826.jpg");
+  background-size: contain;
+  border-radius: 1rem;
+  border: 1px solid #9fd7f5; }
 
 .servicios__tres {
-  grid-area: servicios__tres; }
+  grid-area: servicios__tres;
+  background-image: linear-gradient(to right, rgba(158, 180, 198, 0.4), rgba(148, 153, 159, 0.764)), url("../recursos/img/pexels-zakir-rushanly-11748826.jpg");
+  background-size: contain;
+  border-radius: 1rem;
+  border: 1px solid #9fd7f5; }
 
 .servicios__cuatro {
-  grid-area: servicios__cuatro; }
+  grid-area: servicios__cuatro;
+  background-image: linear-gradient(to right, rgba(158, 180, 198, 0.4), rgba(148, 153, 159, 0.764)), url("../recursos/img/pexels-zakir-rushanly-11748826.jpg");
+  background-size: contain;
+  border-radius: 1rem;
+  border: 1px solid #9fd7f5; }
 
 .servicios__cinco {
-  grid-area: servicios__cinco; }
+  grid-area: servicios__cinco;
+  background-image: linear-gradient(to right, rgba(158, 180, 198, 0.4), rgba(148, 153, 159, 0.764)), url("../recursos/img/pexels-zakir-rushanly-11748826.jpg");
+  background-size: contain;
+  border-radius: 1rem;
+  border: 1px solid #9fd7f5; }
 
 .servicios__seis {
-  grid-area: servicios__seis; }
+  grid-area: servicios__seis;
+  background-image: linear-gradient(to right, rgba(158, 180, 198, 0.4), rgba(148, 153, 159, 0.764)), url("../recursos/img/pexels-zakir-rushanly-11748826.jpg");
+  background-size: contain;
+  border-radius: 1rem;
+  border: 1px solid #9fd7f5; }
 
 .servicios__siete {
-  grid-area: servicios__siete; }
+  grid-area: servicios__siete;
+  background-image: linear-gradient(to right, rgba(158, 180, 198, 0.4), rgba(148, 153, 159, 0.764)), url("../recursos/img/pexels-zakir-rushanly-11748826.jpg");
+  background-size: contain;
+  border-radius: 1rem;
+  border: 1px solid #9fd7f5; }
 
 .servicios__ocho {
-  grid-area: servicios__ocho; }
+  grid-area: servicios__ocho;
+  background-image: linear-gradient(to right, rgba(158, 180, 198, 0.4), rgba(148, 153, 159, 0.764)), url("../recursos/img/pexels-zakir-rushanly-11748826.jpg");
+  background-size: contain;
+  border-radius: 1rem;
+  border: 1px solid #9fd7f5; }
 
 .servicios__nueve {
-  grid-area: servicios__nueve; }
+  grid-area: servicios__nueve;
+  background-image: linear-gradient(to right, rgba(158, 180, 198, 0.4), rgba(148, 153, 159, 0.764)), url("../recursos/img/pexels-zakir-rushanly-11748826.jpg");
+  background-size: contain;
+  border-radius: 1rem;
+  border: 1px solid #9fd7f5; }
 
 .servicios__diez {
-  grid-area: servicios__diez; }
+  grid-area: servicios__diez;
+  background-image: linear-gradient(to right, rgba(158, 180, 198, 0.4), rgba(148, 153, 159, 0.764)), url("../recursos/img/pexels-zakir-rushanly-11748826.jpg");
+  background-size: contain;
+  border-radius: 1rem;
+  border: 1px solid #9fd7f5; }
+
+.cards {
+  /*servicios */
+  width: 20rem;
+  border-radius: 0.50rem; }
+
+/* TABLET */
+@media (min-width: 541px) and (max-width: 720px) {
+  header a img {
+    height: 10vh; }
+  /*.img__cards{  .logos 5vh
+        height: $img-cards/6;
+    }*/
+  .servicios__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "servicios__uno" "servicios__dos"  "servicios__tres" "servicios__cuatro"  "servicios__cinco" "servicios__seis" "servicios__siete" "servicios__ocho" "servicios__nueve" "servicios__diez"; }
+  .contacto {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "contactanos__form"  "contactanos__container";
+    margin: 1rem; }
+    .contacto__img {
+      height: 10vh; }
+  .error {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "error__404" "error__img";
+    margin: 0 5rem 0 5rem; }
+    .error__img {
+      grid-area: error__img;
+      height: 20rem;
+      margin-left: 5rem; } }
+
+/* celular */
+@media (min-width: 320px) and (max-width: 540px) {
+  header a img {
+    height: 10vh; }
+  footer .footer__container {
+    font-size: small;
+    margin: 0%;
+    padding: 0%; }
+    footer .footer__container .footer__redes {
+      padding: 0.3rem; }
+  .chat {
+    bottom: 1.72rem;
+    right: 0.6rem; }
+  .logos {
+    display: none; }
+  .servicios {
+    padding: 0.5rem; }
+    .servicios__container {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-areas: "servicios__uno" "servicios__dos"  "servicios__tres" "servicios__cuatro "  "servicios__cinco" "servicios__seis" "servicios__siete" "servicios__ocho" "servicios__nueve" "servicios__diez";
+      margin: 0rem; }
+  .contacto {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "contactanos__form"  "contactanos__container";
+    margin: 0; }
+    .contacto__img {
+      height: 7vh; }
+  .error {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "error__404" "error__img";
+    margin: 0; }
+    .error__img {
+      grid-area: error__img;
+      height: 12rem;
+      margin-left: 6rem; } }
+
+@media print {
+  p, h1, h2, h3, h4, h5, h6 {
+    color: black;
+    background-color: white; } }
