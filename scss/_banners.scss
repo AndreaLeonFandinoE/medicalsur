@@ -1,0 +1,141 @@
+/*inicio
+.banner-inicio{
+    width: 100%;
+    min-height: 400px;
+    position: relative;
+
+    &__slider {
+        & input{
+            visibility: hidden;
+            display: none;
+            &:nth-child(1):checked ~ .banner-inicio__buttons label:nth-child(1),
+            &:nth-child(2):checked ~ .banner-inicio__buttons label:nth-child(2),
+            &:nth-child(3):checked ~ .banner-inicio__buttons label:nth-child(3){
+                opacity: 1;
+                scroll-margin: 1.2;
+                width: 40px;
+            }
+            &:nth-child(1):checked ~ .banner-inicio__content{
+                left: 0;
+            }
+
+            &:nth-child(2):checked ~ .banner-inicio__content{
+                left: -100vw;
+            }
+
+            &:nth-child(3):checked ~ .banner-inicio__content{
+                left: -200vw;
+            }
+        }
+    }
+
+    &__buttons{
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        bottom: 50px;
+        gap: 10px;
+
+        & label{
+            width: 20px;
+            height: 20px;
+            background-color: white;
+            opacity: 0.5;
+            z-index: 1;
+            transition: 300ms ease-in-out;
+
+            &:hover{
+                scale: 1.2;
+                opacity: 1;
+            }
+        }
+    }
+
+    &__content{
+        position: relative;
+        width: 300vw;
+        display: flex;
+        transition: 400ms ease-in-out;
+
+        &1, &2, &3{
+            position: relative;
+            width: 100vw;
+            min-height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        &1{
+            background-color: violet;
+        }
+    
+        &2{
+            background-color: gold;
+        }
+    
+        &3{
+            background-color: blue;
+        }
+    }
+
+    
+} */
+/*inicio*/
+.slider{
+    width: 100%;
+    min-height: 400px;
+    background-image: url(../recursos/img/pexels-antonio-batinić-5364345.jpg);
+}
+/*Servicio*/
+.banner{
+    width: 100%;
+    min-height: 400px;
+    animation: banner 15s infinite linear alternate;
+    background-size: 100% 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @keyframes banner {
+        0%, 20%{
+            background-image: url(../recursos/img/pexels-antonio-batinić-5364345.jpg);
+        }
+        25%, 45%{
+            background-image: url(../recursos/img/pexels-karolina-grabowska-4021779.jpg);
+        }
+        50%, 70%{
+            background-image: url(../recursos/img/pexels-pavel-danilyuk-6754163.jpg);
+        }
+        75%, 100%{
+            background-image: url(../recursos/img/pexels-roger-brown-5149758.jpg);
+        }
+    }
+    &__capa{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.318);
+        object-fit: cover;
+    }
+    &__info{
+        z-index: 1;
+        width: 100%;
+        max-width: 800px;
+        text-align: center;
+        & h1{
+            color: $color-azul-terciario;
+            font-size: 45px;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+        & p{
+            color: white;
+            line-height: 2;
+            margin-bottom: 1rem;
+        }
+    }
+}
