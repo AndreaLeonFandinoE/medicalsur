@@ -1,93 +1,111 @@
-/*inicio
-.banner-inicio{
-    width: 100%;
-    min-height: 400px;
+/*inicio*/
+// Variables
+$slider-height: 400px;
+$slider-width: 100%;
+$transition-time: 1s;
+$dot-size: 15px;
+$dot-active-color: #333;
+$overlay-color: rgba(0, 0, 0, 0.5);
+
+
+// Slider Styles
+.slider {
     position: relative;
+    width: $slider-width;
+    height: $slider-height;
+    overflow: hidden;
 
-    &__slider {
-        & input{
-            visibility: hidden;
-            display: none;
-            &:nth-child(1):checked ~ .banner-inicio__buttons label:nth-child(1),
-            &:nth-child(2):checked ~ .banner-inicio__buttons label:nth-child(2),
-            &:nth-child(3):checked ~ .banner-inicio__buttons label:nth-child(3){
-                opacity: 1;
-                scroll-margin: 1.2;
-                width: 40px;
-            }
-            &:nth-child(1):checked ~ .banner-inicio__content{
-                left: 0;
-            }
-
-            &:nth-child(2):checked ~ .banner-inicio__content{
-                left: -100vw;
-            }
-
-            &:nth-child(3):checked ~ .banner-inicio__content{
-                left: -200vw;
-            }
-        }
-    }
-
-    &__buttons{
+    .slides {
         position: relative;
         width: 100%;
-        display: flex;
-        justify-content: center;
-        bottom: 50px;
-        gap: 10px;
+        height: 100%;
 
-        & label{
-            width: 20px;
-            height: 20px;
-            background-color: white;
-            opacity: 0.5;
-            z-index: 1;
-            transition: 300ms ease-in-out;
-
-            &:hover{
-                scale: 1.2;
-                opacity: 1;
-            }
-        }
-    }
-
-    &__content{
-        position: relative;
-        width: 300vw;
-        display: flex;
-        transition: 400ms ease-in-out;
-
-        &1, &2, &3{
-            position: relative;
-            width: 100vw;
-            min-height: 400px;
+        .slide {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity $transition-time ease;
             display: flex;
             justify-content: center;
             align-items: center;
-        }
-    
-        &1{
-            background-color: violet;
-        }
-    
-        &2{
-            background-color: gold;
-        }
-    
-        &3{
-            background-color: blue;
+
+            &.active {
+                opacity: 1;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            .overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: $overlay-color;
+            }
+
+            .content {
+                position: absolute;
+                text-align: center;
+                color: $text-color;
+
+                h2 {
+                    font-size: 2.5em;
+                    margin-bottom: 10px;
+                }
+
+                h3 {
+                    font-size: 1.5em;
+                    margin-bottom: 20px;
+                }
+
+                .btn {
+                    background-color: $button;
+                    color: $text-color;
+                    padding: 10px 20px;
+                    text-decoration: none;
+                    font-size: 1em;
+                    border-radius: 5px;
+                    transition: background-color 0.3s;
+
+                    &:hover {
+                        background-color: $button-hover;
+                    }
+                }
+            }
         }
     }
 
-    
-} */
-/*inicio*/
-.slider{
-    width: 100%;
-    min-height: 400px;
-    background-image: url(../recursos/img/pexels-antonio-batinić-5364345.jpg);
+    .navigation {
+        position: absolute;
+        bottom: 15px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 10px;
+
+        .dot {
+            width: $dot-size;
+            height: $dot-size;
+            background-color: $text-color;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: background-color 0.3s;
+
+            &.active {
+                background-color: $dot-active-color;
+            }
+        }
+    }
 }
+
+
+
 /*Servicio*/
 .banner{
     width: 100%;
