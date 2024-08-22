@@ -46,3 +46,4 @@ showSlide(currentSlide);
 
 // Iniciar el slider
 startSlider();
+

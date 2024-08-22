@@ -51,22 +51,43 @@ li {
     text-align: center;
     justify-content: center;
 }
-/**/
-.principal{
-    background-image: url("");
-    background-size: cover;
-    &__container{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-areas:"principal__mision principal__vision principal__valores";
-    }
-    &__fondo{
-        border: 2px solid $color-azul-terciario;
-        padding: 1rem;
-        margin: 1rem;
-        border-radius: 1rem;
+/*Misión, Visión, Valores*/
+.mvv{
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+  
+    &__card {
+      padding: 1.5rem;
+      border-radius: 3.5px;
+      border: 2.5px solid $color-azul-secundario;
+      text-align: center;
+      width: 30%;
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  
+      &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+      }
+  
+      &-logo {
+        margin-bottom: 1rem;
+  
+        img {
+          width: 50px;
+          height: 50px;
+          transition: transform 0.3s ease-in-out;
+
+          &:hover {
+           transform: rotate(360deg); // Rotación del logo al pasar el mouse
+           }
+        }
+      }
+  
     }
 }
+  
 
 .contacto{
     display: grid;

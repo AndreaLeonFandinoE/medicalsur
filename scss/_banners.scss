@@ -1,14 +1,5 @@
 /*inicio*/
-// Variables
-$slider-height: 400px;
-$slider-width: 100%;
-$transition-time: 1s;
-$dot-size: 15px;
-$dot-active-color: #333;
-$overlay-color: rgba(0, 0, 0, 0.5);
 
-
-// Slider Styles
 .slider {
     position: relative;
     width: $slider-width;
@@ -63,20 +54,6 @@ $overlay-color: rgba(0, 0, 0, 0.5);
                     font-size: 1.5em;
                     margin-bottom: 20px;
                 }
-
-                .btn {
-                    background-color: $button;
-                    color: $text-color;
-                    padding: 10px 20px;
-                    text-decoration: none;
-                    font-size: 1em;
-                    border-radius: 5px;
-                    transition: background-color 0.3s;
-
-                    &:hover {
-                        background-color: $button-hover;
-                    }
-                }
             }
         }
     }
@@ -90,15 +67,15 @@ $overlay-color: rgba(0, 0, 0, 0.5);
         gap: 10px;
 
         .dot {
-            width: $dot-size;
-            height: $dot-size;
+            width: $font-size;
+            height: $font-size;
             background-color: $text-color;
             border-radius: 50%;
             cursor: pointer;
             transition: background-color 0.3s;
 
             &.active {
-                background-color: $dot-active-color;
+                background-color: $button;
             }
         }
     }
