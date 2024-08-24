@@ -18,7 +18,7 @@
 body {
     font-family: $font-family;
     text-align: justify;
-    line-height: 1.5rem;
+    line-height: 2rem;
     letter-spacing: 0.1rem;
     font-size: 1rem;
 }
@@ -42,7 +42,7 @@ li {
     justify-content: center;
     padding-top: 0.31rem;
     &__container{
-        margin: 2rem;
+        margin: 2rem 10rem 2rem 10rem;
     }
 }
 
@@ -51,6 +51,14 @@ li {
     text-align: center;
     justify-content: center;
 }
+
+.intro{
+    img{
+        padding-bottom: 2rem;
+        width: $img-cards;
+    }
+}
+
 /*Misión, Visión, Valores*/
 .mvv{
     display: flex;
@@ -88,7 +96,6 @@ li {
     }
 }
   
-
 .contacto{
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -131,6 +138,7 @@ li {
     }
 }
 
+/*servicios en página de inicio */
 .servicios{
     &__container{
         display: grid;
@@ -139,6 +147,7 @@ li {
                             "servicios__uno servicios__dos servicios__tres servicios__cuatro servicios__cinco" 
                             "servicios__seis servicios__siete servicios__ocho servicios__nueve servicios__diez";
         gap: 1rem;
+        margin: 2rem;
     }
     &__contenido{
         display: flex;
@@ -151,76 +160,75 @@ li {
     }
     &__uno{
         grid-area: servicios__uno;
-        background-image: linear-gradient(to right, rgba(158, 180, 198, 0.4), rgba(148, 153, 159, 0.764)), url("../recursos/img/pexels-zakir-rushanly-11748826.jpg");
-        background-size: contain;
+        background-image: linear-gradient(to right, rgba(158, 180, 198, 0.4), rgba(148, 153, 159, 0.764)), url("../recursos/img//medical1.jpeg");
+        background-size: cover;
         border-radius: 1rem;
         border: 1px solid $color-azul-terciario;
     }
     &__dos{
         grid-area: servicios__dos;
-        background-image: linear-gradient(to right, rgba(158, 180, 198, 0.4), rgba(148, 153, 159, 0.764)), url("../recursos/img/pexels-zakir-rushanly-11748826.jpg");
-        background-size: contain;
+        background-image: linear-gradient(to right, rgba(158, 180, 198, 0.4), rgba(148, 153, 159, 0.764)), url("../recursos/img/medical2.jpeg");
+        background-size: cover;
         border-radius: 1rem;
         border: 1px solid $color-azul-terciario;
     }
     &__tres{
         grid-area: servicios__tres;
-        background-image: linear-gradient(to right, rgba(158, 180, 198, 0.4), rgba(148, 153, 159, 0.764)), url("../recursos/img/pexels-zakir-rushanly-11748826.jpg");
-        background-size: contain;
+        background-image: linear-gradient(to right, rgba(158, 180, 198, 0.4), rgba(148, 153, 159, 0.764)), url("../recursos/img/medical7.jpeg");
+        background-size: cover;
         border-radius: 1rem;
         border: 1px solid $color-azul-terciario;
     }
     &__cuatro{
         grid-area: servicios__cuatro;
-        background-image: linear-gradient(to right, rgba(158, 180, 198, 0.4), rgba(148, 153, 159, 0.764)), url("../recursos/img/pexels-zakir-rushanly-11748826.jpg");
-        background-size: contain;
+        background-image: linear-gradient(to right, rgba(158, 180, 198, 0.4), rgba(148, 153, 159, 0.764)), url("../recursos/img/image0.jpeg");
+        background-size: cover;
         border-radius: 1rem;
         border: 1px solid $color-azul-terciario;
     }
     &__cinco{
         grid-area: servicios__cinco;
-        background-image: linear-gradient(to right, rgba(158, 180, 198, 0.4), rgba(148, 153, 159, 0.764)), url("../recursos/img/pexels-zakir-rushanly-11748826.jpg");
-        background-size: contain;
+        background-image: linear-gradient(to right, rgba(158, 180, 198, 0.4), rgba(148, 153, 159, 0.764)), url("../recursos/img/image1.jpeg");
+        background-size: cover;
         border-radius: 1rem;
         border: 1px solid $color-azul-terciario;
     }
     &__seis{
         grid-area: servicios__seis;
-        background-image: linear-gradient(to right, rgba(158, 180, 198, 0.4), rgba(148, 153, 159, 0.764)), url("../recursos/img/pexels-zakir-rushanly-11748826.jpg");
-        background-size: contain;
+        background-image: linear-gradient(to right, rgba(158, 180, 198, 0.4), rgba(148, 153, 159, 0.764)), url("../recursos/img/medical6.jpeg");
+        background-size: cover;
         border-radius: 1rem;
         border: 1px solid $color-azul-terciario;
     }
     &__siete{
         grid-area: servicios__siete;
-        background-image: linear-gradient(to right, rgba(158, 180, 198, 0.4), rgba(148, 153, 159, 0.764)), url("../recursos/img/pexels-zakir-rushanly-11748826.jpg");
-        background-size: contain;
+        background-image: linear-gradient(to right, rgba(158, 180, 198, 0.4), rgba(148, 153, 159, 0.764)), url("../recursos/img/image2.jpeg");
+        background-size: cover;
         border-radius: 1rem;
         border: 1px solid $color-azul-terciario;
     }
     &__ocho{
         grid-area: servicios__ocho;
-        background-image: linear-gradient(to right, rgba(158, 180, 198, 0.4), rgba(148, 153, 159, 0.764)), url("../recursos/img/pexels-zakir-rushanly-11748826.jpg");
-        background-size: contain;
+        background-image: linear-gradient(to right, rgba(158, 180, 198, 0.4), rgba(148, 153, 159, 0.764)), url("../recursos/img/image3.jpeg");
+        background-size: cover;
         border-radius: 1rem;
         border: 1px solid $color-azul-terciario;
     }
     &__nueve{
         grid-area: servicios__nueve;
-        background-image: linear-gradient(to right, rgba(158, 180, 198, 0.4), rgba(148, 153, 159, 0.764)), url("../recursos/img/pexels-zakir-rushanly-11748826.jpg");
-        background-size: contain;
+        background-image: linear-gradient(to right, rgba(158, 180, 198, 0.4), rgba(148, 153, 159, 0.764)), url("../recursos/img/image4.jpeg");
+        background-size: cover;
         border-radius: 1rem;
         border: 1px solid $color-azul-terciario;
     }
     &__diez{
         grid-area: servicios__diez;
-        background-image: linear-gradient(to right, rgba(158, 180, 198, 0.4), rgba(148, 153, 159, 0.764)), url("../recursos/img/pexels-zakir-rushanly-11748826.jpg");
-        background-size: contain;
+        background-image: linear-gradient(to right, rgba(158, 180, 198, 0.4), rgba(148, 153, 159, 0.764)), url("../recursos/img/image5.jpeg");
+        background-size: cover;
         border-radius: 1rem;
         border: 1px solid $color-azul-terciario;
     }
 }
-
 
 .cards{ /*servicios */
     width: $img-cards;
