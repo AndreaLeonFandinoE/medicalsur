@@ -150,17 +150,23 @@ a::selection, button::selection, img::selection, span::selection, p::selection, 
     .separador__text:hover {
       font-size: 4rem; }
 
+/*Todas las páginas*/
 .banner {
   width: 100%;
   height: 400px;
-  background-image: url("../recursos/img/pexels-antonio-batinić-5364345.jpg");
-  background-size: cover;
-  background-position: center;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #fff; }
+  .banner__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0; }
   .banner__overlay {
     position: absolute;
     top: 0;
@@ -178,6 +184,23 @@ a::selection, button::selection, img::selection, span::selection, p::selection, 
   .banner__subtitle {
     font-size: 1.5rem;
     margin: 10px 0 0; }
+
+/*Slider de imagenes en Nosotros*/
+.fotos {
+  display: flex;
+  width: 100%;
+  height: 400px; }
+  .fotos img {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease; }
+    .fotos img:hover {
+      cursor: crosshair;
+      width: 300px;
+      opacity: 1;
+      filter: contrast(120%); }
 
 @font-face {
   font-family: "Medical Sur";
@@ -207,6 +230,7 @@ li {
 .italic {
   font-style: italic; }
 
+/**/
 .section {
   justify-content: center;
   padding-top: 0.31rem; }
@@ -289,7 +313,7 @@ li {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas: "servicios__uno servicios__dos servicios__tres servicios__cuatro servicios__cinco"  "servicios__seis servicios__siete servicios__ocho servicios__nueve servicios__diez";
   gap: 1rem;
-  margin: 2rem; }
+  margin: 0 4rem 0 4rem; }
 
 .servicios__contenido {
   display: flex;
@@ -304,8 +328,10 @@ li {
   grid-area: servicios__uno;
   background-image: linear-gradient(to right, rgba(158, 180, 198, 0.4), rgba(148, 153, 159, 0.764)), url("../recursos/img//medical1.jpeg");
   background-size: cover;
-  border-radius: 1rem;
-  border: 1px solid #9fd7f5; }
+  border-radius: 8px;
+  border: 1px solid #9fd7f5;
+  padding: 20px;
+  transition: background 0.3s, transform 0.3s; }
 
 .servicios__dos {
   grid-area: servicios__dos;
@@ -370,10 +396,128 @@ li {
   border-radius: 1rem;
   border: 1px solid #9fd7f5; }
 
-.cards {
-  /*servicios */
-  width: 20rem;
-  border-radius: 0.50rem; }
+.servicios__uno .servicios__dos .servicios__tres .servicios__cuatro .servicios__cinco .servicios__seis .servicios__siete .servicios__ocho .servicios__nueve .servicios__diez:hover {
+  background: #e0e0e0;
+  transform: scale(1.02); }
+
+.servicios__button {
+  margin-top: 15px;
+  display: inline-block;
+  text-decoration: none; }
+
+.servicios button {
+  background: #00395a;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s; }
+  .servicios button:hover {
+    background: #c41718;
+    transform: scale(1.05); }
+
+/*
+// Estilos para la sección de servicios
+.servicios {
+    padding: 2rem; // Espaciado interno de la sección
+    margin: 0 4rem 0 4rem;
+  
+    &__container {
+      display: flex;
+      flex-wrap: wrap; // Permitir que los artículos se envuelvan en la línea siguiente
+      gap: 10px; // Espacio entre los artículos
+    }
+  
+    &__item {
+      flex: 1 1 calc(33.333% - 20px); // Tres columnas con espacio entre ellas
+     // background: $fondo-header; // Fondo del artículo
+      border: 1px solid $color-azul-terciario; // Borde del artículo
+      border-radius: 8px; // Bordes redondeados
+      padding: 20px; // Espaciado interno del artículo
+      transition: background 0.3s, transform 0.3s; // Transiciones suaves
+    }
+  
+    &__item:hover {
+      background: #e0e0e0; // Fondo del artículo al pasar el cursor
+      transform: scale(1.02); // Aumento del tamaño del artículo
+    }
+  
+    &__contenido {
+      display: flex;
+      flex-direction: column;
+      align-items: center; // Centrar el contenido
+      text-align: center; // Centrar el texto
+    }
+  
+    &__button {
+      margin-top: 15px; // Espacio superior del botón
+      display: inline-block; // Mostrar el botón en línea
+      text-decoration: none; // Quitar el subrayado del enlace
+    }
+  
+    button {
+      background: $button; // Fondo del botón
+      color: #fff; // Color del texto del botón
+      border: none; // Sin borde
+      padding: 10px 20px; // Espaciado interno del botón
+      border-radius: 4px; // Bordes redondeados
+      cursor: pointer; // Cursor en forma de mano
+      transition: background 0.3s, transform 0.3s; // Transiciones suaves
+  
+      &:hover {
+        background: $button-hover; // Fondo del botón al pasar el cursor
+        transform: scale(1.05); // Aumento del tamaño del botón
+      }
+    }
+  }*/
+/*Pag Nosotros*/
+.especialistas {
+  margin: 2.5rem 0 2.5rem 0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); }
+  .especialistas__titulo {
+    text-align: center;
+    padding: 1rem; }
+  .especialistas__lista {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-items: flex-start; }
+  .especialistas__item {
+    display: flex; }
+    .especialistas__item:hover {
+      transform: translateY(-3px);
+      cursor: pointer; }
+  .especialistas__icon {
+    font-size: 1rem;
+    color: #008ad1;
+    margin-right: 10px;
+    transition: color 0.3s ease; }
+    .especialistas__icon:hover {
+      color: #c41718; }
+
+.equipo {
+  padding: 20px;
+  background-color: #008ad1;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); }
+  .equipo__container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; }
+  .equipo__item {
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .equipo__item:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); }
 
 /* TABLET */
 @media (min-width: 541px) and (max-width: 720px) {

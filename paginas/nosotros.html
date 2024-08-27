@@ -13,7 +13,8 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   <!--CSS-->
   <link rel="stylesheet" href="../css/style.css">
-
+  <!--Iconos en Font Awesome-->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   <title>Nosotros</title>
 
 </head>
@@ -87,44 +88,113 @@
   </header>
 
   <main>
+
+    <!-- Banner -->
+    <section class="banner">
+      <img class="banner__image" src="../recursos/img/pexels-antonio-batinić-5364345.jpg" alt="Medical Sur">
+      <div class="banner__overlay"></div>
+      <div class="banner__content">
+        <h1 class="banner__title">Nosotros - Medical Sur</h1>
+        <p class="banner__subtitle">Somos una empresa que cuenta con más de dieciocho años de experiencia en el rubro de la salud, brindando a todos sus clientes la mejor calidad de servicio médico</p>
+      </div>
+    </section>
+    
     <!-- Presentación -->
-    <section class="sectionr">
-      <div class="section__container">
-        <h1>Medical Sur</h1>
-        <p>Somos una empresa que cuenta con más de dieciocho años de experiencia en el rubro de la salud, brindando a todos sus clientes la mejor calidad de servicio médico.</p>
-        <h2>Brindamos atención medica en todo momento y lugar las 24hs del día y los 365 días del año.</h3>
-        <p>Especialistas en:</p>
-        <ul class="presentacion__lista">
-          <li>Servicio de atención médica pre hospitalaria</li>
-          <li>Urgencias y Emergencias Médicas</li>
-          <li>Medicina Laboral</li>
-          <li>Medicina Preventiva</li>
-          <li>Atención en Consultorios Médicos Ambulatorios</li>
-          <li>Traslados Sanitarios Programados</li>
+    <section class="section__container">
+      <h2>Brindamos atención medica en todo momento y lugar las 24hs del día y los 365 días del año.</h2>
+      
+      <div class="especialistas">
+        <h3 class="especialistas__titulo">Especialistas en:</h3>
+        <ul class="especialistas__lista">
+          <li class="especialistas__item">
+            <i class="fas fa-check-circle especialistas__icon"></i>
+            Servicio de atención médica pre hospitalaria
+          </li>
+          <li class="especialistas__item">
+            <i class="fas fa-check-circle especialistas__icon"></i>
+            Urgencias y Emergencias Médicas
+          </li>
+          <li class="especialistas__item">
+            <i class="fas fa-check-circle especialistas__icon"></i>
+            Medicina Laboral
+          </li>
+          <li class="especialistas__item">
+            <i class="fas fa-check-circle especialistas__icon"></i>
+            Medicina Preventiva
+          </li>
+          <li class="especialistas__item">
+            <i class="fas fa-check-circle especialistas__icon"></i>
+            Atención en Consultorios Médicos Ambulatorios
+          </li>
+          <li class="especialistas__item">
+            <i class="fas fa-check-circle especialistas__icon"></i>
+            Traslados Sanitarios Programados
+          </li>
         </ul>
-        <p>Nos proponemos día a día, como objetivo primordial, proteger la Salud y la Vida de nuestros clientes garantizándoles los servicios de salud de primer nivel de atención en: promoción, prevención, diagnóstico y tratamiento. Para cumplir con esta misión, se tienen en cuenta tanto los principios éticos como los desarrollos empresariales que permitan la subsistencia y el crecimiento de la empresa en el medio.
-          <p>Procuramos que, en el resultado de nuestro trabajo siempre se reflejen nuestros principales valores: la transparencia, el compromiso, el respeto por la dignidad humana y la equidad social.</p>
-          Nuestro compromiso, en Medical Sur es, ofrecer un sistema de atención médica que garantice el cumplimiento de los servicios contratados por nuestros clientes; sustentados en la honestidad, experiencia, trabajo en equipo y personal calificado, a través del mejoramiento continuo e innovación de la infraestructura y tecnología.
+      </div>
+
+      <div>
+        <p>
+          Nos proponemos día a día, como objetivo primordial, proteger la Salud y la Vida de nuestros clientes 
+          garantizándoles los servicios de salud de primer nivel de atención en: promoción, prevención, diagnóstico 
+          y tratamiento. Para cumplir con esta misión, se tienen en cuenta tanto los principios éticos como los 
+          desarrollos empresariales que permitan la subsistencia y el crecimiento de la empresa en el medio.
         </p>
+        <p>
+          Procuramos que, en el resultado de nuestro trabajo siempre se reflejen nuestros principales valores: 
+          la transparencia, el compromiso, el respeto por la dignidad humana y la equidad social.
+        </p>
+        <p>
+          Nuestro compromiso en Medical Sur es ofrecer un sistema de atención médica que garantice el cumplimiento 
+          de los servicios contratados por nuestros clientes, sustentados en la honestidad, experiencia, trabajo 
+          en equipo y personal calificado, a través del mejoramiento continuo e innovación de la infraestructura 
+          y tecnología.
+        </p>
+      </div>
+
+    </section>
+    
+    <!-- Imagenes -->
+    <section class="section__container">
+      <div class="fotos">
+        <img src="../recursos/img/image1.jpeg" alt="img">
+        <img src="../recursos/img/image5.jpeg" alt="img">
+        <img src="../recursos/img/image6.jpg" alt="img">
+        <img src="../recursos/img/image0.jpeg" alt="img">
+        <img src="../recursos/img/image2.jpeg" alt="img">
       </div>
     </section>
 
-    <section class="section">
-      <div class="section__container">
-        <div>
-          <h2>Profesionales</h2>
-          <p>Nuestro equipo de profesionales médicos y enfermeros especializados, son constantemente capacitados para atender situaciones de emergencias médicas, con el instrumental y equipamiento que cada atención requiere según su complejidad, utilizando para ello unidades móviles de terapia intensiva, equipadas con la más alta tecnología, dispuesta con los mejores estándares de calidad del mercado y optimizando aún más la calidad de atención para nuestros pacientes.</p>
+    <!-- Texto -->
+    <section class="equipo section__container">
+      <div class="equipo__container">
+        <div class="equipo__item">
+          <h2 class="equipo__titulo">Profesionales</h2>
+          <p class="equipo__texto">
+            Nuestro equipo de profesionales médicos y enfermeros especializados, son constantemente capacitados para 
+            atender situaciones de emergencias médicas, con el instrumental y equipamiento que cada atención requiere 
+            según su complejidad, utilizando para ello unidades móviles de terapia intensiva, equipadas con la más alta 
+            tecnología, dispuesta con los mejores estándares de calidad del mercado y optimizando aún más la calidad de 
+            atención para nuestros pacientes.
+          </p>
         </div>
         
-        <div">
-          <h2>Administrativo</h2>
-          <p>Perfeccionamos constantemente a nuestro equipo administrativo y de despachadores de emergencias para poder realizar la mejor atención y posterior despacho a las llamadas de urgencias y emergencias. 
-           <p>Todos nuestro Recurso Humano se encuentra siempre disponible y capacitado para atender y solucionar cualquier tipo de urgencia médica, entrenando a cada uno de nuestros colaboradores a través de nuestro departamento de capacitaciones, el cual se encuentra acreditado internacionalmente por medio de ACES (Asociación para la Capacitación en Emergencias y Socorros).</p>
+        <div class="equipo__item">
+          <h2 class="equipo__titulo">Administrativo</h2>
+          <p class="equipo__texto">
+            Perfeccionamos constantemente a nuestro equipo administrativo y de despachadores de emergencias para poder 
+            realizar la mejor atención y posterior despacho a las llamadas de urgencias y emergencias.
+          </p>
+          <p class="equipo__texto">
+            Todo nuestro Recurso Humano se encuentra siempre disponible y capacitado para atender y solucionar cualquier 
+            tipo de urgencia médica, entrenando a cada uno de nuestros colaboradores a través de nuestro departamento de 
+            capacitaciones, el cual se encuentra acreditado internacionalmente por medio de ACES (Asociación para la 
+            Capacitación en Emergencias y Socorros).
           </p>
         </div>
       </div>
     </section>
-
+    
   </main>
 
   <!-- Footer -->

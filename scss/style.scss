@@ -37,7 +37,7 @@ li {
 .italic{
     font-style: italic;
 }
-
+/**/
 .section{
     justify-content: center;
     padding-top: 0.31rem;
@@ -147,7 +147,7 @@ li {
                             "servicios__uno servicios__dos servicios__tres servicios__cuatro servicios__cinco" 
                             "servicios__seis servicios__siete servicios__ocho servicios__nueve servicios__diez";
         gap: 1rem;
-        margin: 2rem;
+        margin: 0 4rem 0 4rem;
     }
     &__contenido{
         display: flex;
@@ -162,8 +162,10 @@ li {
         grid-area: servicios__uno;
         background-image: linear-gradient(to right, rgba(158, 180, 198, 0.4), rgba(148, 153, 159, 0.764)), url("../recursos/img//medical1.jpeg");
         background-size: cover;
-        border-radius: 1rem;
+        border-radius: 8px;
         border: 1px solid $color-azul-terciario;
+        padding: 20px; // Espaciado interno del artículo
+        transition: background 0.3s, transform 0.3s; // Transiciones suaves
     }
     &__dos{
         grid-area: servicios__dos;
@@ -228,12 +230,155 @@ li {
         border-radius: 1rem;
         border: 1px solid $color-azul-terciario;
     }
+    
+    &__uno &__dos &__tres &__cuatro &__cinco &__seis &__siete &__ocho &__nueve &__diez:hover {
+      background: #e0e0e0; // Fondo del artículo al pasar el cursor
+      transform: scale(1.02); // Aumento del tamaño del artículo
+    }
+
+    &__button {
+      margin-top: 15px; // Espacio superior del botón
+      display: inline-block; // Mostrar el botón en línea
+      text-decoration: none; // Quitar el subrayado del enlace
+    }
+    button {
+      background: $button; // Fondo del botón
+      color: #fff; // Color del texto del botón
+      border: none; // Sin borde
+      padding: 10px 20px; // Espaciado interno del botón
+      border-radius: 4px; // Bordes redondeados
+      cursor: pointer; // Cursor en forma de mano
+      transition: background 0.3s, transform 0.3s; // Transiciones suaves
+  
+      &:hover {
+        background: $button-hover; // Fondo del botón al pasar el cursor
+        transform: scale(1.05); // Aumento del tamaño del botón
+      }
+    }
 }
 
-.cards{ /*servicios */
-    width: $img-cards;
-    border-radius: 0.50rem;
+/*
+// Estilos para la sección de servicios
+.servicios {
+    padding: 2rem; // Espaciado interno de la sección
+    margin: 0 4rem 0 4rem;
+  
+    &__container {
+      display: flex;
+      flex-wrap: wrap; // Permitir que los artículos se envuelvan en la línea siguiente
+      gap: 10px; // Espacio entre los artículos
+    }
+  
+    &__item {
+      flex: 1 1 calc(33.333% - 20px); // Tres columnas con espacio entre ellas
+     // background: $fondo-header; // Fondo del artículo
+      border: 1px solid $color-azul-terciario; // Borde del artículo
+      border-radius: 8px; // Bordes redondeados
+      padding: 20px; // Espaciado interno del artículo
+      transition: background 0.3s, transform 0.3s; // Transiciones suaves
+    }
+  
+    &__item:hover {
+      background: #e0e0e0; // Fondo del artículo al pasar el cursor
+      transform: scale(1.02); // Aumento del tamaño del artículo
+    }
+  
+    &__contenido {
+      display: flex;
+      flex-direction: column;
+      align-items: center; // Centrar el contenido
+      text-align: center; // Centrar el texto
+    }
+  
+    &__button {
+      margin-top: 15px; // Espacio superior del botón
+      display: inline-block; // Mostrar el botón en línea
+      text-decoration: none; // Quitar el subrayado del enlace
+    }
+  
+    button {
+      background: $button; // Fondo del botón
+      color: #fff; // Color del texto del botón
+      border: none; // Sin borde
+      padding: 10px 20px; // Espaciado interno del botón
+      border-radius: 4px; // Bordes redondeados
+      cursor: pointer; // Cursor en forma de mano
+      transition: background 0.3s, transform 0.3s; // Transiciones suaves
+  
+      &:hover {
+        background: $button-hover; // Fondo del botón al pasar el cursor
+        transform: scale(1.05); // Aumento del tamaño del botón
+      }
+    }
+  }*/
+  
+
+/*Pag Nosotros*/
+.especialistas {
+    margin: 2.5rem 0 2.5rem 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    &__titulo {
+        text-align: center;
+        padding: 1rem;
+    }
+
+    &__lista {
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-items: flex-start;
+    }
+
+    &__item {
+        display: flex;
+
+        &:hover {
+            transform: translateY(-3px);
+            cursor: pointer;
+        }
+    }
+
+    &__icon {
+        font-size: 1rem;
+        color: $color-azul-secundario;
+        margin-right: 10px;
+        transition: color 0.3s ease;
+
+        &:hover {
+            color: $color-rojo;
+        }
+    }
 }
 
+.equipo {
+    padding: 20px;
+    background-color: $color-azul-secundario;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+    &__container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    &__item {
+      padding: 15px;
+      background-color: $text-color;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      
+      &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+    }
+}
 
 @import 'mediaqueries';

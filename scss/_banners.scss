@@ -1,5 +1,4 @@
 /*inicio*/
-
 .slider {
     position: relative;
     width: $slider-width;
@@ -82,7 +81,6 @@
 }
 
 /*Servicios*/
-
 .separador {
     width: 100%;
     background: linear-gradient(145deg, #00395a, #008ad1); // Degradado de colores
@@ -101,42 +99,69 @@
       }
     }
 }
-  
+
+/*Todas las páginas*/
 .banner {
     width: $slider-width;
-    height: $slider-height; // Altura del banner
-    background-image: url('../recursos/img/pexels-antonio-batinić-5364345.jpg');
-    background-size: cover;
-    background-position: center;
+    height: $slider-height; 
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #fff;
-  
+    color: $text-color;
+
+    &__image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover; 
+      z-index: 0; 
+    }
+    
     &__overlay {
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
-      background-color: $overlay-color; // Filtro con opacidad
+      background-color: $overlay-color; 
     }
-  
+
     &__content {
       position: relative;
       text-align: center;
-      z-index: 1; // Asegura que el texto esté por encima de la imagen y la superposición
+      z-index: 1; 
     }
-  
+
     &__title {
-      font-size: 3rem; // Tamaño del título
+      font-size: 3rem; 
       margin: 0;
     }
-  
+
     &__subtitle {
-      font-size: 1.5rem; // Tamaño del subtítulo
+      font-size: 1.5rem; 
       margin: 10px 0 0;
     }
 }
-  
+
+/*Slider de imagenes en Nosotros*/
+.fotos{
+    display: flex;
+    width: $slider-width;
+    height: $slider-height;
+    img{
+        width: 0px;
+        flex-grow: 1;
+        object-fit: cover;
+        opacity: .8;
+        transition: .5s ease;
+        &:hover{
+            cursor: crosshair;
+            width: 300px;
+            opacity: 1;
+            filter: contrast(120%);
+        }
+    }
+}
