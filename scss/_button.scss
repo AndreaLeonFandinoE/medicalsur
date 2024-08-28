@@ -8,6 +8,8 @@ button{
     background-color: $button;
     padding: 0.5rem;
     margin-top: 0.3rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
     &:hover, & a:hover{
         background-color: $button-hover;
         color: white;

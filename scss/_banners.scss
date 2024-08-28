@@ -80,22 +80,21 @@
     }
 }
 
-/*Servicios*/
+/*Pag servicios*/
 .separador {
     width: 100%;
     background: linear-gradient(145deg, #00395a, #008ad1); // Degradado de colores
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 30px 0;
+    padding: 1.5rem 0;
   
     &__text {
-      font-size: 3rem; // Tamaño de la fuente por defecto
-      color: #fff; // Color del texto
+      color: $text-color; // Color del texto
       transition: font-size 0.3s ease-in-out; // Suaviza el efecto al agrandar
   
       &:hover {
-        font-size: 4rem; // Tamaño de la fuente al pasar el cursor
+        font-size: 2.3rem; // Tamaño de la fuente al pasar el cursor
       }
     }
 }

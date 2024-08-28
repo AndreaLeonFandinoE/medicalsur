@@ -67,7 +67,9 @@ button {
   text-align: center;
   background-color: #00395a;
   padding: 0.5rem;
-  margin-top: 0.3rem; }
+  margin-top: 0.3rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease; }
   button:hover, button a:hover {
     background-color: #c41718;
     color: white; }
@@ -135,20 +137,19 @@ a::selection, button::selection, img::selection, span::selection, p::selection, 
       .slider .navigation .dot.active {
         background-color: #00395a; }
 
-/*Servicios*/
+/*Pag servicios*/
 .separador {
   width: 100%;
   background: linear-gradient(145deg, #00395a, #008ad1);
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 30px 0; }
+  padding: 1.5rem 0; }
   .separador__text {
-    font-size: 3rem;
     color: #fff;
     transition: font-size 0.3s ease-in-out; }
     .separador__text:hover {
-      font-size: 4rem; }
+      font-size: 2.3rem; }
 
 /*Todas las páginas*/
 .banner {
@@ -221,6 +222,11 @@ body {
 a {
   text-decoration: none; }
 
+p {
+  margin-bottom: 20px; }
+  p:last-of-type {
+    margin-bottom: 0; }
+
 li {
   list-style-type: none;
   padding: 0.5rem;
@@ -242,11 +248,12 @@ li {
   text-align: center;
   justify-content: center; }
 
+/*Pag inicio*/
 .intro img {
   padding-bottom: 2rem;
   width: 20rem; }
 
-/*Misión, Visión, Valores*/
+/*Pag inicio - Misión, Visión, Valores*/
 .mvv {
   display: flex;
   justify-content: space-around;
@@ -307,170 +314,207 @@ li {
   .contacto__info {
     grid-area: contacto__info; }
 
-/*servicios en página de inicio */
+/*Pag inicio - servicios*/
 .servicios__container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-areas: "servicios__uno servicios__dos servicios__tres servicios__cuatro servicios__cinco"  "servicios__seis servicios__siete servicios__ocho servicios__nueve servicios__diez";
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-areas: "servicios__uno servicios__dos servicios__tres servicios__cuatro servicios__cinco" "servicios__seis servicios__siete servicios__ocho servicios__nueve servicios__diez";
   gap: 1rem;
-  margin: 0 4rem 0 4rem; }
-
-.servicios__contenido {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
   text-align: center;
-  padding: 0.5rem;
-  color: white; }
+  margin: 1rem 5rem; }
 
 .servicios__uno {
   grid-area: servicios__uno;
-  background-image: linear-gradient(to right, rgba(158, 180, 198, 0.4), rgba(148, 153, 159, 0.764)), url("../recursos/img//medical1.jpeg");
+  background-image: linear-gradient(to right, rgba(158, 180, 198, 0.4), rgba(148, 153, 159, 0.764)), url(../recursos/img/image0.jpeg);
   background-size: cover;
-  border-radius: 8px;
+  background-position: center;
+  border-radius: 0.7rem;
   border: 1px solid #9fd7f5;
-  padding: 20px;
-  transition: background 0.3s, transform 0.3s; }
+  height: 14rem;
+  width: 14rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s, transform 0.3s;
+  padding: 1rem; }
+  .servicios__uno:hover {
+    background-image: linear-gradient(to right, rgba(158, 169, 198, 0), rgba(148, 153, 159, 0)), url(../recursos/img/image0.jpeg);
+    transform: scale(1.1); }
 
 .servicios__dos {
   grid-area: servicios__dos;
-  background-image: linear-gradient(to right, rgba(158, 180, 198, 0.4), rgba(148, 153, 159, 0.764)), url("../recursos/img/medical2.jpeg");
+  background-image: linear-gradient(to right, rgba(158, 180, 198, 0.4), rgba(148, 153, 159, 0.764)), url(../recursos/img/medical4.jpeg);
   background-size: cover;
-  border-radius: 1rem;
-  border: 1px solid #9fd7f5; }
+  background-position: center;
+  border-radius: 0.7rem;
+  border: 1px solid #9fd7f5;
+  height: 14rem;
+  width: 14rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s, transform 0.3s;
+  padding: 1rem; }
+  .servicios__dos:hover {
+    background-image: linear-gradient(to right, rgba(158, 169, 198, 0), rgba(148, 153, 159, 0)), url(../recursos/img/medical4.jpeg);
+    transform: scale(1.1); }
 
 .servicios__tres {
   grid-area: servicios__tres;
-  background-image: linear-gradient(to right, rgba(158, 180, 198, 0.4), rgba(148, 153, 159, 0.764)), url("../recursos/img/medical7.jpeg");
+  background-image: linear-gradient(to right, rgba(158, 180, 198, 0.4), rgba(148, 153, 159, 0.764)), url(../recursos/img/image2.jpeg);
   background-size: cover;
-  border-radius: 1rem;
-  border: 1px solid #9fd7f5; }
+  background-position: center;
+  border-radius: 0.7rem;
+  border: 1px solid #9fd7f5;
+  height: 14rem;
+  width: 14rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s, transform 0.3s;
+  padding: 1rem; }
+  .servicios__tres:hover {
+    background-image: linear-gradient(to right, rgba(158, 169, 198, 0), rgba(148, 153, 159, 0)), url(../recursos/img/image2.jpeg);
+    transform: scale(1.1); }
 
 .servicios__cuatro {
   grid-area: servicios__cuatro;
-  background-image: linear-gradient(to right, rgba(158, 180, 198, 0.4), rgba(148, 153, 159, 0.764)), url("../recursos/img/image0.jpeg");
+  background-image: linear-gradient(to right, rgba(158, 180, 198, 0.4), rgba(148, 153, 159, 0.764)), url(../recursos/img/image3.jpeg);
   background-size: cover;
-  border-radius: 1rem;
-  border: 1px solid #9fd7f5; }
+  background-position: center;
+  border-radius: 0.7rem;
+  border: 1px solid #9fd7f5;
+  height: 14rem;
+  width: 14rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s, transform 0.3s;
+  padding: 1rem; }
+  .servicios__cuatro:hover {
+    background-image: linear-gradient(to right, rgba(158, 169, 198, 0), rgba(148, 153, 159, 0)), url(../recursos/img/image3.jpeg);
+    transform: scale(1.1); }
 
 .servicios__cinco {
   grid-area: servicios__cinco;
-  background-image: linear-gradient(to right, rgba(158, 180, 198, 0.4), rgba(148, 153, 159, 0.764)), url("../recursos/img/image1.jpeg");
+  background-image: linear-gradient(to right, rgba(158, 180, 198, 0.4), rgba(148, 153, 159, 0.764)), url(../recursos/img/pexels-zakir-rushanly-11748826.jpg);
   background-size: cover;
-  border-radius: 1rem;
-  border: 1px solid #9fd7f5; }
+  background-position: center;
+  border-radius: 0.7rem;
+  border: 1px solid #9fd7f5;
+  height: 14rem;
+  width: 14rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s, transform 0.3s;
+  padding: 1rem; }
+  .servicios__cinco:hover {
+    background-image: linear-gradient(to right, rgba(158, 169, 198, 0), rgba(148, 153, 159, 0)), url(../recursos/img/pexels-zakir-rushanly-11748826.jpg);
+    transform: scale(1.1); }
 
 .servicios__seis {
   grid-area: servicios__seis;
-  background-image: linear-gradient(to right, rgba(158, 180, 198, 0.4), rgba(148, 153, 159, 0.764)), url("../recursos/img/medical6.jpeg");
+  background-image: linear-gradient(to right, rgba(158, 180, 198, 0.4), rgba(148, 153, 159, 0.764)), url(../recursos/img/image5.jpeg);
   background-size: cover;
-  border-radius: 1rem;
-  border: 1px solid #9fd7f5; }
+  background-position: center;
+  border-radius: 0.7rem;
+  border: 1px solid #9fd7f5;
+  height: 14rem;
+  width: 14rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s, transform 0.3s;
+  padding: 1rem; }
+  .servicios__seis:hover {
+    background-image: linear-gradient(to right, rgba(158, 169, 198, 0), rgba(148, 153, 159, 0)), url(../recursos/img/image5.jpeg);
+    transform: scale(1.1); }
 
 .servicios__siete {
   grid-area: servicios__siete;
-  background-image: linear-gradient(to right, rgba(158, 180, 198, 0.4), rgba(148, 153, 159, 0.764)), url("../recursos/img/image2.jpeg");
+  background-image: linear-gradient(to right, rgba(158, 180, 198, 0.4), rgba(148, 153, 159, 0.764)), url(../recursos/img/image6.jpg);
   background-size: cover;
-  border-radius: 1rem;
-  border: 1px solid #9fd7f5; }
+  background-position: center;
+  border-radius: 0.7rem;
+  border: 1px solid #9fd7f5;
+  height: 14rem;
+  width: 14rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s, transform 0.3s;
+  padding: 1rem; }
+  .servicios__siete:hover {
+    background-image: linear-gradient(to right, rgba(158, 169, 198, 0), rgba(148, 153, 159, 0)), url(../recursos/img/image6.jpg);
+    transform: scale(1.1); }
 
 .servicios__ocho {
   grid-area: servicios__ocho;
-  background-image: linear-gradient(to right, rgba(158, 180, 198, 0.4), rgba(148, 153, 159, 0.764)), url("../recursos/img/image3.jpeg");
+  background-image: linear-gradient(to right, rgba(158, 180, 198, 0.4), rgba(148, 153, 159, 0.764)), url(../recursos/img/medical6.jpeg);
   background-size: cover;
-  border-radius: 1rem;
-  border: 1px solid #9fd7f5; }
+  background-position: center;
+  border-radius: 0.7rem;
+  border: 1px solid #9fd7f5;
+  height: 14rem;
+  width: 14rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s, transform 0.3s;
+  padding: 1rem; }
+  .servicios__ocho:hover {
+    background-image: linear-gradient(to right, rgba(158, 169, 198, 0), rgba(148, 153, 159, 0)), url(../recursos/img/medical6.jpeg);
+    transform: scale(1.1); }
 
 .servicios__nueve {
   grid-area: servicios__nueve;
-  background-image: linear-gradient(to right, rgba(158, 180, 198, 0.4), rgba(148, 153, 159, 0.764)), url("../recursos/img/image4.jpeg");
+  background-image: linear-gradient(to right, rgba(158, 180, 198, 0.4), rgba(148, 153, 159, 0.764)), url(../recursos/img/medical2.jpeg);
   background-size: cover;
-  border-radius: 1rem;
-  border: 1px solid #9fd7f5; }
+  background-position: center;
+  border-radius: 0.7rem;
+  border: 1px solid #9fd7f5;
+  height: 14rem;
+  width: 14rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s, transform 0.3s;
+  padding: 1rem; }
+  .servicios__nueve:hover {
+    background-image: linear-gradient(to right, rgba(158, 169, 198, 0), rgba(148, 153, 159, 0)), url(../recursos/img/medical2.jpeg);
+    transform: scale(1.1); }
 
 .servicios__diez {
   grid-area: servicios__diez;
-  background-image: linear-gradient(to right, rgba(158, 180, 198, 0.4), rgba(148, 153, 159, 0.764)), url("../recursos/img/image5.jpeg");
+  background-image: linear-gradient(to right, rgba(158, 180, 198, 0.4), rgba(148, 153, 159, 0.764)), url(../recursos/img/medical7.jpg);
   background-size: cover;
-  border-radius: 1rem;
-  border: 1px solid #9fd7f5; }
-
-.servicios__uno .servicios__dos .servicios__tres .servicios__cuatro .servicios__cinco .servicios__seis .servicios__siete .servicios__ocho .servicios__nueve .servicios__diez:hover {
-  background: #e0e0e0;
-  transform: scale(1.02); }
+  background-position: center;
+  border-radius: 0.7rem;
+  border: 1px solid #9fd7f5;
+  height: 14rem;
+  width: 14rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s, transform 0.3s;
+  padding: 1rem; }
+  .servicios__diez:hover {
+    background-image: linear-gradient(to right, rgba(158, 169, 198, 0), rgba(148, 153, 159, 0)), url(../recursos/img/medical7.jpg);
+    transform: scale(1.1); }
 
 .servicios__button {
-  margin-top: 15px;
-  display: inline-block;
-  text-decoration: none; }
+  display: inline-block; }
+  .servicios__button button {
+    background: #00395ae0;
+    padding: 0.60rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s; }
+    .servicios__button button:hover {
+      background: #c41717de;
+      transform: scale(1.05); }
 
-.servicios button {
-  background: #00395a;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background 0.3s, transform 0.3s; }
-  .servicios button:hover {
-    background: #c41718;
-    transform: scale(1.05); }
-
-/*
-// Estilos para la sección de servicios
-.servicios {
-    padding: 2rem; // Espaciado interno de la sección
-    margin: 0 4rem 0 4rem;
-  
-    &__container {
-      display: flex;
-      flex-wrap: wrap; // Permitir que los artículos se envuelvan en la línea siguiente
-      gap: 10px; // Espacio entre los artículos
-    }
-  
-    &__item {
-      flex: 1 1 calc(33.333% - 20px); // Tres columnas con espacio entre ellas
-     // background: $fondo-header; // Fondo del artículo
-      border: 1px solid $color-azul-terciario; // Borde del artículo
-      border-radius: 8px; // Bordes redondeados
-      padding: 20px; // Espaciado interno del artículo
-      transition: background 0.3s, transform 0.3s; // Transiciones suaves
-    }
-  
-    &__item:hover {
-      background: #e0e0e0; // Fondo del artículo al pasar el cursor
-      transform: scale(1.02); // Aumento del tamaño del artículo
-    }
-  
-    &__contenido {
-      display: flex;
-      flex-direction: column;
-      align-items: center; // Centrar el contenido
-      text-align: center; // Centrar el texto
-    }
-  
-    &__button {
-      margin-top: 15px; // Espacio superior del botón
-      display: inline-block; // Mostrar el botón en línea
-      text-decoration: none; // Quitar el subrayado del enlace
-    }
-  
-    button {
-      background: $button; // Fondo del botón
-      color: #fff; // Color del texto del botón
-      border: none; // Sin borde
-      padding: 10px 20px; // Espaciado interno del botón
-      border-radius: 4px; // Bordes redondeados
-      cursor: pointer; // Cursor en forma de mano
-      transition: background 0.3s, transform 0.3s; // Transiciones suaves
-  
-      &:hover {
-        background: $button-hover; // Fondo del botón al pasar el cursor
-        transform: scale(1.05); // Aumento del tamaño del botón
-      }
-    }
-  }*/
 /*Pag Nosotros*/
 .especialistas {
   margin: 2.5rem 0 2.5rem 0;
@@ -500,6 +544,7 @@ li {
     .especialistas__icon:hover {
       color: #c41718; }
 
+/*Pag Nosotros*/
 .equipo {
   padding: 20px;
   background-color: #008ad1;
@@ -518,6 +563,118 @@ li {
     .equipo__item:hover {
       transform: scale(1.05);
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); }
+
+/*Pag Servicio*/
+.urgencias {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 1.1em;
+  color: #00395a;
+  background-color: #cdcdcd;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease; }
+  .urgencias:hover {
+    background-color: #9fd7f5;
+    color: #000000; }
+
+/*Pag Servicio*/
+.guardia__span {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 1.2em;
+  color: #00395a;
+  background-color: #f2f2f2;
+  padding: 15px;
+  border-left: 5px solid #008ad1;
+  border-radius: 4px;
+  transition: all 0.3s ease; }
+  .guardia__span:hover {
+    background-color: #008ad1;
+    color: #fff; }
+
+.guardia p::first-letter {
+  font-size: 1.2em;
+  color: #008ad1;
+  font-weight: bold; }
+
+/*Pag Servicio*/
+.translados dl dt {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #00395a;
+  margin: 3rem 0rem 1rem 1.5rem;
+  transition: color 0.3s ease; }
+  .translados dl dt:hover {
+    color: #008ad1; }
+
+.translados dl dd {
+  background-color: #9fd7f5;
+  padding: 15px;
+  border-left: 4px solid #008ad1;
+  border-radius: 4px; }
+
+/*Pag Servicio*/
+.health-services h4 {
+  margin-bottom: 20px; }
+
+.health-services dl dt {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #c41718;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #c41718;
+  padding-bottom: 5px; }
+
+.health-services dl dd {
+  margin: 2rem 0;
+  background-color: #fff;
+  padding: 15px;
+  border-left: 4px solid #c41718;
+  border-radius: 4px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); }
+
+/*Pag Servicio*/
+.internacion p {
+  margin-bottom: 1.5rem; }
+
+.internacion h2 {
+  font-size: 1.30rem;
+  color: #008ad1;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center; }
+  .internacion h2 i {
+    margin-right: 0.5rem; }
+
+.internacion ul {
+  list-style: none;
+  padding: 0; }
+  .internacion ul li {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center; }
+    .internacion ul li i {
+      color: #00395a;
+      margin-right: 0.5rem; }
+
+.internacion__objectives, .internacion__benefits, .internacion__services {
+  margin-bottom: 2rem;
+  border-radius: 4px;
+  padding: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease; }
+  .internacion__objectives:hover, .internacion__benefits:hover, .internacion__services:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); }
+
+.internacion__services ul li {
+  display: flex;
+  align-items: center; }
+  .internacion__services ul li i {
+    color: #00395a; }
 
 /* TABLET */
 @media (min-width: 541px) and (max-width: 720px) {
