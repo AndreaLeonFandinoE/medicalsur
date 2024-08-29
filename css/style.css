@@ -178,7 +178,8 @@ a::selection, button::selection, img::selection, span::selection, p::selection, 
   .banner__content {
     position: relative;
     text-align: center;
-    z-index: 1; }
+    z-index: 1;
+    padding: 5rem; }
   .banner__title {
     font-size: 3rem;
     margin: 0; }
@@ -223,7 +224,8 @@ a {
   text-decoration: none; }
 
 p {
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  text-align: justify; }
   p:last-of-type {
     margin-bottom: 0; }
 
@@ -675,6 +677,80 @@ li {
   align-items: center; }
   .internacion__services ul li i {
     color: #00395a; }
+
+/*Pag Servicio*/
+.hogar dt {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  color: #00395a; }
+  .hogar dt i {
+    margin-right: 10px;
+    font-size: 1.4rem;
+    color: #c41718; }
+
+.hogar dd {
+  margin-left: 30px;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px; }
+
+.hogar ol {
+  margin-left: 20px;
+  padding-left: 20px;
+  list-style-type: decimal; }
+  .hogar ol li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    line-height: 1.5; }
+
+.hogar ul {
+  margin-left: 30px;
+  padding-left: 20px;
+  list-style: none; }
+  .hogar ul li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    line-height: 1.5;
+    display: flex;
+    align-items: center; }
+    .hogar ul li i {
+      margin-right: 10px;
+      color: #c41718; }
+
+/*Pag Servicio*/
+.capacitaciones p {
+  transition: transform 0.3s ease, opacity 0.3s ease; }
+  .capacitaciones p:hover {
+    transform: scale(1.02);
+    opacity: 0.9; }
+  .capacitaciones p strong {
+    color: #00395a;
+    font-weight: bold; }
+
+.capacitaciones__courses {
+  list-style-type: none;
+  padding-left: 0; }
+  .capacitaciones__courses li {
+    margin-bottom: 2rem;
+    padding: 10px;
+    border-left: 4px solid #00395a;
+    border-radius: 8px;
+    transition: background 0.3s ease, transform 0.3s ease; }
+    .capacitaciones__courses li:hover {
+      background: #e9f5ff;
+      transform: translateX(5px); }
+    .capacitaciones__courses li strong {
+      color: #00395a; }
+
+.capacitaciones__sublist {
+  list-style-type: disc;
+  margin-top: 10px;
+  margin-left: 20px; }
+  .capacitaciones__sublist li {
+    margin-bottom: 5px; }
 
 /* TABLET */
 @media (min-width: 541px) and (max-width: 720px) {

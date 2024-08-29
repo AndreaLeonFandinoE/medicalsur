@@ -29,6 +29,7 @@ a {
 
 p {
     margin-bottom: 20px;
+    text-align: justify;
     &:last-of-type {
         margin-bottom: 0;
     }
@@ -433,5 +434,106 @@ $servicios-imagenes: (
       }
 }
 
+/*Pag Servicio*/
+.hogar {
+  dt {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    color: $color-azul-principal;
+
+    i {
+      margin-right: 10px;
+      font-size: 1.4rem;
+      color: $color-rojo;
+    }
+  }
+
+  dd {
+    margin-left: 30px;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+
+  ol {
+    margin-left: 20px;
+    padding-left: 20px;
+    list-style-type: decimal;
+
+    li {
+      margin-bottom: 10px;
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+  }
+
+  ul {
+    margin-left: 30px;
+    padding-left: 20px;
+    list-style: none;
+
+    li {
+      margin-bottom: 10px;
+      font-size: 1rem;
+      line-height: 1.5;
+      display: flex;
+      align-items: center;
+
+      i {
+        margin-right: 10px;
+        color: $color-rojo;
+      }
+    }
+  }
+}
+
+/*Pag Servicio*/
+.capacitaciones{
+    p {
+      transition: transform 0.3s ease, opacity 0.3s ease;
+
+      &:hover {
+        transform: scale(1.02);
+        opacity: 0.9;
+      }
+      strong {
+        color: $color-azul-principal;
+        font-weight: bold;
+      }
+    }
+  &__courses {
+    list-style-type: none;
+    padding-left: 0;
+
+    li {
+      margin-bottom: 2rem;
+      padding: 10px;
+      border-left: 4px solid $color-azul-principal;
+      border-radius: 8px;
+      transition: background 0.3s ease, transform 0.3s ease;
+
+      &:hover {
+        background: #e9f5ff;
+        transform: translateX(5px);
+      }
+
+      strong {
+        color: $color-azul-principal;
+      }
+    }
+  }
+  &__sublist {
+    list-style-type: disc;
+    margin-top: 10px;
+    margin-left: 20px;
+
+    li {
+      margin-bottom: 5px;
+    }
+  }
+}
 
 @import 'mediaqueries';
