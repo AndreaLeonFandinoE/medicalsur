@@ -50,7 +50,10 @@ li {
     justify-content: center;
     padding-top: 0.31rem;
     &__container{
-        margin: 2rem 10rem 2rem 10rem;
+        margin: 2rem 15rem 8rem 15rem;
+    }
+    &__cuadros{
+      margin: 2rem 8rem 10rem 8rem;
     }
 }
 
@@ -62,9 +65,13 @@ li {
 
 /*Pag inicio*/
 .intro{
+  margin-bottom: 3rem;
     img{
         padding-bottom: 2rem;
         width: $img-cards;
+    }
+    h1{
+      font-size: 1.5rem;
     }
 }
 
@@ -72,7 +79,6 @@ li {
 .mvv{
     display: flex;
     justify-content: space-around;
-    padding: 2rem;
   
     &__card {
       padding: 1.5rem;
@@ -171,7 +177,6 @@ $servicios-imagenes: (
       "servicios__seis servicios__siete servicios__ocho servicios__nueve servicios__diez";
     gap: 1rem;
     text-align: center;
-    margin: 1rem 5rem;
   }
 
   // Itera sobre el mapa para aplicar las imágenes de fondo específicas
@@ -535,5 +540,6 @@ $servicios-imagenes: (
     }
   }
 }
+
 
 @import 'mediaqueries';

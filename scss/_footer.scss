@@ -1,4 +1,4 @@
-.footer{
+/*.footer{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
@@ -16,6 +16,72 @@
     }
     &__redes{
         display: flex;
+    }
+}
+*/
+
+
+.footer {
+    background-color: $fondo-header;
+    color: $color-azul-principal;
+    padding: 20px;
+    
+    &__top {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: center;
+        padding-bottom: 20px;
+        border-bottom: 1px solid $color-azul-principal;
+    }
+
+    &__logo img {
+        max-height: 80px;
+    }
+
+    &__social {
+        display: flex;
+        justify-content: center;
+
+        a {
+            color: $color-azul-principal;
+            margin: 0 10px;
+            font-size: 24px;
+
+            &:hover {
+                color: $color-rojo;
+            }
+        }
+    }
+
+    &__links {
+        display: flex;
+        justify-content: space-around;
+        padding: 20px 0;
+    }
+
+    &__section {
+
+        h4 {
+            font-size: 14px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        span{
+            display: flex;
+            text-decoration: none;
+            font-size: 14px;
+        }
+    }
+
+    &__bottom {
+        
+        font-size: 12px;
+        border-top: 1px solid $color-azul-principal;
+        padding-top: 10px;
+        p{
+            text-align: center;
+        }
     }
 }
 
