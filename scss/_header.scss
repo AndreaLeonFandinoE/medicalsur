@@ -9,10 +9,10 @@ header{
     align-items: center;
 
     a{
-        color: $color-rojo;
+        color: $text-color;
         padding-left: 2rem;
         &:hover{
-            color: $color-azul-principal;
+            color: $color-rojo;
         }
     }
     ul{
@@ -33,17 +33,24 @@ header{
 }
 
 .barra{
-    background-color: $color-azul-principal;
-    
+    background-color: $color-rojo;
+    padding: 0.6rem;
+
     &__top{
         display: flex;
         justify-content: space-evenly;
         align-items: center;
     }
     &__redes{
-        display: flex;
-        margin: 0;
-        padding: 0;
+        a {
+            color: $text-color;
+            font-size: 25px;
+            margin: 0 10px;
+
+            &:hover {
+                color: $color-azul-principal;
+            }
+        }
     }
     &__texto{
         color: white;

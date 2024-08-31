@@ -76,41 +76,60 @@ li {
 }
 
 /*Pag inicio - Misión, Visión, Valores*/
-.mvv{
-    display: flex;
-    justify-content: space-around;
-  
-    &__card {
-      padding: 1.5rem;
-      border-radius: 3.5px;
-      border: 2.5px solid $color-azul-secundario;
-      text-align: center;
-      width: 30%;
-      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  
-      &:hover {
-        transform: scale(1.05);
-        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
-      }
-  
-      &-logo {
-        margin-bottom: 1rem;
-  
-        img {
-          width: 50px;
-          height: 50px;
-          transition: transform 0.3s ease-in-out;
+.mvv {
+  display: flex;
+  justify-content: space-around;
 
-          &:hover {
-           transform: rotate(360deg); // Rotación del logo al pasar el mouse
-           }
-        }
-      }
-  
+  &__card {
+    padding: 1.5rem;
+    border-radius: 3.5px;
+    border: 2.5px solid $color-azul-secundario;
+    text-align: center;
+    width: 30%;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.8); // Oscurece la imagen de fondo
+    
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to bottom, rgba(95, 93, 93, 0.5), rgba(138, 129, 129, 0.7)); // Aumenta la opacidad del degradado
+      border-radius: 3.5px;
+      z-index: 1;
     }
+
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    }
+
+    h3, p {
+      z-index: 2;
+      color: white; // Asegura que el texto sea blanco y tenga un buen contraste
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); // Añade sombra al texto para hacerlo resaltar más
+    }
+
+    &--mision {
+      background-image: url('../recursos/img/pexels-karolina-grabowska-4021779.jpg');
+    }
+
+    &--vision {
+      background-image: url('../recursos/img/pexels-karolina-grabowska-4021779.jpg');
+    }
+
+    &--valores {
+      background-image: url('../recursos/img/pexels-karolina-grabowska-4021779.jpg');
+    }
+  }
 }
-  
+
 .contacto{
     display: grid;
     grid-template-columns: 1fr 2fr;

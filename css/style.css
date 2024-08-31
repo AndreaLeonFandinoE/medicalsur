@@ -4,21 +4,21 @@ header {
   flex-wrap: wrap;
   top: 0px;
   justify-content: space-evenly;
-  background-color: #cdcdcd;
+  background-color: #00395a;
   position: sticky;
   z-index: 1000;
   align-items: center; }
   header a {
-    color: #c41718;
+    color: #fff;
     padding-left: 2rem; }
     header a:hover {
-      color: #00395a; }
+      color: #c41718; }
   header ul {
     list-style: none;
     font-size: 0; }
     header ul li:hover ul {
       display: block;
-      background-color: #cdcdcd;
+      background-color: #00395a;
       text-align: center;
       min-width: 21.5rem; }
 
@@ -27,42 +27,24 @@ header {
   vertical-align: 0; }
 
 .barra {
-  background-color: #00395a; }
+  background-color: #c41718;
+  padding: 0.6rem; }
   .barra__top {
     display: flex;
     justify-content: space-evenly;
     align-items: center; }
-  .barra__redes {
-    display: flex;
-    margin: 0;
-    padding: 0; }
+  .barra__redes a {
+    color: #fff;
+    font-size: 25px;
+    margin: 0 10px; }
+    .barra__redes a:hover {
+      color: #00395a; }
   .barra__texto {
     color: white; }
 
-/*.footer{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    background-color: $fondo-header;
-    align-items: center;
-    color: $color-azul-principal;
-    &__contenido{
-        display: flex;
-        flex-flow: column wrap ;
-        align-items: flex-start;
-        padding: 1rem;
-    }
-    & span{
-        padding: 0.5rem;
-    }
-    &__redes{
-        display: flex;
-    }
-}
-*/
 .footer {
-  background-color: #cdcdcd;
-  color: #00395a;
+  background-color: #00395a;
+  color: #fff;
   padding: 20px; }
   .footer__top {
     display: flex;
@@ -70,16 +52,20 @@ header {
     justify-content: space-around;
     align-items: center;
     padding-bottom: 20px;
-    border-bottom: 1px solid #00395a; }
-  .footer__logo img {
-    max-height: 80px; }
+    border-bottom: 1px solid #c41718; }
+  .footer__logo {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center; }
+    .footer__logo img {
+      height: 6vh; }
   .footer__social {
     display: flex;
     justify-content: center; }
     .footer__social a {
-      color: #00395a;
+      color: #fff;
       margin: 0 10px;
-      font-size: 24px; }
+      font-size: 27px; }
       .footer__social a:hover {
         color: #c41718; }
   .footer__links {
@@ -96,7 +82,7 @@ header {
     font-size: 14px; }
   .footer__bottom {
     font-size: 12px;
-    border-top: 1px solid #00395a;
+    border-top: 1px solid #fff;
     padding-top: 10px; }
     .footer__bottom p {
       text-align: center; }
@@ -161,8 +147,9 @@ a::selection, button::selection, img::selection, span::selection, p::selection, 
       .slider .slides .slide .content {
         position: absolute;
         text-align: center;
-        color: #fff; }
-        .slider .slides .slide .content h2 {
+        color: #fff;
+        margin: 0rem 15rem 0rem 15rem; }
+        .slider .slides .slide .content h3 {
           font-size: 2.5em;
           margin-bottom: 10px; }
         .slider .slides .slide .content h3 {
@@ -320,18 +307,34 @@ li {
     text-align: center;
     width: 30%;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); }
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.8); }
+    .mvv__card:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to bottom, rgba(95, 93, 93, 0.5), rgba(138, 129, 129, 0.7));
+      border-radius: 3.5px;
+      z-index: 1; }
     .mvv__card:hover {
       transform: scale(1.05);
       box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); }
-    .mvv__card-logo {
-      margin-bottom: 1rem; }
-      .mvv__card-logo img {
-        width: 50px;
-        height: 50px;
-        transition: transform 0.3s ease-in-out; }
-        .mvv__card-logo img:hover {
-          transform: rotate(360deg); }
+    .mvv__card h3, .mvv__card p {
+      z-index: 2;
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); }
+    .mvv__card--mision {
+      background-image: url("../recursos/img/pexels-karolina-grabowska-4021779.jpg"); }
+    .mvv__card--vision {
+      background-image: url("../recursos/img/pexels-karolina-grabowska-4021779.jpg"); }
+    .mvv__card--valores {
+      background-image: url("../recursos/img/pexels-karolina-grabowska-4021779.jpg"); }
 
 .contacto {
   display: grid;
@@ -624,7 +627,7 @@ li {
   margin-bottom: 15px;
   font-size: 1.1em;
   color: #00395a;
-  background-color: #cdcdcd;
+  background-color: #00395a;
   padding: 10px;
   border-radius: 4px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);

@@ -1,29 +1,6 @@
-/*.footer{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    background-color: $fondo-header;
-    align-items: center;
-    color: $color-azul-principal;
-    &__contenido{
-        display: flex;
-        flex-flow: column wrap ;
-        align-items: flex-start;
-        padding: 1rem;
-    }
-    & span{
-        padding: 0.5rem;
-    }
-    &__redes{
-        display: flex;
-    }
-}
-*/
-
-
 .footer {
     background-color: $fondo-header;
-    color: $color-azul-principal;
+    color: $text-color;
     padding: 20px;
     
     &__top {
@@ -32,11 +9,16 @@
         justify-content: space-around;
         align-items: center;
         padding-bottom: 20px;
-        border-bottom: 1px solid $color-azul-principal;
+        border-bottom: 1px solid $color-rojo;
     }
 
-    &__logo img {
-        max-height: 80px;
+    &__logo{
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        img{
+            height: 6vh;
+        }
     }
 
     &__social {
@@ -44,9 +26,9 @@
         justify-content: center;
 
         a {
-            color: $color-azul-principal;
+            color: $text-color;
             margin: 0 10px;
-            font-size: 24px;
+            font-size: 27px;
 
             &:hover {
                 color: $color-rojo;
@@ -77,7 +59,7 @@
     &__bottom {
         
         font-size: 12px;
-        border-top: 1px solid $color-azul-principal;
+        border-top: 1px solid $text-color;
         padding-top: 10px;
         p{
             text-align: center;
