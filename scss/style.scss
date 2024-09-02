@@ -45,7 +45,7 @@ li {
 .italic{
     font-style: italic;
 }
-/**/
+
 .section{
     justify-content: center;
     padding-top: 0.31rem;
@@ -130,60 +130,18 @@ li {
   }
 }
 
-.contacto{
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-areas:"contacto__form contacto__container"; 
-    align-items: center;
-    gap: 1rem;
-    margin: 3rem;
-    &__form{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        grid-area: contacto__form;
-        gap: 0.63rem;
-        padding: 1rem;
-        border-radius: 0.43rem;
-        background-image: $background-form;
-    }
-    &__container{
-        grid-area: contacto__container;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 1rem;
-    }
-    &__datos{
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        grid-template-areas:"contacto__img contacto__info"; 
-        text-align: center;
-        align-items: center;
-        justify-items: center;
-    }
-    &__img{
-        grid-area: contacto__img;
-        height: 20vh;
-        border-radius: 1rem;
-    }
-    &__info{
-        grid-area: contacto__info;
-    }
-}
-
 //  mapa con los nombres de las clases y sus respectivas imágenes
 $servicios-imagenes: (
-  uno: "../recursos/img/image0.jpeg",
-  dos: "../recursos/img/medical4.jpeg",
-  tres: "../recursos/img/image2.jpeg",
-  cuatro: "../recursos/img/image3.jpeg",
-  cinco: "../recursos/img/pexels-zakir-rushanly-11748826.jpg",
-  seis: "../recursos/img/image5.jpeg",
-  siete: "../recursos/img/image6.jpg",
-  ocho: "../recursos/img/medical6.jpeg",
-  nueve: "../recursos/img/medical2.jpeg",
-  diez: "../recursos/img/medical7.jpg",
+  uno: "../recursos/img/medical1.jpeg",
+  dos: "../recursos/img/medical2.jpeg",
+  tres: "../recursos/img/medical3.jpeg",
+  cuatro: "../recursos/img/medical4.jpg",
+  cinco: "../recursos/img/medical5.jpeg",
+  seis: "../recursos/img/medical6.jpeg",
+  siete: "../recursos/img/medical7.jpeg",
+  ocho: "../recursos/img/medical8.jpeg",
+  nueve: "../recursos/img/medical9.jpg",
+  diez: "../recursos/img/pexels-zakir-rushanly-11748826.jpg",
 );
 
 /*Pag inicio - servicios*/
@@ -242,71 +200,132 @@ $servicios-imagenes: (
 
 /*Pag Nosotros*/
 .especialistas {
-    margin: 2.5rem 0 2.5rem 0;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 2.5rem 0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: $color-azul-principal;
+  color: $text-color;
 
-    &__titulo {
-        text-align: center;
-        padding: 1rem;
-    }
+  &__titulo {
+      text-align: center; // Centra el título
+      padding: 1rem;
+      font-size: 1.5rem; // Tamaño de fuente ajustado si es necesario
+  }
 
-    &__lista {
-        list-style-type: none;
-        padding: 0;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-        justify-items: flex-start;
-    }
+  &__lista {
+      list-style-type: none;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); // Tres columnas
+      gap: 20px; // Espacio entre los items
+      align-items: start; // Alinea los items en la parte superior de cada columna
+  }
 
-    &__item {
-        display: flex;
+  &__item {
+      display: flex;
+      align-items: center; // Alinea el ícono y el texto verticalmente
+      transition: transform 0.3s ease;
+      text-align: start;
 
-        &:hover {
-            transform: translateY(-3px);
-            cursor: pointer;
-        }
-    }
+      &:hover {
+          transform: translateY(-3px);
+          cursor: pointer;
+      }
+  }
 
-    &__icon {
-        font-size: 1rem;
-        color: $color-azul-secundario;
-        margin-right: 10px;
-        transition: color 0.3s ease;
+  &__icon {
+      font-size: 1.5rem; // Tamaño del ícono
+      color: $color-azul-secundario;
+      margin-right: 10px;
+      transition: color 0.3s ease;
 
-        &:hover {
-            color: $color-rojo;
-        }
-    }
+      &:hover {
+          color: $color-rojo;
+      }
+  }
+}
+
+/*Slider de imagenes en Nosotros*/
+.fotos{
+  display: flex;
+  width: $slider-width;
+  height: $slider-height;
+  img{
+      width: 0px;
+      flex-grow: 1;
+      object-fit: cover;
+      opacity: .8;
+      transition: .5s ease;
+      &:hover{
+          cursor: crosshair;
+          width: 300px;
+          opacity: 1;
+          filter: contrast(120%);
+      }
+  }
 }
 
 /*Pag Nosotros*/
 .equipo {
-    padding: 20px;
-    background-color: $color-azul-secundario;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  
-    &__container {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
-  
-    &__item {
-      padding: 15px;
-      background-color: $text-color;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: unset;
+  padding-top: 2rem;
+
+  &__contenido {
+      flex: 0 0 50%; // El contenido textual ocupa el espacio disponible
+      padding: 1.5rem;
       border-radius: 8px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      
-      &:hover {
-        transform: scale(1.05);
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-top: 0;
+      position: relative;
+      z-index: 1;
+      background-color: $text-color;
+  }
+  &__titulo {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      font-weight: bold;
+  }
+  &__texto {
+      font-size: 1rem;
+      margin-bottom: 2rem;
+      line-height: 1.5;
+  }
+  &__imagen {
+      flex: 0 0 58%;
+      margin-top: 2rem;
+      left: auto;
+      right: 9%;
+      margin-left: unset;
+      position: relative;
+      min-width: 58%;
+
+      img {
+          width: 100%;
+          height: 100%;
+          border-radius: 8px;
+      }
+  }
+  .invertido {
+    flex-direction: row-reverse; // Invertir el orden de los hijos
+    &__contenido {
+        text-align: left; // Asegurar que el texto esté alineado a la izquierda
+        margin-top: 2rem;
+        right: 9%;
+    }
+
+    &__imagen {
+      margin: 0;
+      left: 0;
+      right: auto;
+      img{
+        height: 30rem;
       }
     }
+  }
 }
 
 /*Pag Servicio*/
@@ -560,5 +579,46 @@ $servicios-imagenes: (
   }
 }
 
-
+/*Pag Contacto*/
+.contacto{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas:"contacto__form contacto__container"; 
+  align-items: center;
+  gap: 1rem;
+  margin: 3rem;
+  &__form{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      grid-area: contacto__form;
+      gap: 0.63rem;
+      padding: 1rem;
+      border-radius: 0.43rem;
+      background-image: $background-form;
+  }
+  &__container{
+      grid-area: contacto__container;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem;
+  }
+  &__datos{
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      grid-template-areas:"contacto__img contacto__info"; 
+      text-align: center;
+      align-items: center;
+      justify-items: center;
+  }
+  &__img{
+      grid-area: contacto__img;
+      height: 20vh;
+      border-radius: 1rem;
+  }
+  &__info{
+      grid-area: contacto__info;
+  }
+}
 @import 'mediaqueries';

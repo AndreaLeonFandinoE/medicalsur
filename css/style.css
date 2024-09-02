@@ -49,10 +49,10 @@ header {
   .footer__top {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #c41718; }
+    padding: 0 4rem 1rem 13rem;
+    border-bottom: 1px solid #fff; }
   .footer__logo {
     display: flex;
     flex-flow: column wrap;
@@ -89,8 +89,23 @@ header {
 
 .chat {
   position: fixed;
-  bottom: 0.62rem;
-  right: 1.25rem; }
+  bottom: 20px;
+  right: 20px;
+  z-index: 100; }
+  .chat a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color: #25D366;
+    border-radius: 50%;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    color: white;
+    font-size: 2.5rem; }
+    .chat a:hover {
+      transform: scale(1.1); }
 
 button {
   color: white;
@@ -222,23 +237,6 @@ a::selection, button::selection, img::selection, span::selection, p::selection, 
     font-size: 1.5rem;
     margin: 10px 0 0; }
 
-/*Slider de imagenes en Nosotros*/
-.fotos {
-  display: flex;
-  width: 100%;
-  height: 450px; }
-  .fotos img {
-    width: 0px;
-    flex-grow: 1;
-    object-fit: cover;
-    opacity: .8;
-    transition: .5s ease; }
-    .fotos img:hover {
-      cursor: crosshair;
-      width: 300px;
-      opacity: 1;
-      filter: contrast(120%); }
-
 @font-face {
   font-family: "Medical Sur";
   src: url("../tipografia/latha.ttf"); }
@@ -273,7 +271,6 @@ li {
 .italic {
   font-style: italic; }
 
-/**/
 .section {
   justify-content: center;
   padding-top: 0.31rem; }
@@ -336,42 +333,6 @@ li {
     .mvv__card--valores {
       background-image: url("../recursos/img/pexels-karolina-grabowska-4021779.jpg"); }
 
-.contacto {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-template-areas: "contacto__form contacto__container";
-  align-items: center;
-  gap: 1rem;
-  margin: 3rem; }
-  .contacto__form {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    grid-area: contacto__form;
-    gap: 0.63rem;
-    padding: 1rem;
-    border-radius: 0.43rem;
-    background-image: #008ad1; }
-  .contacto__container {
-    grid-area: contacto__container;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem; }
-  .contacto__datos {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-areas: "contacto__img contacto__info";
-    text-align: center;
-    align-items: center;
-    justify-items: center; }
-  .contacto__img {
-    grid-area: contacto__img;
-    height: 20vh;
-    border-radius: 1rem; }
-  .contacto__info {
-    grid-area: contacto__info; }
-
 /*Pag inicio - servicios*/
 .servicios__container {
   display: grid;
@@ -382,7 +343,7 @@ li {
 
 .servicios__uno {
   grid-area: servicios__uno;
-  background-image: linear-gradient(to right, rgba(158, 180, 198, 0.4), rgba(148, 153, 159, 0.764)), url(../recursos/img/image0.jpeg);
+  background-image: linear-gradient(to right, rgba(158, 180, 198, 0.4), rgba(148, 153, 159, 0.764)), url(../recursos/img/medical1.jpeg);
   background-size: cover;
   background-position: center;
   border-radius: 0.7rem;
@@ -395,137 +356,11 @@ li {
   transition: background 0.3s, transform 0.3s;
   padding: 1rem; }
   .servicios__uno:hover {
-    background-image: linear-gradient(to right, rgba(158, 169, 198, 0), rgba(148, 153, 159, 0)), url(../recursos/img/image0.jpeg);
+    background-image: linear-gradient(to right, rgba(158, 169, 198, 0), rgba(148, 153, 159, 0)), url(../recursos/img/medical1.jpeg);
     transform: scale(1.1); }
 
 .servicios__dos {
   grid-area: servicios__dos;
-  background-image: linear-gradient(to right, rgba(158, 180, 198, 0.4), rgba(148, 153, 159, 0.764)), url(../recursos/img/medical4.jpeg);
-  background-size: cover;
-  background-position: center;
-  border-radius: 0.7rem;
-  border: 1px solid #9fd7f5;
-  height: 14rem;
-  width: 14rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: background 0.3s, transform 0.3s;
-  padding: 1rem; }
-  .servicios__dos:hover {
-    background-image: linear-gradient(to right, rgba(158, 169, 198, 0), rgba(148, 153, 159, 0)), url(../recursos/img/medical4.jpeg);
-    transform: scale(1.1); }
-
-.servicios__tres {
-  grid-area: servicios__tres;
-  background-image: linear-gradient(to right, rgba(158, 180, 198, 0.4), rgba(148, 153, 159, 0.764)), url(../recursos/img/image2.jpeg);
-  background-size: cover;
-  background-position: center;
-  border-radius: 0.7rem;
-  border: 1px solid #9fd7f5;
-  height: 14rem;
-  width: 14rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: background 0.3s, transform 0.3s;
-  padding: 1rem; }
-  .servicios__tres:hover {
-    background-image: linear-gradient(to right, rgba(158, 169, 198, 0), rgba(148, 153, 159, 0)), url(../recursos/img/image2.jpeg);
-    transform: scale(1.1); }
-
-.servicios__cuatro {
-  grid-area: servicios__cuatro;
-  background-image: linear-gradient(to right, rgba(158, 180, 198, 0.4), rgba(148, 153, 159, 0.764)), url(../recursos/img/image3.jpeg);
-  background-size: cover;
-  background-position: center;
-  border-radius: 0.7rem;
-  border: 1px solid #9fd7f5;
-  height: 14rem;
-  width: 14rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: background 0.3s, transform 0.3s;
-  padding: 1rem; }
-  .servicios__cuatro:hover {
-    background-image: linear-gradient(to right, rgba(158, 169, 198, 0), rgba(148, 153, 159, 0)), url(../recursos/img/image3.jpeg);
-    transform: scale(1.1); }
-
-.servicios__cinco {
-  grid-area: servicios__cinco;
-  background-image: linear-gradient(to right, rgba(158, 180, 198, 0.4), rgba(148, 153, 159, 0.764)), url(../recursos/img/pexels-zakir-rushanly-11748826.jpg);
-  background-size: cover;
-  background-position: center;
-  border-radius: 0.7rem;
-  border: 1px solid #9fd7f5;
-  height: 14rem;
-  width: 14rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: background 0.3s, transform 0.3s;
-  padding: 1rem; }
-  .servicios__cinco:hover {
-    background-image: linear-gradient(to right, rgba(158, 169, 198, 0), rgba(148, 153, 159, 0)), url(../recursos/img/pexels-zakir-rushanly-11748826.jpg);
-    transform: scale(1.1); }
-
-.servicios__seis {
-  grid-area: servicios__seis;
-  background-image: linear-gradient(to right, rgba(158, 180, 198, 0.4), rgba(148, 153, 159, 0.764)), url(../recursos/img/image5.jpeg);
-  background-size: cover;
-  background-position: center;
-  border-radius: 0.7rem;
-  border: 1px solid #9fd7f5;
-  height: 14rem;
-  width: 14rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: background 0.3s, transform 0.3s;
-  padding: 1rem; }
-  .servicios__seis:hover {
-    background-image: linear-gradient(to right, rgba(158, 169, 198, 0), rgba(148, 153, 159, 0)), url(../recursos/img/image5.jpeg);
-    transform: scale(1.1); }
-
-.servicios__siete {
-  grid-area: servicios__siete;
-  background-image: linear-gradient(to right, rgba(158, 180, 198, 0.4), rgba(148, 153, 159, 0.764)), url(../recursos/img/image6.jpg);
-  background-size: cover;
-  background-position: center;
-  border-radius: 0.7rem;
-  border: 1px solid #9fd7f5;
-  height: 14rem;
-  width: 14rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: background 0.3s, transform 0.3s;
-  padding: 1rem; }
-  .servicios__siete:hover {
-    background-image: linear-gradient(to right, rgba(158, 169, 198, 0), rgba(148, 153, 159, 0)), url(../recursos/img/image6.jpg);
-    transform: scale(1.1); }
-
-.servicios__ocho {
-  grid-area: servicios__ocho;
-  background-image: linear-gradient(to right, rgba(158, 180, 198, 0.4), rgba(148, 153, 159, 0.764)), url(../recursos/img/medical6.jpeg);
-  background-size: cover;
-  background-position: center;
-  border-radius: 0.7rem;
-  border: 1px solid #9fd7f5;
-  height: 14rem;
-  width: 14rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: background 0.3s, transform 0.3s;
-  padding: 1rem; }
-  .servicios__ocho:hover {
-    background-image: linear-gradient(to right, rgba(158, 169, 198, 0), rgba(148, 153, 159, 0)), url(../recursos/img/medical6.jpeg);
-    transform: scale(1.1); }
-
-.servicios__nueve {
-  grid-area: servicios__nueve;
   background-image: linear-gradient(to right, rgba(158, 180, 198, 0.4), rgba(148, 153, 159, 0.764)), url(../recursos/img/medical2.jpeg);
   background-size: cover;
   background-position: center;
@@ -538,13 +373,139 @@ li {
   justify-content: center;
   transition: background 0.3s, transform 0.3s;
   padding: 1rem; }
-  .servicios__nueve:hover {
+  .servicios__dos:hover {
     background-image: linear-gradient(to right, rgba(158, 169, 198, 0), rgba(148, 153, 159, 0)), url(../recursos/img/medical2.jpeg);
+    transform: scale(1.1); }
+
+.servicios__tres {
+  grid-area: servicios__tres;
+  background-image: linear-gradient(to right, rgba(158, 180, 198, 0.4), rgba(148, 153, 159, 0.764)), url(../recursos/img/medical3.jpeg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 0.7rem;
+  border: 1px solid #9fd7f5;
+  height: 14rem;
+  width: 14rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s, transform 0.3s;
+  padding: 1rem; }
+  .servicios__tres:hover {
+    background-image: linear-gradient(to right, rgba(158, 169, 198, 0), rgba(148, 153, 159, 0)), url(../recursos/img/medical3.jpeg);
+    transform: scale(1.1); }
+
+.servicios__cuatro {
+  grid-area: servicios__cuatro;
+  background-image: linear-gradient(to right, rgba(158, 180, 198, 0.4), rgba(148, 153, 159, 0.764)), url(../recursos/img/medical4.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 0.7rem;
+  border: 1px solid #9fd7f5;
+  height: 14rem;
+  width: 14rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s, transform 0.3s;
+  padding: 1rem; }
+  .servicios__cuatro:hover {
+    background-image: linear-gradient(to right, rgba(158, 169, 198, 0), rgba(148, 153, 159, 0)), url(../recursos/img/medical4.jpg);
+    transform: scale(1.1); }
+
+.servicios__cinco {
+  grid-area: servicios__cinco;
+  background-image: linear-gradient(to right, rgba(158, 180, 198, 0.4), rgba(148, 153, 159, 0.764)), url(../recursos/img/medical5.jpeg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 0.7rem;
+  border: 1px solid #9fd7f5;
+  height: 14rem;
+  width: 14rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s, transform 0.3s;
+  padding: 1rem; }
+  .servicios__cinco:hover {
+    background-image: linear-gradient(to right, rgba(158, 169, 198, 0), rgba(148, 153, 159, 0)), url(../recursos/img/medical5.jpeg);
+    transform: scale(1.1); }
+
+.servicios__seis {
+  grid-area: servicios__seis;
+  background-image: linear-gradient(to right, rgba(158, 180, 198, 0.4), rgba(148, 153, 159, 0.764)), url(../recursos/img/medical6.jpeg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 0.7rem;
+  border: 1px solid #9fd7f5;
+  height: 14rem;
+  width: 14rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s, transform 0.3s;
+  padding: 1rem; }
+  .servicios__seis:hover {
+    background-image: linear-gradient(to right, rgba(158, 169, 198, 0), rgba(148, 153, 159, 0)), url(../recursos/img/medical6.jpeg);
+    transform: scale(1.1); }
+
+.servicios__siete {
+  grid-area: servicios__siete;
+  background-image: linear-gradient(to right, rgba(158, 180, 198, 0.4), rgba(148, 153, 159, 0.764)), url(../recursos/img/medical7.jpeg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 0.7rem;
+  border: 1px solid #9fd7f5;
+  height: 14rem;
+  width: 14rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s, transform 0.3s;
+  padding: 1rem; }
+  .servicios__siete:hover {
+    background-image: linear-gradient(to right, rgba(158, 169, 198, 0), rgba(148, 153, 159, 0)), url(../recursos/img/medical7.jpeg);
+    transform: scale(1.1); }
+
+.servicios__ocho {
+  grid-area: servicios__ocho;
+  background-image: linear-gradient(to right, rgba(158, 180, 198, 0.4), rgba(148, 153, 159, 0.764)), url(../recursos/img/medical8.jpeg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 0.7rem;
+  border: 1px solid #9fd7f5;
+  height: 14rem;
+  width: 14rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s, transform 0.3s;
+  padding: 1rem; }
+  .servicios__ocho:hover {
+    background-image: linear-gradient(to right, rgba(158, 169, 198, 0), rgba(148, 153, 159, 0)), url(../recursos/img/medical8.jpeg);
+    transform: scale(1.1); }
+
+.servicios__nueve {
+  grid-area: servicios__nueve;
+  background-image: linear-gradient(to right, rgba(158, 180, 198, 0.4), rgba(148, 153, 159, 0.764)), url(../recursos/img/medical9.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 0.7rem;
+  border: 1px solid #9fd7f5;
+  height: 14rem;
+  width: 14rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s, transform 0.3s;
+  padding: 1rem; }
+  .servicios__nueve:hover {
+    background-image: linear-gradient(to right, rgba(158, 169, 198, 0), rgba(148, 153, 159, 0)), url(../recursos/img/medical9.jpg);
     transform: scale(1.1); }
 
 .servicios__diez {
   grid-area: servicios__diez;
-  background-image: linear-gradient(to right, rgba(158, 180, 198, 0.4), rgba(148, 153, 159, 0.764)), url(../recursos/img/medical7.jpg);
+  background-image: linear-gradient(to right, rgba(158, 180, 198, 0.4), rgba(148, 153, 159, 0.764)), url(../recursos/img/pexels-zakir-rushanly-11748826.jpg);
   background-size: cover;
   background-position: center;
   border-radius: 0.7rem;
@@ -557,7 +518,7 @@ li {
   transition: background 0.3s, transform 0.3s;
   padding: 1rem; }
   .servicios__diez:hover {
-    background-image: linear-gradient(to right, rgba(158, 169, 198, 0), rgba(148, 153, 159, 0)), url(../recursos/img/medical7.jpg);
+    background-image: linear-gradient(to right, rgba(158, 169, 198, 0), rgba(148, 153, 159, 0)), url(../recursos/img/pexels-zakir-rushanly-11748826.jpg);
     transform: scale(1.1); }
 
 .servicios__button {
@@ -574,52 +535,104 @@ li {
 
 /*Pag Nosotros*/
 .especialistas {
-  margin: 2.5rem 0 2.5rem 0;
+  margin: 2.5rem 0;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); }
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #00395a;
+  color: #fff; }
   .especialistas__titulo {
     text-align: center;
-    padding: 1rem; }
+    padding: 1rem;
+    font-size: 1.5rem; }
   .especialistas__lista {
     list-style-type: none;
     padding: 0;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    justify-items: flex-start; }
+    align-items: start; }
   .especialistas__item {
-    display: flex; }
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease;
+    text-align: start; }
     .especialistas__item:hover {
       transform: translateY(-3px);
       cursor: pointer; }
   .especialistas__icon {
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: #008ad1;
     margin-right: 10px;
     transition: color 0.3s ease; }
     .especialistas__icon:hover {
       color: #c41718; }
 
+/*Slider de imagenes en Nosotros*/
+.fotos {
+  display: flex;
+  width: 100%;
+  height: 450px; }
+  .fotos img {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease; }
+    .fotos img:hover {
+      cursor: crosshair;
+      width: 300px;
+      opacity: 1;
+      filter: contrast(120%); }
+
 /*Pag Nosotros*/
 .equipo {
-  padding: 20px;
-  background-color: #008ad1;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); }
-  .equipo__container {
-    display: flex;
-    flex-direction: column;
-    gap: 20px; }
-  .equipo__item {
-    padding: 15px;
-    background-color: #fff;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: unset;
+  padding-top: 2rem; }
+  .equipo__contenido {
+    flex: 0 0 50%;
+    padding: 1.5rem;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease; }
-    .equipo__item:hover {
-      transform: scale(1.05);
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); }
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 0;
+    position: relative;
+    z-index: 1;
+    background-color: #fff; }
+  .equipo__titulo {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: bold; }
+  .equipo__texto {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    line-height: 1.5; }
+  .equipo__imagen {
+    flex: 0 0 58%;
+    margin-top: 2rem;
+    left: auto;
+    right: 9%;
+    margin-left: unset;
+    position: relative;
+    min-width: 58%; }
+    .equipo__imagen img {
+      width: 100%;
+      height: 100%;
+      border-radius: 8px; }
+  .equipo .invertido {
+    flex-direction: row-reverse; }
+    .equipo .invertido__contenido {
+      text-align: left;
+      margin-top: 2rem;
+      right: 9%; }
+    .equipo .invertido__imagen {
+      margin: 0;
+      left: 0;
+      right: auto; }
+      .equipo .invertido__imagen img {
+        height: 30rem; }
 
 /*Pag Servicio*/
 .urgencias {
@@ -806,6 +819,43 @@ li {
   margin-left: 20px; }
   .capacitaciones__sublist li {
     margin-bottom: 5px; }
+
+/*Pag Contacto*/
+.contacto {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas: "contacto__form contacto__container";
+  align-items: center;
+  gap: 1rem;
+  margin: 3rem; }
+  .contacto__form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    grid-area: contacto__form;
+    gap: 0.63rem;
+    padding: 1rem;
+    border-radius: 0.43rem;
+    background-image: #008ad1; }
+  .contacto__container {
+    grid-area: contacto__container;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem; }
+  .contacto__datos {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "contacto__img contacto__info";
+    text-align: center;
+    align-items: center;
+    justify-items: center; }
+  .contacto__img {
+    grid-area: contacto__img;
+    height: 20vh;
+    border-radius: 1rem; }
+  .contacto__info {
+    grid-area: contacto__info; }
 
 /* TABLET */
 @media (min-width: 541px) and (max-width: 720px) {
