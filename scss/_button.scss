@@ -20,3 +20,29 @@ a::selection, button::selection, img::selection, span::selection, p::selection, 
     background-color: $color-azul-terciario;
     color: black;
 }
+
+.button__ambulancia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    button {
+        font-size: 1.5rem;
+        padding: 1rem 2rem;
+        background-color: #00395add;
+        color: $text-color;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        &:hover {
+            background-color: $button-hover;
+            transform: scale(1.1);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            color: $text-color;
+          }
+      }
+}
+  

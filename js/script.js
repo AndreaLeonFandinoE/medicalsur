@@ -47,3 +47,18 @@ showSlide(currentSlide);
 // Iniciar el slider
 startSlider();
 
+
+//servicio6
+document.querySelectorAll('.health-services dt').forEach(item => {
+    item.addEventListener('click', () => {
+        const parent = item.parentElement;
+        const dd = parent.querySelector('dd');
+
+        // Toggle the active class
+        parent.classList.toggle('active');
+
+        // Toggle the display of the <dd>
+        dd.style.display = dd.style.display === 'block' ? 'none' : 'block';
+    });
+});
+

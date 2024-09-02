@@ -127,6 +127,27 @@ a::selection, button::selection, img::selection, span::selection, p::selection, 
   background-color: #9fd7f5;
   color: black; }
 
+.button__ambulancia {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+  .button__ambulancia button {
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    background-color: #00395add;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .button__ambulancia button:hover {
+      background-color: #c41718;
+      transform: scale(1.1);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      color: #fff; }
+
 /*inicio*/
 .slider {
   position: relative;
@@ -634,78 +655,154 @@ li {
       .equipo .invertido__imagen img {
         height: 30rem; }
 
-/*Pag Servicio*/
+/*Pag Servicio 1*/
 .urgencias {
-  display: block;
-  margin-bottom: 15px;
-  font-size: 1.1em;
-  color: #00395a;
-  background-color: #00395a;
-  padding: 10px;
-  border-radius: 4px;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s ease; }
-  .urgencias:hover {
-    background-color: #9fd7f5;
-    color: #000000; }
-
-/*Pag Servicio*/
-.guardia__span {
-  display: block;
-  margin-bottom: 20px;
-  font-size: 1.2em;
-  color: #00395a;
-  background-color: #f2f2f2;
-  padding: 15px;
-  border-left: 5px solid #008ad1;
-  border-radius: 4px;
-  transition: all 0.3s ease; }
-  .guardia__span:hover {
-    background-color: #008ad1;
-    color: #fff; }
-
-.guardia p::first-letter {
-  font-size: 1.2em;
-  color: #008ad1;
-  font-weight: bold; }
-
-/*Pag Servicio*/
-.translados dl dt {
-  font-size: 1.2em;
-  font-weight: bold;
-  color: #00395a;
-  margin: 3rem 0rem 1rem 1.5rem;
-  transition: color 0.3s ease; }
-  .translados dl dt:hover {
-    color: #008ad1; }
-
-.translados dl dd {
-  background-color: #9fd7f5;
-  padding: 15px;
-  border-left: 4px solid #008ad1;
-  border-radius: 4px; }
-
-/*Pag Servicio*/
-.health-services h4 {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
   margin-bottom: 20px; }
+  .urgencias__span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    max-width: 54%;
+    padding: 2rem;
+    font-size: 1.1em;
+    font-weight: normal;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    min-height: 150px; }
+    .urgencias__span strong {
+      font-size: 1.3em;
+      font-weight: bold;
+      text-transform: uppercase; }
+    .urgencias__span:hover {
+      transform: scale(1.02);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); }
+  .urgencias__codigos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px; }
+    .urgencias__codigos .codigo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center; }
+      .urgencias__codigos .codigo i {
+        font-size: 2rem; }
+      .urgencias__codigos .codigo:hover {
+        transform: scale(1.2); }
+    .urgencias__codigos .codigo-rojo {
+      color: #c41718; }
+    .urgencias__codigos .codigo-amarillo {
+      color: yellow; }
+    .urgencias__codigos .codigo-verde {
+      color: green; }
 
-.health-services dl dt {
-  font-size: 1.2em;
-  font-weight: bold;
-  color: #c41718;
-  margin-bottom: 10px;
-  border-bottom: 2px solid #c41718;
-  padding-bottom: 5px; }
+/*Pag Servicio 2*/
+.guardia {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem; }
+  .guardia__imagen {
+    width: 100%;
+    max-height: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; }
+    .guardia__imagen:hover {
+      transform: scale(1.05); }
+  .guardia__caption {
+    margin-top: 10px;
+    text-align: center;
+    color: #00395a; }
 
-.health-services dl dd {
-  margin: 2rem 0;
+/*Pag Servicio 3*/
+.translados__item {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  border-radius: 8px;
   background-color: #fff;
-  padding: 15px;
-  border-left: 4px solid #c41718;
-  border-radius: 4px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); }
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease; }
+  .translados__item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); }
 
-/*Pag Servicio*/
+.translados dt {
+  font-size: 1.30rem;
+  color: #008ad1;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem; }
+  .translados dt i {
+    margin-right: 0.5rem; }
+
+.translados dd {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0; }
+
+/*Pag Servicio 4*/
+.protegida {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem; }
+  .protegida__fila {
+    width: 100%; }
+    .protegida__fila p {
+      text-align: start; }
+  .protegida__imagen {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); }
+
+/*Pag Servicio 6*/
+.health-services h4 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.5em;
+  color: #00395a; }
+
+.health-services .service-item {
+  margin-bottom: 1rem; }
+  .health-services .service-item dt {
+    cursor: pointer;
+    padding: 1rem;
+    background-color: #008ad1;
+    color: #fff;
+    border-radius: 5px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-weight: bold;
+    transition: background-color 0.3s ease; }
+    .health-services .service-item dt:hover {
+      background-color: #c41718; }
+    .health-services .service-item dt .icon {
+      font-size: 1.2em;
+      transition: transform 0.3s ease;
+      align-items: center;
+      justify-content: center;
+      padding-left: 1rem; }
+  .health-services .service-item dd {
+    padding: 1rem;
+    margin-top: 0.5rem;
+    display: none; }
+  .health-services .service-item.active dt .icon {
+    transform: rotate(-180deg); }
+  .health-services .service-item.active dd {
+    display: block; }
+
+/*Pag Servicio 7*/
 .internacion p {
   margin-bottom: 1.5rem; }
 
@@ -730,13 +827,13 @@ li {
       color: #00395a;
       margin-right: 0.5rem; }
 
-.internacion__objectives, .internacion__benefits, .internacion__services {
+.internacion__objectives, .internacion__services {
   margin-bottom: 2rem;
   border-radius: 4px;
   padding: 2rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease; }
-  .internacion__objectives:hover, .internacion__benefits:hover, .internacion__services:hover {
+  .internacion__objectives:hover, .internacion__services:hover {
     transform: scale(1.02);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); }
 
@@ -746,79 +843,84 @@ li {
   .internacion__services ul li i {
     color: #00395a; }
 
-/*Pag Servicio*/
-.hogar dt {
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin-top: 20px;
-  display: flex;
-  align-items: center;
-  color: #00395a; }
-  .hogar dt i {
-    margin-right: 10px;
-    font-size: 1.4rem;
-    color: #c41718; }
-
-.hogar dd {
-  margin-left: 30px;
-  font-size: 1rem;
-  line-height: 1.6;
-  margin-bottom: 20px; }
-
-.hogar ol {
-  margin-left: 20px;
-  padding-left: 20px;
-  list-style-type: decimal; }
-  .hogar ol li {
-    margin-bottom: 10px;
-    font-size: 1rem;
-    line-height: 1.5; }
-
-.hogar ul {
-  margin-left: 30px;
-  padding-left: 20px;
-  list-style: none; }
-  .hogar ul li {
-    margin-bottom: 10px;
-    font-size: 1rem;
-    line-height: 1.5;
-    display: flex;
-    align-items: center; }
-    .hogar ul li i {
-      margin-right: 10px;
-      color: #c41718; }
-
-/*Pag Servicio*/
-.capacitaciones p {
-  transition: transform 0.3s ease, opacity 0.3s ease; }
-  .capacitaciones p:hover {
+/*Pag Servicio 8*/
+.hogar {
+  border-radius: 4px;
+  padding: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease; }
+  .hogar:hover {
     transform: scale(1.02);
-    opacity: 0.9; }
-  .capacitaciones p strong {
-    color: #00395a;
-    font-weight: bold; }
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); }
+  .hogar dt {
+    font-size: 1.3rem;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    color: #008ad1; }
+    .hogar dt i {
+      margin-right: 10px;
+      font-size: 1.4rem; }
+  .hogar dd {
+    margin-left: 30px;
+    font-size: 1rem;
+    line-height: 1.6; }
+  .hogar ol, .hogar ul {
+    margin-left: 30px;
+    padding-left: 20px;
+    list-style: none; }
+    .hogar ol li, .hogar ul li {
+      margin-bottom: 10px;
+      font-size: 1rem;
+      line-height: 1.5;
+      display: flex;
+      align-items: center; }
+      .hogar ol li i, .hogar ul li i {
+        margin-right: 10px;
+        color: #00395a; }
+  .hogar ol {
+    list-style-type: decimal; }
 
-.capacitaciones__courses {
-  list-style-type: none;
-  padding-left: 0; }
-  .capacitaciones__courses li {
-    margin-bottom: 2rem;
-    padding: 10px;
-    border-left: 4px solid #00395a;
-    border-radius: 8px;
-    transition: background 0.3s ease, transform 0.3s ease; }
-    .capacitaciones__courses li:hover {
-      background: #e9f5ff;
-      transform: translateX(5px); }
-    .capacitaciones__courses li strong {
-      color: #00395a; }
-
-.capacitaciones__sublist {
-  list-style-type: disc;
-  margin-top: 10px;
-  margin-left: 20px; }
-  .capacitaciones__sublist li {
-    margin-bottom: 5px; }
+/*Pag Servicio 10*/
+.capacitaciones {
+  margin-bottom: 2rem;
+  border-radius: 4px;
+  padding: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease; }
+  .capacitaciones:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); }
+  .capacitaciones p {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    line-height: 1.6; }
+  .capacitaciones .curso-lista {
+    margin-left: 1.5rem;
+    padding-left: 1rem;
+    list-style: none; }
+    .capacitaciones .curso-lista li {
+      margin-bottom: 1rem;
+      font-size: 1rem;
+      line-height: 1.5;
+      align-items: center; }
+      .capacitaciones .curso-lista li i {
+        margin-right: 10px;
+        color: #008ad1; }
+  .capacitaciones .certificacion-detalles {
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+    padding-left: 1rem;
+    list-style: none; }
+    .capacitaciones .certificacion-detalles li {
+      margin-bottom: 0.5rem;
+      font-size: 1rem;
+      line-height: 1.5;
+      align-items: center; }
+      .capacitaciones .certificacion-detalles li i {
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+        color: #00395a; }
 
 /*Pag Contacto*/
 .contacto {
