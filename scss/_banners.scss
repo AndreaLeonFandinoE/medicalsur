@@ -85,15 +85,18 @@
 /*Pag servicios*/
 .separador {
     width: 100%;
-    background: linear-gradient(145deg, #00395a, #008ad1); // Degradado de colores
+    //background: linear-gradient(145deg, #00395a, #008ad1); // Degradado de colores
+    background: linear-gradient(145deg, #d3d3d3, #c5c5c5);
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1.5rem 0;
+    padding: 1rem 0;
   
     &__text {
-      color: $text-color; // Color del texto
+      color: $color-azul-principal; // Color del texto
       transition: font-size 0.3s ease-in-out; // Suaviza el efecto al agrandar
+      padding: 0;
+      margin: 0;
   
       &:hover {
         font-size: 2.3rem; // Tamaño de la fuente al pasar el cursor

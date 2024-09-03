@@ -1,35 +1,64 @@
-header{
+header {
     display: flex;
     flex-wrap: wrap;
-    top: 0px;
-    justify-content:space-evenly;
+    top: 0;
+    justify-content: space-evenly;
     background-color: $fondo-header;
     position: sticky;
     z-index: 1000;
     align-items: center;
-
-    a{
-        color: $text-color;
-        padding-left: 2rem;
-        &:hover{
-            color: $color-rojo;
-        }
+    padding: 0 1rem; // Añade un poco de padding a los lados para que el contenido no toque los bordes
+    
+    a {
+      color: $text-color;
+      padding-left: 2rem;
+      transition: color 0.3s ease;
+  
+      &:hover {
+        color: $color-rojo;
+      }
     }
-    ul{
-        list-style: none;
-        font-size: 0;
-        & li:hover ul{
-            display: block;
-            background-color: $fondo-header;
-            text-align: center;
-            min-width: 21.5rem;
+  
+    ul {
+      list-style: none;
+      font-size: 0;
+      padding: 0;
+      margin: 0;
+  
+      & li {
+        position: relative;
+  
+        &:hover ul {
+          display: block;
+          background-color: $fondo-header;
+          text-align: center;
+          min-width: 21.5rem;
+          position: absolute;
+          top: 100%; // Asegura que el submenú se muestre debajo del elemento principal
+          left: 0;
         }
+      }
+  
+      & > li {
+        margin-right: 1rem; // Espacio entre los elementos del menú
+      }
+  
+      ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 1000;
+        padding: 0;
+        margin: 0;
+        min-width: 100%;
+      }
     }
 }
-
-.logo{
-    height: 6vh;
-    vertical-align: 0;
+  
+.logo {
+height: 6vh;
+vertical-align: middle; // Alinea verticalmente el logo
 }
 
 .barra{
