@@ -1,701 +1,10 @@
-// Celulares (pantallas pequeñas)
-@media only screen and (max-width: 480px) {
+// Laptops
+@media (min-width: 1024px){
 body {
-font-size: 0.85rem;
-line-height: 1.5;
+  font-size: 1.1rem;
 }
 li {
-font-size: 0.75rem;
-}
-.section__container {
-margin: 2rem 2rem 8rem 2rem;
-}
-.section__cuadros {
-margin: 2rem 2rem 10rem 2rem;
-}
-.intro {
-margin-bottom: 2rem;
-img {
-  height: 8vh;
-}
-h1 {
-  font-size: 1rem;
-}
-}
-.mvv {
-flex-direction: column;
-align-items: center;
-
-&__card {
-width: 100%;
-margin-bottom: 1.5rem;
-padding: 1rem;
-border-radius: 3px;
-}
-}
-.servicios__container {
-grid-template-columns: 1fr;
-grid-template-areas:
-"servicios__uno"
-"servicios__dos"
-"servicios__tres"
-"servicios__cuatro"
-"servicios__cinco"
-"servicios__seis"
-"servicios__siete"
-"servicios__ocho"
-"servicios__nueve"
-"servicios__diez";
-gap: 0.8rem;
-} 
-.servicios__imagenes {
-height: 10rem;
-width: 100%;
-} 
-.servicios__button button {
-padding: 0.5rem;
-width: 100%;
-}
-.especialistas__titulo {
-font-size: 1.2rem; // Reduce el tamaño del título para celulares
-} 
-.especialistas__lista {
-grid-template-columns: 1fr; // Una columna en celulares
-gap: 10px; // Reduce aún más el espacio entre los ítems
-}
-.fotos img:hover {
-width: 100%; // Ocupa el ancho completo de la pantalla al hacer hover
-}
-.equipo__titulo {
-font-size: 1.5rem; // Reduce el tamaño del título para celulares
-}
-.equipo__imagen img {
-max-height: 15rem; // Ajusta la altura máxima de la imagen
-} 
-.invertido {
-flex-direction: column; // Cambia a columna para la versión invertida
-&__contenido, &__imagen {
-width: 100%; // Asegura que ocupen el ancho completo
-}
-}
-.urgencias__span {
-font-size: 1em; // Reduce el tamaño de fuente para celulares
-padding: 0.8rem; // Reduce el padding en celulares
-} 
-.urgencias__codigos {
-gap: 15px; // Reduce aún más el espacio entre los círculos
-margin: 1rem; // Reduce el margen
-}   
-.guardia__imagen {
-max-height: 200px; // Reduce la altura máxima de la imagen
-} 
-.translados__item {
-padding: 0.8rem; // Reduce el padding en celulares
-}
-.translados dt {
-font-size: 1.1rem; // Reduce el tamaño de la fuente para celulares
-}
-.translados dd {
-font-size: 0.9rem; // Ajusta el tamaño de la fuente del texto
-}
-.protegida {
-flex-direction: column; // Cambia a columna en celulares
-gap: 1rem; // Reduce el espacio entre los elementos
-}   
-.protegida__imagen {
-max-width: 100%; // Ancho completo en celulares
-}  
-.health-services p {
-font-size: 1rem; // Tamaño de fuente ajustado
-}  
-.health-services .service-item {
-dt {
-font-size: 0.9rem; // Tamaño de fuente ajustado para detalles
-}
-}  
-.internacion h2 {
-font-size: 1.2rem; // Tamaño de fuente ajustado para títulos
-}  
-.internacion ul li {
-font-size: 0.9rem; // Tamaño de fuente ajustado para ítems de lista
-}
-.hogar {
-padding: 1rem; // Reduce aún más el padding
-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-
-dt {
-  font-size: 1rem; // Ajusta el tamaño de la fuente
-  i {
-    font-size: 1rem; // Ajusta el tamaño del ícono
-  }
-}
-
-dd {
-  margin-left: 10px; // Reduce el margen izquierdo
-  font-size: 0.8rem; // Ajusta el tamaño de la fuente
-}
-
-ul, ol {
-  margin-left: 10px; // Reduce el margen izquierdo
-  padding-left: 10px; // Reduce el padding
-}
-}
-.capacitaciones {
-padding: 1rem; // Reduce el padding en celulares
-p {
-font-size: 0.8rem; // Ajusta el tamaño de la fuente
-}
-.curso-lista, .certificacion-detalles {
-margin-left: 0.5rem; // Reduce el margen izquierdo
-padding-left: 0.5rem; // Ajusta el padding
-}
-.curso-lista li, .certificacion-detalles li {
-font-size: 0.8rem; // Ajusta el tamaño de la fuente
-}
-}
-.contact {
-padding: 1rem; // Reduce aún más el padding
-
-&__form {
-  max-width: 100%; // El formulario ocupa todo el ancho disponible
-}
-
-&__info {
-  .contact__logo {
-    max-width: 100px; // Reduce aún más el tamaño máximo del logo
-  }
-
-  ul {
-    padding: 0;
-  }
-
-  li {
-    font-size: 0.8rem; // Ajusta el tamaño de la fuente
-  }
-}
-}
-header {
-padding: 0.5rem;
-
-ul {
-  & > li {
-    margin-bottom: 0.5rem; // Reduce el margen inferior
-  }
-
-  ul {
-    position: static;
-    display: none; // Mantiene los submenús ocultos por defecto
-
-    &.show {
-      display: block; // Se mostrará al hacer clic
-    }
-  }
-}
-}
-.logo {
-height: 4vh; // Reduce aún más el tamaño del logo
-}
-.barra__top {
-flex-direction: column; // Cambia a columna para mejor visualización en pantallas pequeñas
-align-items: center; // Centra los elementos
-}
-.barra__redes a {
-font-size: 18px; // Tamaño de fuente más pequeño
-margin: 0 5px; // Ajusta el margen
-}
-.barra__texto {
-font-size: 0.9rem; // Ajusta el tamaño del texto
-text-align: center; // Centra el texto
-}
-.footer__top {
-padding: 0 1rem; // Reduce el padding para pantallas pequeñas
-flex-direction: column;
-align-items: center; // Centra los elementos en pantallas pequeñas
-}   
-.footer__logo {
-margin-bottom: 1rem; // Ajusta el margen inferior del logo
-}   
-.footer__social {
-margin-bottom: 1rem; // Ajusta el margen inferior de los íconos sociales
-}  
-.footer__social a {
-font-size: 20px; // Tamaño de fuente reducido para íconos sociales
-margin: 0 5px; // Ajusta el margen entre íconos
-}   
-.footer__section {
-text-align: center; // Centra el texto en pantallas pequeñas
-
-h4 {
-font-size: 11px; // Tamaño de fuente de los títulos en pantallas pequeñas
-}
-
-span {
-font-size: 11px; // Tamaño de fuente de los enlaces en pantallas pequeñas
-}
-} 
-.footer__bottom {
-font-size: 10px; // Tamaño de fuente del pie de página en pantallas pequeñas
-}
-.chat {
-width: 45px;
-height: 45px;
-}
-button {
-font-size: 0.8rem; // Tamaño de fuente del botón en pantallas pequeñas
-padding: 0.3rem 0.6rem; // Ajusta el padding del botón
-}
-.button__ambulancia button {
-font-size: 1.2rem; // Tamaño de fuente del botón en .button__ambulancia
-padding: 0.6rem 1.2rem; // Ajusta el padding del botón en .button__ambulancia
-}
-.slider {
-width: 100%; // Ajusta el ancho del slider
-height: 50vh; // Ajusta la altura del slider
-
-.content {
-  margin: 0rem 5rem 0rem 5rem; // Ajusta el margen del contenido
-  h3 {
-    font-size: 1.5em; // Tamaño de fuente para pantallas pequeñas
-  }
-  p {
-    font-size: 1.2em; // Tamaño de fuente para pantallas pequeñas
-  }
-}
-}
-}
-
-// Tablets (pantallas medianas)
-@media (min-width: 769px) and (max-width: 1200px) {
-body {
-font-size: 0.95rem;
-}
-li {
-font-size: 0.85rem;
-}
-.section__container {
-margin: 2rem 5rem 8rem 5rem;
-}
-.section__cuadros {
-margin: 2rem 5rem 10rem 5rem;
-}
-.intro {
-  margin-bottom: 3rem;
-  img {
-    height: 10vh;
-  }
-  h1 {
-    font-size: 1.2rem;
-  }
-} 
-.mvv {
-  flex-direction: column;
-  align-items: center;
-
-  &__card {
-    width: 80%;
-    margin-bottom: 2rem;
-    padding: 1.2rem;
-    border-radius: 4px;
-  }
-}
-.servicios__container {
-grid-template-columns: repeat(3, 1fr);
-grid-template-areas:
-  "servicios__uno servicios__dos servicios__tres"
-  "servicios__cuatro servicios__cinco servicios__seis"
-  "servicios__siete servicios__ocho servicios__nueve"
-  "servicios__diez . .";
-gap: 1rem;
-}  
-.servicios__imagenes {
-height: 12rem;
-width: 12rem;
-}  
-.servicios__button button {
-padding: 0.6rem;
-}
-.especialistas__titulo {
-font-size: 1.5rem; // Ajusta el tamaño del título para tabletas
-} 
-.especialistas__lista {
-grid-template-columns: repeat(2, 1fr); // Dos columnas en tabletas
-gap: 15px; // Reduce el espacio entre los ítems
-}
-.fotos {
-flex-direction: column; // Cambia la dirección a columna en tabletas
-img {
-  width: 100%;
-  margin-bottom: 1rem;
-}
-}
-.equipo {
-flex-direction: column; // Cambia la dirección a columna
-}
-.equipo__contenido, .equipo__imagen {
-flex: unset; // Elimina el tamaño fijo
-width: 100%; // Asegura que ocupen el ancho completo
-}
-.equipo__imagen img {
-max-height: 18rem; // Ajusta la altura máxima de la imagen en tabletas
-}
-.urgencias {
-  flex-direction: column; // Cambia a columna en tabletas
-  gap: 15px; // Reduce el espacio entre los elementos
-}
-.urgencias__span {
-max-width: 100%; // Ocupa el ancho completo de la pantalla
-font-size: 1.1em; // Mantén el tamaño de fuente similar
-}
-.urgencias__codigos {
-flex-direction: column; // Alinea los códigos en columna
-gap: 20px; // Reduce el espacio entre los círculos
-}
-.guardia {
-flex-direction: column; // Cambia a columna
-}
-.guardia__imagen {
-max-height: 250px; // Reduce la altura máxima de la imagen
-}  
-.translados__item {
-padding: 1rem; // Reduce el padding en tabletas
-}    
-.translados dt {
-font-size: 1.2rem; // Ajusta el tamaño de la fuente
-}
-.protegida {
-  flex-direction: column; // Cambia a columna en tabletas
-  align-items: center; // Centra los elementos
-  gap: 1.5rem; // Reduce el espacio entre los elementos
-}
-.protegida__imagen {
-max-width: 100%; // Ancho completo en tabletas
-}
-.health-services p {
-font-size: 1.1rem; // Tamaño de fuente ajustado
-}
-.health-services .service-item {
-dt {
-  font-size: 1rem; // Tamaño de fuente ajustado para detalles
-}
-}
-.internacion h2 {
-font-size: 1.3rem; // Tamaño de fuente ajustado para títulos
-}  
-.internacion ul li {
-font-size: 1rem; // Tamaño de fuente ajustado para ítems de lista
-}
-.hogar {
-  padding: 1.5rem; // Reduce el padding en tabletas
-  border-radius: 4px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  
-  dt {
-    font-size: 1.1rem; // Ajusta el tamaño de la fuente
-    i {
-      font-size: 1.2rem; // Ajusta el tamaño del ícono
-    }
-  }
-
-  dd {
-    margin-left: 20px; // Reduce el margen izquierdo
-    font-size: 0.9rem; // Ajusta el tamaño de la fuente
-  }
-  ul, ol {
-    margin-left: 20px; // Reduce el margen izquierdo
-    padding-left: 15px; // Reduce el padding
-  }
-}
-.capacitaciones {
-padding: 1.5rem; // Reduce el padding en tabletas 
-p {
-  font-size: 0.9rem; // Ajusta el tamaño de la fuente
-}
-.curso-lista, .certificacion-detalles {
-  margin-left: 1rem; // Reduce el margen izquierdo
-  padding-left: 0.5rem; // Reduce el padding
-}  
-.curso-lista li, .certificacion-detalles li {
-  font-size: 0.9rem; // Ajusta el tamaño de la fuente
-}
-}
-.contact {
-  flex-direction: column;
-  padding: 1.5rem; // Reduce el padding en tabletas
-
-  &__form {
-    max-width: 100%; // El formulario ocupa todo el ancho disponible
-    padding-right: 0; // Elimina el padding derecho
-    margin-bottom: 1.5rem; // Añade un margen inferior para separar del contenido de la sección de info
-  }
-
-  &__info {
-    align-items: center; // Centra los elementos de información
-    text-align: center;
-
-    .contact__logo {
-      max-width: 120px; // Reduce el tamaño máximo del logo
-    }
-
-    ul {
-      padding: 0;
-    }
-
-    li {
-      font-size: 0.9rem; // Ajusta el tamaño de la fuente
-    }
-  }
-}
-header {
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 1rem;
-  
-  ul {
-    display: block;
-
-    & > li {
-      margin-right: 0; // Elimina el margen en dispositivos móviles
-      margin-bottom: 1rem; // Añade margen inferior para separar los elementos
-    }
-
-    ul {
-      position: static;
-      min-width: 100%;
-      display: none; // Mantiene los submenús ocultos por defecto
-      text-align: left;
-    }
-
-    & > li:hover ul {
-      display: block;
-    }
-  }
-
-  a {
-    padding-left: 0;
-  }
-}
-.logo {
-  height: 5vh; // Reduce el tamaño del logo para pantallas medianas
-}  
-.barra__top {
-flex-direction: column; // Cambia la dirección del flex para pantallas más estrechas
-align-items: center; // Centra los elementos
-}   
-.barra__redes a {
-font-size: 20px; // Tamaño de fuente reducido
-margin: 0 8px; // Ajusta el margen
-}
-.footer__top {
-  padding: 0 12rem 0.5rem 8rem; // Ajusta el padding para pantallas medianas
-}   
-.footer__logo img {
-height: 5vh; // Reduce el tamaño del logo para pantallas medianas
-}   
-.footer__social a {
-font-size: 22px; // Tamaño de fuente reducido
-}  
-.footer__section {
-h4 {
-  font-size: 12px; // Tamaño de fuente de los títulos en pantallas medianas
-}
-span {
-  font-size: 12px; // Tamaño de fuente de los enlaces en pantallas medianas
-}
-}  
-.footer__bottom {
-font-size: 11px; // Tamaño de fuente del pie de página en pantallas medianas
-}
-.chat {
-width: 50px;
-height: 50px;
-}
-button {
-  font-size: 0.9rem; // Tamaño de fuente del botón en pantallas medianas
-  padding: 0.4rem 0.8rem; // Ajusta el padding del botón
-} 
-.button__ambulancia button {
-font-size: 1.3rem; // Tamaño de fuente del botón en .button__ambulancia
-padding: 0.8rem 1.5rem; // Ajusta el padding del botón en .button__ambulancia
-}
-.slider {
-  width: 90%;  // Ajusta el ancho del slider
-  height: 60vh; // Ajusta la altura del slider
-
-  .content {
-    margin: 0rem 10rem 0rem 10rem; // Ajusta el margen del contenido
-    h3 {
-      font-size: 2em; // Tamaño de fuente para pantallas medianas
-    }
-    p {
-      font-size: 1.3em; // Tamaño de fuente para pantallas medianas
-    }
-  }
-}
-}
-
-// Destoks y laptops
-@media only screen and (max-width: 768px) {
-body {
-font-size: 1rem;
-}
-.section__container {
-margin: 2rem 20rem 8rem 20rem;
-}
-.section__cuadros {
-margin: 2rem 12rem 10rem 12rem;
-}
-.intro {
-  margin-bottom: 4rem;
-  img {
-    height: 15vh;
-  }
-  h1 {
-    font-size: 1.5rem;
-  }
-}
-.mvv {
-&__card {
-  width: 28%;
-  padding: 2rem;
-  border-radius: 5px;
-}
-}
-.servicios__container {
-grid-template-columns: repeat(5, 1fr);
-gap: 1.5rem;
-}
-.servicios__imagenes {
-height: 16rem;
-width: 16rem;
-}
-.servicios__button button {
-padding: 0.7rem;
-}
-.especialistas__titulo {
-font-size: 1.8rem; // Aumenta el tamaño del título en pantallas grandes
-}
-.especialistas__lista {
-grid-template-columns: repeat(4, 1fr); // Cuatro columnas en pantallas grandes
-gap: 25px; // Aumenta el espacio entre los ítems
-}  
-.fotos img:hover {
-width: 350px; // Aumenta el ancho de la imagen al hacer hover
-}  
-.equipo__titulo {
-font-size: 2.2rem; // Aumenta el tamaño del título
-}   
-.equipo__imagen img {
-max-height: 22rem; // Ajusta la altura máxima de la imagen
-}
-.urgencias__span {
-  font-size: 1.2em; // Aumenta el tamaño de fuente en pantallas grandes
-}   
-.guardia__imagen {
-max-height: 350px; // Aumenta la altura máxima de la imagen
-}   
-.translados dt {
-font-size: 1.5rem; // Aumenta el tamaño de la fuente de los títulos
-}
-.protegida {
-  flex-direction: row; // Mantiene la dirección de fila en pantallas grandes
-  gap: 2rem; // Espacio entre los elementos
-}   
-.protegida__imagen {
-max-width: 800px; // Máxima anchura de la imagen
-}  
-.health-services p {
-font-size: 1.2rem; // Tamaño de fuente ajustado
-} 
-.health-services .service-item {
-dt {
-  font-size: 1.1rem; // Tamaño de fuente ajustado para detalles
-}
-}
-.internacion h2 {
-font-size: 1.5rem; // Tamaño de fuente mayor para títulos
-}  
-.internacion ul li {
-font-size: 1.1rem; // Tamaño de fuente mayor para ítems de lista
-}
-.hogar {
-  padding: 2rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-.capacitaciones {
-padding: 2rem;
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-.contact {
-  padding: 2rem;
-
-  &__form {
-    max-width: 50%; // Mantén el ancho máximo del formulario
-    padding-right: 2rem; // Espacio a la derecha del formulario
-  }
-}
-.logo {
-  height: 6vh; // Ajusta el tamaño del logo si es necesario
-}
-.barra__top {
-justify-content: space-evenly; // Espacio adecuado entre elementos
-} 
-.barra__redes a {
-font-size: 25px; // Tamaño de fuente de los íconos
-margin: 0 10px; // Espacio entre íconos
-}
-.footer__top {
-  padding: 0 18rem 0.5rem 13rem; // Padding para pantallas grandes
-}   
-.footer__logo img {
-height: 6vh; // Tamaño del logo en pantallas grandes
-}
-.footer__social a {
-font-size: 27px; // Tamaño de fuente de los íconos en pantallas grandes
-} 
-.footer__section {
-h4 {
-  font-size: 14px; // Tamaño de fuente de los títulos en pantallas grandes
-}
-
-span {
-  font-size: 14px; // Tamaño de fuente de los enlaces en pantallas grandes
-}
-}
-.footer__bottom {
-font-size: 12px; // Tamaño de fuente del pie de página en pantallas grandes
-}
-.chat {
-width: 60px;
-height: 60px;
-}
-button {
-  font-size: 1rem; // Tamaño de fuente del botón en pantallas grandes
-  padding: 0.5rem 1rem; // Ajusta el padding del botón
-}
-.button__ambulancia button {
-font-size: 1.5rem; // Tamaño de fuente del botón en .button__ambulancia
-padding: 1rem 2rem; // Ajusta el padding del botón en .button__ambulancia
-}
-.slider {
-  width: $slider-width;  // Ajusta el ancho del slider si es necesario
-  height: $slider-height; // Ajusta la altura del slider si es necesario
-
-  .content {
-    margin: 0rem 20rem 0rem 20rem; // Ajusta el margen del contenido
-    h3 {
-      font-size: 2.5em; // Tamaño de fuente para pantallas grandes
-    }
-    p {
-      font-size: 1.5em; // Tamaño de fuente para pantallas grandes
-    }
-  }
-}
-}
-
-// Pantallas grandes (desktops grandes)
-@media only screen and (min-width: 1201px) {
-body {
-  font-size: 1rem;
+  font-size: 0.95rem;
 }
 .section__container {
   margin: 2rem 20rem 8rem 20rem;
@@ -851,9 +160,547 @@ padding: 1rem 2rem; // Ajusta el padding del botón en .button__ambulancia
 }
 }
 
-@media print {
-    p, h1, h2, h3, h4, h5, h6{
-        color: black;
-        background-color: white;
+// Tablets (pantallas medianas)
+@media (min-width: 768px) and (max-width: 1023px) {
+body {
+  font-size: 0.95rem;
+}
+li {
+  font-size: 0.85rem;
+}
+.section__container {
+  margin: 2rem 5rem 8rem 5rem;
+}
+.section__cuadros {
+  margin: 2rem 5rem 10rem 5rem;
+}
+.intro {
+    margin-bottom: 3rem;
+    img {
+      height: 10vh;
     }
+    h1 {
+      font-size: 1.2rem;
+    }
+} 
+.mvv {
+    flex-direction: column;
+    align-items: center;
+
+    &__card {
+      width: 80%;
+      margin-bottom: 2rem;
+      padding: 1.2rem;
+      border-radius: 4px;
+    }
+}
+.servicios__container {
+grid-template-columns: repeat(3, 1fr);
+grid-template-areas:
+    "servicios__uno servicios__dos servicios__tres"
+    "servicios__cuatro servicios__cinco servicios__seis"
+    "servicios__siete servicios__ocho servicios__nueve"
+    "servicios__diez . .";
+gap: 1rem;
+}  
+.servicios__imagenes {
+height: 12rem;
+width: 12rem;
+}  
+.servicios__button button {
+padding: 0.6rem;
+}
+.especialistas__titulo {
+font-size: 1.5rem; // Ajusta el tamaño del título para tabletas
+} 
+.especialistas__lista {
+grid-template-columns: repeat(2, 1fr); // Dos columnas en tabletas
+gap: 15px; // Reduce el espacio entre los ítems
+}
+.fotos {
+flex-direction: column; // Cambia la dirección a columna en tabletas
+img {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+}
+.equipo {
+flex-direction: column; // Cambia la dirección a columna
+}
+.equipo__contenido, .equipo__imagen {
+flex: unset; // Elimina el tamaño fijo
+width: 100%; // Asegura que ocupen el ancho completo
+}
+.equipo__imagen img {
+max-height: 18rem; // Ajusta la altura máxima de la imagen en tabletas
+}
+.urgencias {
+    flex-direction: column; // Cambia a columna en tabletas
+    gap: 15px; // Reduce el espacio entre los elementos
+}
+.urgencias__span {
+max-width: 100%; // Ocupa el ancho completo de la pantalla
+font-size: 1.1em; // Mantén el tamaño de fuente similar
+}
+.urgencias__codigos {
+flex-direction: column; // Alinea los códigos en columna
+gap: 20px; // Reduce el espacio entre los círculos
+}
+.guardia {
+flex-direction: column; // Cambia a columna
+}
+.guardia__imagen {
+max-height: 250px; // Reduce la altura máxima de la imagen
+}  
+.translados__item {
+padding: 1rem; // Reduce el padding en tabletas
+}    
+.translados dt {
+font-size: 1.2rem; // Ajusta el tamaño de la fuente
+}
+.protegida {
+    flex-direction: column; // Cambia a columna en tabletas
+    align-items: center; // Centra los elementos
+    gap: 1.5rem; // Reduce el espacio entre los elementos
+}
+.protegida__imagen {
+max-width: 100%; // Ancho completo en tabletas
+}
+.health-services p {
+font-size: 1.1rem; // Tamaño de fuente ajustado
+}
+.health-services .service-item {
+dt {
+    font-size: 1rem; // Tamaño de fuente ajustado para detalles
+}
+}
+.internacion h2 {
+font-size: 1.3rem; // Tamaño de fuente ajustado para títulos
+}  
+.internacion ul li {
+font-size: 1rem; // Tamaño de fuente ajustado para ítems de lista
+}
+.hogar {
+    padding: 1.5rem; // Reduce el padding en tabletas
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+    dt {
+      font-size: 1.1rem; // Ajusta el tamaño de la fuente
+      i {
+        font-size: 1.2rem; // Ajusta el tamaño del ícono
+      }
+    }
+
+    dd {
+      margin-left: 20px; // Reduce el margen izquierdo
+      font-size: 0.9rem; // Ajusta el tamaño de la fuente
+    }
+    ul, ol {
+      margin-left: 20px; // Reduce el margen izquierdo
+      padding-left: 15px; // Reduce el padding
+    }
+}
+.capacitaciones {
+padding: 1.5rem; // Reduce el padding en tabletas 
+p {
+    font-size: 0.9rem; // Ajusta el tamaño de la fuente
+}
+.curso-lista, .certificacion-detalles {
+    margin-left: 1rem; // Reduce el margen izquierdo
+    padding-left: 0.5rem; // Reduce el padding
+}  
+.curso-lista li, .certificacion-detalles li {
+    font-size: 0.9rem; // Ajusta el tamaño de la fuente
+}
+}
+.contact {
+    flex-direction: column;
+    padding: 1.5rem; // Reduce el padding en tabletas
+
+    &__form {
+      max-width: 100%; // El formulario ocupa todo el ancho disponible
+      padding-right: 0; // Elimina el padding derecho
+      margin-bottom: 1.5rem; // Añade un margen inferior para separar del contenido de la sección de info
+    }
+
+    &__info {
+      align-items: center; // Centra los elementos de información
+      text-align: center;
+
+      .contact__logo {
+        max-width: 120px; // Reduce el tamaño máximo del logo
+      }
+
+      ul {
+        padding: 0;
+      }
+
+      li {
+        font-size: 0.9rem; // Ajusta el tamaño de la fuente
+      }
+    }
+}
+header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+    
+    ul {
+      display: block;
+
+      & > li {
+        margin-right: 0; // Elimina el margen en dispositivos móviles
+        margin-bottom: 1rem; // Añade margen inferior para separar los elementos
+      }
+
+      ul {
+        position: static;
+        min-width: 100%;
+        display: none; // Mantiene los submenús ocultos por defecto
+        text-align: left;
+      }
+
+      & > li:hover ul {
+        display: block;
+      }
+    }
+
+    a {
+      padding-left: 0;
+    }
+}
+.logo {
+    height: 5vh; // Reduce el tamaño del logo para pantallas medianas
+}  
+.barra__top {
+flex-direction: column; // Cambia la dirección del flex para pantallas más estrechas
+align-items: center; // Centra los elementos
+}   
+.barra__redes a {
+font-size: 20px; // Tamaño de fuente reducido
+margin: 0 8px; // Ajusta el margen
+}
+.footer__top {
+    padding: 0 12rem 0.5rem 8rem; // Ajusta el padding para pantallas medianas
+}   
+.footer__logo img {
+height: 5vh; // Reduce el tamaño del logo para pantallas medianas
+}   
+.footer__social a {
+font-size: 22px; // Tamaño de fuente reducido
+}  
+.footer__section {
+h4 {
+    font-size: 12px; // Tamaño de fuente de los títulos en pantallas medianas
+}
+span {
+    font-size: 12px; // Tamaño de fuente de los enlaces en pantallas medianas
+}
+}  
+.footer__bottom {
+font-size: 11px; // Tamaño de fuente del pie de página en pantallas medianas
+}
+.chat {
+width: 50px;
+height: 50px;
+}
+button {
+    font-size: 0.9rem; // Tamaño de fuente del botón en pantallas medianas
+    padding: 0.4rem 0.8rem; // Ajusta el padding del botón
+} 
+.button__ambulancia button {
+font-size: 1.3rem; // Tamaño de fuente del botón en .button__ambulancia
+padding: 0.8rem 1.5rem; // Ajusta el padding del botón en .button__ambulancia
+}
+.slider {
+    width: 90%;  // Ajusta el ancho del slider
+    height: 60vh; // Ajusta la altura del slider
+
+    .content {
+      margin: 0rem 10rem 0rem 10rem; // Ajusta el margen del contenido
+      h3 {
+        font-size: 2em; // Tamaño de fuente para pantallas medianas
+      }
+      p {
+        font-size: 1.3em; // Tamaño de fuente para pantallas medianas
+      }
+    }
+}
+}
+
+// Celulares (pantallas pequeñas)
+@media only screen and (max-width: 767px) {
+  body {
+  font-size: 0.8rem;
+  line-height: 1.5;
+  }
+  h1, h2, h3, h4, h5, h6{
+    font-weight: 400;
+  }
+  li {
+  font-size: 0.75rem;
+  }
+  .section__container {
+  margin: 2rem 2rem 8rem 2rem;
+  }
+  .section__cuadros {
+  margin: 2rem 2rem 5rem 2rem;
+  }
+  .intro {
+    margin-bottom: 1rem;
+    img {
+      height: 8vh;
+    }
+    h1 {
+      font-size: 1rem;
+    }
+  }
+  .mvv {
+  flex-direction: column;
+  align-items: center;
+
+  &__card {
+    width: 100%;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border-radius: 3px;
+  }
+  }
+  .servicios__container {
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "servicios__uno"
+    "servicios__dos"
+    "servicios__tres"
+    "servicios__cuatro"
+    "servicios__cinco"
+    "servicios__seis"
+    "servicios__siete"
+    "servicios__ocho"
+    "servicios__nueve"
+    "servicios__diez";
+  gap: 0.8rem;
+  } 
+  @each $name, $image-path in $servicios-imagenes {
+  height: 100%;
+  width: 100%;
+  } 
+  .servicios__button button {
+  padding: 0.5rem;
+  width: 100%;
+  }
+  .especialistas__titulo {
+  font-size: 1.2rem; // Reduce el tamaño del título para celulares
+  } 
+  .especialistas__lista {
+  grid-template-columns: 1fr; // Una columna en celulares
+  gap: 10px; // Reduce aún más el espacio entre los ítems
+  }
+  .fotos img:hover {
+  width: 100%; // Ocupa el ancho completo de la pantalla al hacer hover
+  }
+  .equipo__titulo {
+  font-size: 1.5rem; // Reduce el tamaño del título para celulares
+  }
+  .equipo__imagen img {
+  max-height: 15rem; // Ajusta la altura máxima de la imagen
+  } 
+  .invertido {
+  flex-direction: column; // Cambia a columna para la versión invertida
+  &__contenido, &__imagen {
+    width: 100%; // Asegura que ocupen el ancho completo
+  }
+  }
+  .urgencias__span {
+    font-size: 1em; // Reduce el tamaño de fuente para celulares
+    padding: 0.8rem; // Reduce el padding en celulares
+  } 
+  .urgencias__codigos {
+  gap: 15px; // Reduce aún más el espacio entre los círculos
+  margin: 1rem; // Reduce el margen
+  }   
+  .guardia__imagen {
+  max-height: 200px; // Reduce la altura máxima de la imagen
+  } 
+  .translados__item {
+  padding: 0.8rem; // Reduce el padding en celulares
+  }
+  .translados dt {
+  font-size: 1.1rem; // Reduce el tamaño de la fuente para celulares
+  }
+  .translados dd {
+  font-size: 0.9rem; // Ajusta el tamaño de la fuente del texto
+  }
+  .protegida {
+    flex-direction: column; // Cambia a columna en celulares
+    gap: 1rem; // Reduce el espacio entre los elementos
+  }   
+  .protegida__imagen {
+  max-width: 100%; // Ancho completo en celulares
+  }  
+  .health-services p {
+  font-size: 1rem; // Tamaño de fuente ajustado
+  }  
+  .health-services .service-item {
+  dt {
+    font-size: 0.9rem; // Tamaño de fuente ajustado para detalles
+  }
+  }  
+  .internacion h2 {
+  font-size: 1.2rem; // Tamaño de fuente ajustado para títulos
+  }  
+  .internacion ul li {
+  font-size: 0.9rem; // Tamaño de fuente ajustado para ítems de lista
+  }
+  .hogar {
+    padding: 1rem; // Reduce aún más el padding
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    
+    dt {
+      font-size: 1rem; // Ajusta el tamaño de la fuente
+      i {
+        font-size: 1rem; // Ajusta el tamaño del ícono
+      }
+    }
+
+    dd {
+      margin-left: 10px; // Reduce el margen izquierdo
+      font-size: 0.8rem; // Ajusta el tamaño de la fuente
+    }
+
+    ul, ol {
+      margin-left: 10px; // Reduce el margen izquierdo
+      padding-left: 10px; // Reduce el padding
+    }
+  }
+  .capacitaciones {
+  padding: 1rem; // Reduce el padding en celulares
+  p {
+    font-size: 0.8rem; // Ajusta el tamaño de la fuente
+  }
+  .curso-lista, .certificacion-detalles {
+    margin-left: 0.5rem; // Reduce el margen izquierdo
+    padding-left: 0.5rem; // Ajusta el padding
+  }
+  .curso-lista li, .certificacion-detalles li {
+    font-size: 0.8rem; // Ajusta el tamaño de la fuente
+  }
+  }
+  .contact {
+    padding: 1rem; // Reduce aún más el padding
+
+    &__form {
+      max-width: 100%; // El formulario ocupa todo el ancho disponible
+    }
+
+    &__info {
+      .contact__logo {
+        max-width: 100px; // Reduce aún más el tamaño máximo del logo
+      }
+
+      ul {
+        padding: 0;
+      }
+
+      li {
+        font-size: 0.8rem; // Ajusta el tamaño de la fuente
+      }
+    }
+  }
+  header {
+    padding: 0.5rem;
+
+    ul {
+      & > li {
+        margin-bottom: 0.5rem; // Reduce el margen inferior
+      }
+
+      ul {
+        position: static;
+        display: none; // Mantiene los submenús ocultos por defecto
+
+        &.show {
+          display: block; // Se mostrará al hacer clic
+        }
+      }
+    }
+  }
+  .logo {
+    height: 4vh; // Reduce aún más el tamaño del logo
+  }
+  .barra__top {
+  flex-direction: column; // Cambia a columna para mejor visualización en pantallas pequeñas
+  align-items: center; // Centra los elementos
+  }
+  .barra__redes a {
+  font-size: 18px; // Tamaño de fuente más pequeño
+  margin: 0 5px; // Ajusta el margen
+  }
+  .barra__texto {
+  font-size: 0.9rem; // Ajusta el tamaño del texto
+  text-align: center; // Centra el texto
+  }
+  .footer__top {
+    padding: 0 1rem; // Reduce el padding para pantallas pequeñas
+    flex-direction: column;
+    align-items: center; // Centra los elementos en pantallas pequeñas
+  }   
+  .footer__logo {
+  margin-bottom: 1rem; // Ajusta el margen inferior del logo
+  }   
+  .footer__social {
+  margin-bottom: 1rem; // Ajusta el margen inferior de los íconos sociales
+  }  
+  .footer__social a {
+  font-size: 20px; // Tamaño de fuente reducido para íconos sociales
+  margin: 0 5px; // Ajusta el margen entre íconos
+  }   
+  .footer__section {
+  text-align: center; // Centra el texto en pantallas pequeñas
+
+  h4 {
+    font-size: 11px; // Tamaño de fuente de los títulos en pantallas pequeñas
+  }
+
+  span {
+    font-size: 11px; // Tamaño de fuente de los enlaces en pantallas pequeñas
+  }
+  } 
+  .footer__bottom {
+  font-size: 10px; // Tamaño de fuente del pie de página en pantallas pequeñas
+  }
+  .chat {
+  width: 45px;
+  height: 45px;
+  }
+  button {
+    font-size: 0.8rem; // Tamaño de fuente del botón en pantallas pequeñas
+    padding: 0.3rem 0.6rem; // Ajusta el padding del botón
+  }
+  .button__ambulancia button {
+  font-size: 1.2rem; // Tamaño de fuente del botón en .button__ambulancia
+  padding: 0.6rem 1.2rem; // Ajusta el padding del botón en .button__ambulancia
+  }
+  .slider {
+    width: 100%; // Ajusta el ancho del slider
+    height: 50vh; // Ajusta la altura del slider
+
+    .content {
+      margin: 0rem 5rem 0rem 5rem; // Ajusta el margen del contenido
+      h3 {
+        font-size: 1.5em; // Tamaño de fuente para pantallas pequeñas
+      }
+      p {
+        font-size: 1.2em; // Tamaño de fuente para pantallas pequeñas
+      }
+    }
+  }
+}
+
+@media print {
+p, h1, h2, h3, h4, h5, h6{
+    color: black;
+    background-color: white;
+}
 }
