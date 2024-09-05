@@ -148,7 +148,6 @@ $servicios-imagenes: (
       "servicios__uno servicios__dos servicios__tres servicios__cuatro servicios__cinco"
       "servicios__seis servicios__siete servicios__ocho servicios__nueve servicios__diez";
     gap: 1rem;
-    text-align: center;
   }
 
   // Itera sobre el mapa para aplicar las imágenes de fondo específicas
@@ -285,9 +284,7 @@ $servicios-imagenes: (
       font-weight: bold;
   }
   &__texto {
-      font-size: 1rem;
       margin-bottom: 2rem;
-      line-height: 1.5;
   }
   &__imagen {
       flex: 0 0 58%;

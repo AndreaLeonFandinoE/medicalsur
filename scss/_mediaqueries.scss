@@ -1,4 +1,4 @@
-// Laptops
+/* Laptops
 @media (min-width: 1024px){
 body {
   font-size: 1.1rem;
@@ -10,7 +10,7 @@ li {
   margin: 2rem 20rem 8rem 20rem;
 }
 .section__cuadros {
-  margin: 2rem 12rem 10rem 12rem;
+  //margin: 2rem 12rem 10rem 12rem;
 }
 .intro {
     margin-bottom: 4rem;
@@ -32,7 +32,7 @@ li {
 grid-template-columns: repeat(5, 1fr);
 gap: 1.5rem;
 }
-.servicios__imagenes {
+.servicios__uno, .servicios__dos, .servicios__tres, .servicios__cuatro .servicios__cinco, .servicios__seis, .servicios__siete, .servicios__ocho, .servicios__nueve, .servicios__diez {
 height: 16rem;
 width: 16rem;
 }
@@ -159,7 +159,7 @@ padding: 1rem 2rem; // Ajusta el padding del botón en .button__ambulancia
     }
 }
 }
-
+*/
 // Tablets (pantallas medianas)
 @media (min-width: 768px) and (max-width: 1023px) {
 body {
@@ -453,7 +453,7 @@ padding: 0.8rem 1.5rem; // Ajusta el padding del botón en .button__ambulancia
       height: 8vh;
     }
     h1 {
-      font-size: 1rem;
+      font-size: 0.9rem;
     }
   }
   .mvv {
@@ -482,13 +482,16 @@ padding: 0.8rem 1.5rem; // Ajusta el padding del botón en .button__ambulancia
     "servicios__diez";
   gap: 0.8rem;
   } 
-  @each $name, $image-path in $servicios-imagenes {
-  height: 100%;
+  .servicios__uno, .servicios__dos, .servicios__tres, .servicios__cuatro, .servicios__cinco, .servicios__seis, .servicios__siete, .servicios__ocho, .servicios__nueve, .servicios__diez {
+  height: 16rem;
   width: 100%;
   } 
   .servicios__button button {
   padding: 0.5rem;
-  width: 100%;
+  }
+  .titilo__especialistas{
+    font-size: 1.3rem;
+    text-align: center;
   }
   .especialistas__titulo {
   font-size: 1.2rem; // Reduce el tamaño del título para celulares
@@ -497,19 +500,23 @@ padding: 0.8rem 1.5rem; // Ajusta el padding del botón en .button__ambulancia
   grid-template-columns: 1fr; // Una columna en celulares
   gap: 10px; // Reduce aún más el espacio entre los ítems
   }
-  .fotos img:hover {
+  .fotos {
   width: 100%; // Ocupa el ancho completo de la pantalla al hacer hover
   }
-  .equipo__titulo {
-  font-size: 1.5rem; // Reduce el tamaño del título para celulares
-  }
-  .equipo__imagen img {
-  max-height: 15rem; // Ajusta la altura máxima de la imagen
+  .equipo{
+    flex-direction: column-reverse;
+    &__titulo {
+      font-size: 1.5rem; // Reduce el tamaño del título para celulares
+      }
+      &__imagen {
+      position: relative;
+      right: 4%;
+      margin-top: 0;
+      }
   } 
   .invertido {
-  flex-direction: column; // Cambia a columna para la versión invertida
   &__contenido, &__imagen {
-    width: 100%; // Asegura que ocupen el ancho completo
+    left: 4%;
   }
   }
   .urgencias__span {

@@ -374,8 +374,7 @@ li {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-areas: "servicios__uno servicios__dos servicios__tres servicios__cuatro servicios__cinco" "servicios__seis servicios__siete servicios__ocho servicios__nueve servicios__diez";
-  gap: 1rem;
-  text-align: center; }
+  gap: 1rem; }
 
 .servicios__uno {
   grid-area: servicios__uno;
@@ -642,9 +641,7 @@ li {
     margin-bottom: 1rem;
     font-weight: bold; }
   .equipo__texto {
-    font-size: 1rem;
-    margin-bottom: 2rem;
-    line-height: 1.5; }
+    margin-bottom: 2rem; }
   .equipo__imagen {
     flex: 0 0 58%;
     margin-top: 2rem;
@@ -983,112 +980,168 @@ li {
           margin-right: 0.5rem;
           color: #008ad1; }
 
-@media (min-width: 1024px) {
-  body {
-    font-size: 1.1rem; }
-  li {
-    font-size: 0.95rem; }
-  .section__container {
-    margin: 2rem 20rem 8rem 20rem; }
-  .section__cuadros {
-    margin: 2rem 12rem 10rem 12rem; }
-  .intro {
-    margin-bottom: 4rem; }
-    .intro img {
-      height: 15vh; }
-    .intro h1 {
-      font-size: 1.5rem; }
-  .mvv__card {
+/* Laptops
+@media (min-width: 1024px){
+body {
+  font-size: 1.1rem;
+}
+li {
+  font-size: 0.95rem;
+}
+.section__container {
+  margin: 2rem 20rem 8rem 20rem;
+}
+.section__cuadros {
+  //margin: 2rem 12rem 10rem 12rem;
+}
+.intro {
+    margin-bottom: 4rem;
+    img {
+      height: 15vh;
+    }
+    h1 {
+      font-size: 1.5rem;
+    }
+}
+.mvv {
+&__card {
     width: 28%;
     padding: 2rem;
-    border-radius: 5px; }
-  .servicios__container {
-    grid-template-columns: repeat(5, 1fr);
-    gap: 1.5rem; }
-  .servicios__imagenes {
-    height: 16rem;
-    width: 16rem; }
-  .servicios__button button {
-    padding: 0.7rem; }
-  .especialistas__titulo {
-    font-size: 1.8rem; }
-  .especialistas__lista {
-    grid-template-columns: repeat(4, 1fr);
-    gap: 25px; }
-  .fotos img:hover {
-    width: 350px; }
-  .equipo__titulo {
-    font-size: 2.2rem; }
-  .equipo__imagen img {
-    max-height: 22rem; }
-  .urgencias__span {
-    font-size: 1.2em; }
-  .guardia__imagen {
-    max-height: 350px; }
-  .translados dt {
-    font-size: 1.5rem; }
-  .protegida {
-    flex-direction: row;
-    gap: 2rem; }
-  .protegida__imagen {
-    max-width: 800px; }
-  .health-services p {
-    font-size: 1.2rem; }
-  .health-services .service-item dt {
-    font-size: 1.1rem; }
-  .internacion h2 {
-    font-size: 1.5rem; }
-  .internacion ul li {
-    font-size: 1.1rem; }
-  .hogar {
+    border-radius: 5px;
+}
+}
+.servicios__container {
+grid-template-columns: repeat(5, 1fr);
+gap: 1.5rem;
+}
+.servicios__uno, .servicios__dos, .servicios__tres, .servicios__cuatro .servicios__cinco, .servicios__seis, .servicios__siete, .servicios__ocho, .servicios__nueve, .servicios__diez {
+height: 16rem;
+width: 16rem;
+}
+.servicios__button button {
+padding: 0.7rem;
+}
+.especialistas__titulo {
+font-size: 1.8rem; // Aumenta el tamaño del título en pantallas grandes
+}
+.especialistas__lista {
+grid-template-columns: repeat(4, 1fr); // Cuatro columnas en pantallas grandes
+gap: 25px; // Aumenta el espacio entre los ítems
+}  
+.fotos img:hover {
+width: 350px; // Aumenta el ancho de la imagen al hacer hover
+}  
+.equipo__titulo {
+font-size: 2.2rem; // Aumenta el tamaño del título
+}   
+.equipo__imagen img {
+max-height: 22rem; // Ajusta la altura máxima de la imagen
+}
+.urgencias__span {
+    font-size: 1.2em; // Aumenta el tamaño de fuente en pantallas grandes
+}   
+.guardia__imagen {
+max-height: 350px; // Aumenta la altura máxima de la imagen
+}   
+.translados dt {
+font-size: 1.5rem; // Aumenta el tamaño de la fuente de los títulos
+}
+.protegida {
+    flex-direction: row; // Mantiene la dirección de fila en pantallas grandes
+    gap: 2rem; // Espacio entre los elementos
+}   
+.protegida__imagen {
+max-width: 800px; // Máxima anchura de la imagen
+}  
+.health-services p {
+font-size: 1.2rem; // Tamaño de fuente ajustado
+} 
+.health-services .service-item {
+dt {
+    font-size: 1.1rem; // Tamaño de fuente ajustado para detalles
+}
+}
+.internacion h2 {
+font-size: 1.5rem; // Tamaño de fuente mayor para títulos
+}  
+.internacion ul li {
+font-size: 1.1rem; // Tamaño de fuente mayor para ítems de lista
+}
+.hogar {
     padding: 2rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); }
-  .capacitaciones {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.capacitaciones {
+padding: 2rem;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.contact {
     padding: 2rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); }
-  .contact {
-    padding: 2rem; }
-    .contact__form {
-      max-width: 50%;
-      padding-right: 2rem; }
-  .logo {
-    height: 6vh; }
-  .barra__top {
-    justify-content: space-evenly; }
-  .barra__redes a {
-    font-size: 25px;
-    margin: 0 10px; }
-  .footer__top {
-    padding: 0 18rem 0.5rem 13rem; }
-  .footer__logo img {
-    height: 6vh; }
-  .footer__social a {
-    font-size: 27px; }
-  .footer__section h4 {
-    font-size: 14px; }
-  .footer__section span {
-    font-size: 14px; }
-  .footer__bottom {
-    font-size: 12px; }
-  .chat {
-    width: 60px;
-    height: 60px; }
-  button {
-    font-size: 1rem;
-    padding: 0.5rem 1rem; }
-  .button__ambulancia button {
-    font-size: 1.5rem;
-    padding: 1rem 2rem; }
-  .slider {
-    width: 100%;
-    height: 450px; }
-    .slider .content {
-      margin: 0rem 20rem 0rem 20rem; }
-      .slider .content h3 {
-        font-size: 2.5em; }
-      .slider .content p {
-        font-size: 1.5em; } }
 
+    &__form {
+      max-width: 50%; // Mantén el ancho máximo del formulario
+      padding-right: 2rem; // Espacio a la derecha del formulario
+    }
+}
+.logo {
+    height: 6vh; // Ajusta el tamaño del logo si es necesario
+}
+.barra__top {
+justify-content: space-evenly; // Espacio adecuado entre elementos
+} 
+.barra__redes a {
+font-size: 25px; // Tamaño de fuente de los íconos
+margin: 0 10px; // Espacio entre íconos
+}
+.footer__top {
+    padding: 0 18rem 0.5rem 13rem; // Padding para pantallas grandes
+  }   
+.footer__logo img {
+height: 6vh; // Tamaño del logo en pantallas grandes
+}
+.footer__social a {
+font-size: 27px; // Tamaño de fuente de los íconos en pantallas grandes
+} 
+.footer__section {
+h4 {
+    font-size: 14px; // Tamaño de fuente de los títulos en pantallas grandes
+}
+
+span {
+    font-size: 14px; // Tamaño de fuente de los enlaces en pantallas grandes
+}
+}
+.footer__bottom {
+font-size: 12px; // Tamaño de fuente del pie de página en pantallas grandes
+}
+.chat {
+width: 60px;
+height: 60px;
+}
+button {
+    font-size: 1rem; // Tamaño de fuente del botón en pantallas grandes
+    padding: 0.5rem 1rem; // Ajusta el padding del botón
+}
+.button__ambulancia button {
+font-size: 1.5rem; // Tamaño de fuente del botón en .button__ambulancia
+padding: 1rem 2rem; // Ajusta el padding del botón en .button__ambulancia
+}
+.slider {
+    width: $slider-width;  // Ajusta el ancho del slider si es necesario
+    height: $slider-height; // Ajusta la altura del slider si es necesario
+
+    .content {
+      margin: 0rem 20rem 0rem 20rem; // Ajusta el margen del contenido
+      h3 {
+        font-size: 2.5em; // Tamaño de fuente para pantallas grandes
+      }
+      p {
+        font-size: 1.5em; // Tamaño de fuente para pantallas grandes
+      }
+    }
+}
+}
+*/
 @media (min-width: 768px) and (max-width: 1023px) {
   body {
     font-size: 0.95rem; }
@@ -1282,7 +1335,7 @@ li {
     .intro img {
       height: 8vh; }
     .intro h1 {
-      font-size: 1rem; }
+      font-size: 0.9rem; }
   .mvv {
     flex-direction: column;
     align-items: center; }
@@ -1295,44 +1348,31 @@ li {
     grid-template-columns: 1fr;
     grid-template-areas: "servicios__uno" "servicios__dos" "servicios__tres" "servicios__cuatro" "servicios__cinco" "servicios__seis" "servicios__siete" "servicios__ocho" "servicios__nueve" "servicios__diez";
     gap: 0.8rem; }
-  height: 100%;
-  width: 100%;
-  height: 100%;
-  width: 100%;
-  height: 100%;
-  width: 100%;
-  height: 100%;
-  width: 100%;
-  height: 100%;
-  width: 100%;
-  height: 100%;
-  width: 100%;
-  height: 100%;
-  width: 100%;
-  height: 100%;
-  width: 100%;
-  height: 100%;
-  width: 100%;
-  height: 100%;
-  width: 100%;
-  .servicios__button button {
-    padding: 0.5rem;
+  .servicios__uno, .servicios__dos, .servicios__tres, .servicios__cuatro, .servicios__cinco, .servicios__seis, .servicios__siete, .servicios__ocho, .servicios__nueve, .servicios__diez {
+    height: 16rem;
     width: 100%; }
+  .servicios__button button {
+    padding: 0.5rem; }
+  .titilo__especialistas {
+    font-size: 1.3rem;
+    text-align: center; }
   .especialistas__titulo {
     font-size: 1.2rem; }
   .especialistas__lista {
     grid-template-columns: 1fr;
     gap: 10px; }
-  .fotos img:hover {
+  .fotos {
     width: 100%; }
-  .equipo__titulo {
-    font-size: 1.5rem; }
-  .equipo__imagen img {
-    max-height: 15rem; }
-  .invertido {
-    flex-direction: column; }
-    .invertido__contenido, .invertido__imagen {
-      width: 100%; }
+  .equipo {
+    flex-direction: column-reverse; }
+    .equipo__titulo {
+      font-size: 1.5rem; }
+    .equipo__imagen {
+      position: relative;
+      right: 4%;
+      margin-top: 0; }
+  .invertido__contenido, .invertido__imagen {
+    left: 4%; }
   .urgencias__span {
     font-size: 1em;
     padding: 0.8rem; }
