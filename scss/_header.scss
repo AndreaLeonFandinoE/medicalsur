@@ -64,12 +64,9 @@ vertical-align: middle; // Alinea verticalmente el logo
 .barra{
     background-color: $color-rojo;
     padding: 0.6rem;
-
-    &__top{
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-    }
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     &__redes{
         a {
             color: $text-color;

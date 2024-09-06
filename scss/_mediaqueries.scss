@@ -160,7 +160,7 @@ padding: 1rem 2rem; // Ajusta el padding del botón en .button__ambulancia
 }
 }
 */
-// Tablets (pantallas medianas)
+/*Tablets (pantallas medianas)
 @media (min-width: 768px) and (max-width: 1023px) {
 body {
   font-size: 0.95rem;
@@ -428,7 +428,7 @@ padding: 0.8rem 1.5rem; // Ajusta el padding del botón en .button__ambulancia
     }
 }
 }
-
+*/
 // Celulares (pantallas pequeñas)
 @media only screen and (max-width: 767px) {
   body {
@@ -448,12 +448,9 @@ padding: 0.8rem 1.5rem; // Ajusta el padding del botón en .button__ambulancia
   margin: 2rem 2rem 5rem 2rem;
   }
   .intro {
-    margin-bottom: 1rem;
+    margin-bottom: 0;
     img {
-      height: 8vh;
-    }
-    h1 {
-      font-size: 0.9rem;
+      height: 9vh;
     }
   }
   .mvv {
@@ -491,7 +488,6 @@ padding: 0.8rem 1.5rem; // Ajusta el padding del botón en .button__ambulancia
   }
   .titilo__especialistas{
     font-size: 1.3rem;
-    text-align: center;
   }
   .especialistas__titulo {
   font-size: 1.2rem; // Reduce el tamaño del título para celulares
@@ -519,14 +515,17 @@ padding: 0.8rem 1.5rem; // Ajusta el padding del botón en .button__ambulancia
     left: 4%;
   }
   }
-  .urgencias__span {
-    font-size: 1em; // Reduce el tamaño de fuente para celulares
-    padding: 0.8rem; // Reduce el padding en celulares
-  } 
-  .urgencias__codigos {
-  gap: 15px; // Reduce aún más el espacio entre los círculos
-  margin: 1rem; // Reduce el margen
-  }   
+  .urgencias{
+    &__span {
+      font-size: 1em; // Reduce el tamaño de fuente para celulares
+      padding: 0.8rem; // Reduce el padding en celulares
+    } 
+    &__codigos {
+    gap: 15px; // Reduce aún más el espacio entre los círculos
+    margin: 1rem; // Reduce el margen
+    } 
+  }
+    
   .guardia__imagen {
   max-height: 200px; // Reduce la altura máxima de la imagen
   } 
@@ -596,14 +595,21 @@ padding: 0.8rem 1.5rem; // Ajusta el padding del botón en .button__ambulancia
   }
   .contact {
     padding: 1rem; // Reduce aún más el padding
+    display: block;
+
 
     &__form {
       max-width: 100%; // El formulario ocupa todo el ancho disponible
+      padding: 0;
     }
 
     &__info {
+      padding-top: 1.8rem;
       .contact__logo {
-        max-width: 100px; // Reduce aún más el tamaño máximo del logo
+        display: none;
+      }
+      h2{
+        display: none;
       }
 
       ul {
@@ -615,75 +621,92 @@ padding: 0.8rem 1.5rem; // Ajusta el padding del botón en .button__ambulancia
       }
     }
   }
-  header {
-    padding: 0.5rem;
+  .navbar-collapse {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #00395a;
+    z-index: 1050;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .navbar-toggler {
+    z-index: 1100;
+    background-color: $color-azul-secundario;
+    content: "x";
+  }
+  .dropdown-menu {
+    display: contents;
+  }
+  .btn-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    background: none;
+    border: none;
+  }
 
-    ul {
-      & > li {
-        margin-bottom: 0.5rem; // Reduce el margen inferior
-      }
 
-      ul {
-        position: static;
-        display: none; // Mantiene los submenús ocultos por defecto
-
-        &.show {
-          display: block; // Se mostrará al hacer clic
-        }
-      }
-    }
+  .nav-item a {
+    font-size: 1.1rem;
+    color: $text-color;
+  }
+  header ul li:hover ul {
+    text-align: start;
   }
   .logo {
     height: 4vh; // Reduce aún más el tamaño del logo
   }
-  .barra__top {
-  flex-direction: column; // Cambia a columna para mejor visualización en pantallas pequeñas
-  align-items: center; // Centra los elementos
-  }
+  
   .barra__redes a {
-  font-size: 18px; // Tamaño de fuente más pequeño
-  margin: 0 5px; // Ajusta el margen
+  font-size: 1.4rem; 
+  margin: 0 5px; 
   }
   .barra__texto {
-  font-size: 0.9rem; // Ajusta el tamaño del texto
-  text-align: center; // Centra el texto
+  font-size: 1.2rem; 
   }
-  .footer__top {
-    padding: 0 1rem; // Reduce el padding para pantallas pequeñas
+  .footer{
+    &__top {
+    padding: 0 1rem; 
     flex-direction: column;
-    align-items: center; // Centra los elementos en pantallas pequeñas
-  }   
-  .footer__logo {
-  margin-bottom: 1rem; // Ajusta el margen inferior del logo
-  }   
-  .footer__social {
-  margin-bottom: 1rem; // Ajusta el margen inferior de los íconos sociales
-  }  
-  .footer__social a {
-  font-size: 20px; // Tamaño de fuente reducido para íconos sociales
-  margin: 0 5px; // Ajusta el margen entre íconos
-  }   
-  .footer__section {
-  text-align: center; // Centra el texto en pantallas pequeñas
-
-  h4 {
-    font-size: 11px; // Tamaño de fuente de los títulos en pantallas pequeñas
-  }
-
-  span {
-    font-size: 11px; // Tamaño de fuente de los enlaces en pantallas pequeñas
-  }
-  } 
-  .footer__bottom {
-  font-size: 10px; // Tamaño de fuente del pie de página en pantallas pequeñas
+    align-items: center; 
+    }   
+    &__logo {
+    margin-bottom: 1rem; 
+    }   
+    &__social {
+    margin-bottom: 1rem; 
+    a {
+      font-size: 20px; 
+      margin: 0 5px; 
+      }   
+    }  
+    &__section { 
+      h4 {
+        font-size: 11px; 
+        text-align: center;
+      }
+      span {
+        font-size: 11px; 
+        text-align: center;
+        justify-content: center;
+      }
+    } 
+    &__bottom {
+    font-size: 10px; 
+    }
   }
   .chat {
   width: 45px;
   height: 45px;
   }
   button {
-    font-size: 0.8rem; // Tamaño de fuente del botón en pantallas pequeñas
-    padding: 0.3rem 0.6rem; // Ajusta el padding del botón
+    padding: 0.3rem 0.6rem;
   }
   .button__ambulancia button {
   font-size: 1.2rem; // Tamaño de fuente del botón en .button__ambulancia
@@ -691,16 +714,23 @@ padding: 0.8rem 1.5rem; // Ajusta el padding del botón en .button__ambulancia
   }
   .slider {
     width: 100%; // Ajusta el ancho del slider
-    height: 50vh; // Ajusta la altura del slider
+    height: 40vh; // Ajusta la altura del slider
 
-    .content {
-      margin: 0rem 5rem 0rem 5rem; // Ajusta el margen del contenido
+    .slides .slide .content {
+      margin: 0 2rem 0 2rem; // Ajusta el margen del contenido
       h3 {
-        font-size: 1.5em; // Tamaño de fuente para pantallas pequeñas
+        font-size: 1.3rem; // Tamaño de fuente para pantallas pequeñas
       }
-      p {
-        font-size: 1.2em; // Tamaño de fuente para pantallas pequeñas
-      }
+    }
+  }
+  .banner {
+    width: 100%; // Ajusta el ancho del slider
+    height: 40vh; // Ajusta la altura del slider
+    &__title {
+      font-size: 1.8rem; // Tamaño de fuente para pantallas pequeñas
+    }
+    &__subtitle {
+      font-size: 1.1rem;
     }
   }
 }

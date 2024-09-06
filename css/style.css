@@ -48,11 +48,10 @@ header {
 
 .barra {
   background-color: #c41718;
-  padding: 0.6rem; }
-  .barra__top {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center; }
+  padding: 0.6rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center; }
   .barra__redes a {
     color: #fff;
     font-size: 25px;
@@ -206,11 +205,7 @@ a::selection, button::selection, img::selection, span::selection, p::selection, 
         color: #fff;
         margin: 0rem 15rem 0rem 15rem; }
         .slider .slides .slide .content h3 {
-          font-size: 2.5em;
-          margin-bottom: 10px; }
-        .slider .slides .slide .content h3 {
-          font-size: 1.5em;
-          margin-bottom: 20px; }
+          font-size: 1.4rem; }
   .slider .navigation {
     position: absolute;
     bottom: 15px;
@@ -323,12 +318,10 @@ li {
 
 /*Pag inicio*/
 .intro {
-  margin-bottom: 3rem; }
+  margin: 2rem 15rem 0 15rem; }
   .intro img {
     padding-bottom: 2rem;
     height: 12vh; }
-  .intro h1 {
-    font-size: 1.34rem; }
 
 /*Pag inicio - Misión, Visión, Valores*/
 .mvv {
@@ -352,7 +345,7 @@ li {
       left: 0;
       width: 100%;
       height: 100%;
-      background: linear-gradient(to right, rgba(158, 180, 198, 0.4), rgba(148, 153, 159, 0.764));
+      background: linear-gradient(to right, rgba(158, 180, 198, 0.164), rgba(148, 153, 159, 0.373));
       border-radius: 3.5px;
       z-index: 1; }
     .mvv__card:hover {
@@ -360,8 +353,9 @@ li {
       box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); }
     .mvv__card h3, .mvv__card p {
       z-index: 2;
-      color: #FFFFFF;
-      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8); }
+      color: black;
+      background-color: #ffffffd1;
+      border-radius: 3.5px; }
     .mvv__card--mision {
       background-image: url("../recursos/img/medical1.jpeg"); }
     .mvv__card--vision {
@@ -1142,182 +1136,275 @@ padding: 1rem 2rem; // Ajusta el padding del botón en .button__ambulancia
 }
 }
 */
+/*Tablets (pantallas medianas)
 @media (min-width: 768px) and (max-width: 1023px) {
-  body {
-    font-size: 0.95rem; }
-  li {
-    font-size: 0.85rem; }
-  .section__container {
-    margin: 2rem 5rem 8rem 5rem; }
-  .section__cuadros {
-    margin: 2rem 5rem 10rem 5rem; }
-  .intro {
-    margin-bottom: 3rem; }
-    .intro img {
-      height: 10vh; }
-    .intro h1 {
-      font-size: 1.2rem; }
-  .mvv {
+body {
+  font-size: 0.95rem;
+}
+li {
+  font-size: 0.85rem;
+}
+.section__container {
+  margin: 2rem 5rem 8rem 5rem;
+}
+.section__cuadros {
+  margin: 2rem 5rem 10rem 5rem;
+}
+.intro {
+    margin-bottom: 3rem;
+    img {
+      height: 10vh;
+    }
+    h1 {
+      font-size: 1.2rem;
+    }
+} 
+.mvv {
     flex-direction: column;
-    align-items: center; }
-    .mvv__card {
+    align-items: center;
+
+    &__card {
       width: 80%;
       margin-bottom: 2rem;
       padding: 1.2rem;
-      border-radius: 4px; }
-  .servicios__container {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "servicios__uno servicios__dos servicios__tres" "servicios__cuatro servicios__cinco servicios__seis" "servicios__siete servicios__ocho servicios__nueve" "servicios__diez . .";
-    gap: 1rem; }
-  .servicios__imagenes {
-    height: 12rem;
-    width: 12rem; }
-  .servicios__button button {
-    padding: 0.6rem; }
-  .especialistas__titulo {
-    font-size: 1.5rem; }
-  .especialistas__lista {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px; }
-  .fotos {
-    flex-direction: column; }
-    .fotos img {
-      width: 100%;
-      margin-bottom: 1rem; }
-  .equipo {
-    flex-direction: column; }
-  .equipo__contenido, .equipo__imagen {
-    flex: unset;
-    width: 100%; }
-  .equipo__imagen img {
-    max-height: 18rem; }
-  .urgencias {
-    flex-direction: column;
-    gap: 15px; }
-  .urgencias__span {
-    max-width: 100%;
-    font-size: 1.1em; }
-  .urgencias__codigos {
-    flex-direction: column;
-    gap: 20px; }
-  .guardia {
-    flex-direction: column; }
-  .guardia__imagen {
-    max-height: 250px; }
-  .translados__item {
-    padding: 1rem; }
-  .translados dt {
-    font-size: 1.2rem; }
-  .protegida {
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5rem; }
-  .protegida__imagen {
-    max-width: 100%; }
-  .health-services p {
-    font-size: 1.1rem; }
-  .health-services .service-item dt {
-    font-size: 1rem; }
-  .internacion h2 {
-    font-size: 1.3rem; }
-  .internacion ul li {
-    font-size: 1rem; }
-  .hogar {
-    padding: 1.5rem;
+      border-radius: 4px;
+    }
+}
+.servicios__container {
+grid-template-columns: repeat(3, 1fr);
+grid-template-areas:
+    "servicios__uno servicios__dos servicios__tres"
+    "servicios__cuatro servicios__cinco servicios__seis"
+    "servicios__siete servicios__ocho servicios__nueve"
+    "servicios__diez . .";
+gap: 1rem;
+}  
+.servicios__imagenes {
+height: 12rem;
+width: 12rem;
+}  
+.servicios__button button {
+padding: 0.6rem;
+}
+.especialistas__titulo {
+font-size: 1.5rem; // Ajusta el tamaño del título para tabletas
+} 
+.especialistas__lista {
+grid-template-columns: repeat(2, 1fr); // Dos columnas en tabletas
+gap: 15px; // Reduce el espacio entre los ítems
+}
+.fotos {
+flex-direction: column; // Cambia la dirección a columna en tabletas
+img {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+}
+.equipo {
+flex-direction: column; // Cambia la dirección a columna
+}
+.equipo__contenido, .equipo__imagen {
+flex: unset; // Elimina el tamaño fijo
+width: 100%; // Asegura que ocupen el ancho completo
+}
+.equipo__imagen img {
+max-height: 18rem; // Ajusta la altura máxima de la imagen en tabletas
+}
+.urgencias {
+    flex-direction: column; // Cambia a columna en tabletas
+    gap: 15px; // Reduce el espacio entre los elementos
+}
+.urgencias__span {
+max-width: 100%; // Ocupa el ancho completo de la pantalla
+font-size: 1.1em; // Mantén el tamaño de fuente similar
+}
+.urgencias__codigos {
+flex-direction: column; // Alinea los códigos en columna
+gap: 20px; // Reduce el espacio entre los círculos
+}
+.guardia {
+flex-direction: column; // Cambia a columna
+}
+.guardia__imagen {
+max-height: 250px; // Reduce la altura máxima de la imagen
+}  
+.translados__item {
+padding: 1rem; // Reduce el padding en tabletas
+}    
+.translados dt {
+font-size: 1.2rem; // Ajusta el tamaño de la fuente
+}
+.protegida {
+    flex-direction: column; // Cambia a columna en tabletas
+    align-items: center; // Centra los elementos
+    gap: 1.5rem; // Reduce el espacio entre los elementos
+}
+.protegida__imagen {
+max-width: 100%; // Ancho completo en tabletas
+}
+.health-services p {
+font-size: 1.1rem; // Tamaño de fuente ajustado
+}
+.health-services .service-item {
+dt {
+    font-size: 1rem; // Tamaño de fuente ajustado para detalles
+}
+}
+.internacion h2 {
+font-size: 1.3rem; // Tamaño de fuente ajustado para títulos
+}  
+.internacion ul li {
+font-size: 1rem; // Tamaño de fuente ajustado para ítems de lista
+}
+.hogar {
+    padding: 1.5rem; // Reduce el padding en tabletas
     border-radius: 4px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); }
-    .hogar dt {
-      font-size: 1.1rem; }
-      .hogar dt i {
-        font-size: 1.2rem; }
-    .hogar dd {
-      margin-left: 20px;
-      font-size: 0.9rem; }
-    .hogar ul, .hogar ol {
-      margin-left: 20px;
-      padding-left: 15px; }
-  .capacitaciones {
-    padding: 1.5rem; }
-    .capacitaciones p {
-      font-size: 0.9rem; }
-    .capacitaciones .curso-lista, .capacitaciones .certificacion-detalles {
-      margin-left: 1rem;
-      padding-left: 0.5rem; }
-    .capacitaciones .curso-lista li, .capacitaciones .certificacion-detalles li {
-      font-size: 0.9rem; }
-  .contact {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+    dt {
+      font-size: 1.1rem; // Ajusta el tamaño de la fuente
+      i {
+        font-size: 1.2rem; // Ajusta el tamaño del ícono
+      }
+    }
+
+    dd {
+      margin-left: 20px; // Reduce el margen izquierdo
+      font-size: 0.9rem; // Ajusta el tamaño de la fuente
+    }
+    ul, ol {
+      margin-left: 20px; // Reduce el margen izquierdo
+      padding-left: 15px; // Reduce el padding
+    }
+}
+.capacitaciones {
+padding: 1.5rem; // Reduce el padding en tabletas 
+p {
+    font-size: 0.9rem; // Ajusta el tamaño de la fuente
+}
+.curso-lista, .certificacion-detalles {
+    margin-left: 1rem; // Reduce el margen izquierdo
+    padding-left: 0.5rem; // Reduce el padding
+}  
+.curso-lista li, .certificacion-detalles li {
+    font-size: 0.9rem; // Ajusta el tamaño de la fuente
+}
+}
+.contact {
     flex-direction: column;
-    padding: 1.5rem; }
-    .contact__form {
-      max-width: 100%;
-      padding-right: 0;
-      margin-bottom: 1.5rem; }
-    .contact__info {
-      align-items: center;
-      text-align: center; }
-      .contact__info .contact__logo {
-        max-width: 120px; }
-      .contact__info ul {
-        padding: 0; }
-      .contact__info li {
-        font-size: 0.9rem; }
-  header {
+    padding: 1.5rem; // Reduce el padding en tabletas
+
+    &__form {
+      max-width: 100%; // El formulario ocupa todo el ancho disponible
+      padding-right: 0; // Elimina el padding derecho
+      margin-bottom: 1.5rem; // Añade un margen inferior para separar del contenido de la sección de info
+    }
+
+    &__info {
+      align-items: center; // Centra los elementos de información
+      text-align: center;
+
+      .contact__logo {
+        max-width: 120px; // Reduce el tamaño máximo del logo
+      }
+
+      ul {
+        padding: 0;
+      }
+
+      li {
+        font-size: 0.9rem; // Ajusta el tamaño de la fuente
+      }
+    }
+}
+header {
     flex-direction: column;
     align-items: flex-start;
-    padding: 1rem; }
-    header ul {
-      display: block; }
-      header ul > li {
-        margin-right: 0;
-        margin-bottom: 1rem; }
-      header ul ul {
+    padding: 1rem;
+    
+    ul {
+      display: block;
+
+      & > li {
+        margin-right: 0; // Elimina el margen en dispositivos móviles
+        margin-bottom: 1rem; // Añade margen inferior para separar los elementos
+      }
+
+      ul {
         position: static;
         min-width: 100%;
-        display: none;
-        text-align: left; }
-      header ul > li:hover ul {
-        display: block; }
-    header a {
-      padding-left: 0; }
-  .logo {
-    height: 5vh; }
-  .barra__top {
-    flex-direction: column;
-    align-items: center; }
-  .barra__redes a {
-    font-size: 20px;
-    margin: 0 8px; }
-  .footer__top {
-    padding: 0 12rem 0.5rem 8rem; }
-  .footer__logo img {
-    height: 5vh; }
-  .footer__social a {
-    font-size: 22px; }
-  .footer__section h4 {
-    font-size: 12px; }
-  .footer__section span {
-    font-size: 12px; }
-  .footer__bottom {
-    font-size: 11px; }
-  .chat {
-    width: 50px;
-    height: 50px; }
-  button {
-    font-size: 0.9rem;
-    padding: 0.4rem 0.8rem; }
-  .button__ambulancia button {
-    font-size: 1.3rem;
-    padding: 0.8rem 1.5rem; }
-  .slider {
-    width: 90%;
-    height: 60vh; }
-    .slider .content {
-      margin: 0rem 10rem 0rem 10rem; }
-      .slider .content h3 {
-        font-size: 2em; }
-      .slider .content p {
-        font-size: 1.3em; } }
+        display: none; // Mantiene los submenús ocultos por defecto
+        text-align: left;
+      }
 
+      & > li:hover ul {
+        display: block;
+      }
+    }
+
+    a {
+      padding-left: 0;
+    }
+}
+.logo {
+    height: 5vh; // Reduce el tamaño del logo para pantallas medianas
+}  
+.barra__top {
+flex-direction: column; // Cambia la dirección del flex para pantallas más estrechas
+align-items: center; // Centra los elementos
+}   
+.barra__redes a {
+font-size: 20px; // Tamaño de fuente reducido
+margin: 0 8px; // Ajusta el margen
+}
+.footer__top {
+    padding: 0 12rem 0.5rem 8rem; // Ajusta el padding para pantallas medianas
+}   
+.footer__logo img {
+height: 5vh; // Reduce el tamaño del logo para pantallas medianas
+}   
+.footer__social a {
+font-size: 22px; // Tamaño de fuente reducido
+}  
+.footer__section {
+h4 {
+    font-size: 12px; // Tamaño de fuente de los títulos en pantallas medianas
+}
+span {
+    font-size: 12px; // Tamaño de fuente de los enlaces en pantallas medianas
+}
+}  
+.footer__bottom {
+font-size: 11px; // Tamaño de fuente del pie de página en pantallas medianas
+}
+.chat {
+width: 50px;
+height: 50px;
+}
+button {
+    font-size: 0.9rem; // Tamaño de fuente del botón en pantallas medianas
+    padding: 0.4rem 0.8rem; // Ajusta el padding del botón
+} 
+.button__ambulancia button {
+font-size: 1.3rem; // Tamaño de fuente del botón en .button__ambulancia
+padding: 0.8rem 1.5rem; // Ajusta el padding del botón en .button__ambulancia
+}
+.slider {
+    width: 90%;  // Ajusta el ancho del slider
+    height: 60vh; // Ajusta la altura del slider
+
+    .content {
+      margin: 0rem 10rem 0rem 10rem; // Ajusta el margen del contenido
+      h3 {
+        font-size: 2em; // Tamaño de fuente para pantallas medianas
+      }
+      p {
+        font-size: 1.3em; // Tamaño de fuente para pantallas medianas
+      }
+    }
+}
+}
+*/
 @media only screen and (max-width: 767px) {
   body {
     font-size: 0.8rem;
@@ -1331,11 +1418,9 @@ padding: 1rem 2rem; // Ajusta el padding del botón en .button__ambulancia
   .section__cuadros {
     margin: 2rem 2rem 5rem 2rem; }
   .intro {
-    margin-bottom: 1rem; }
+    margin-bottom: 0; }
     .intro img {
-      height: 8vh; }
-    .intro h1 {
-      font-size: 0.9rem; }
+      height: 9vh; }
   .mvv {
     flex-direction: column;
     align-items: center; }
@@ -1354,8 +1439,7 @@ padding: 1rem 2rem; // Ajusta el padding del botón en .button__ambulancia
   .servicios__button button {
     padding: 0.5rem; }
   .titilo__especialistas {
-    font-size: 1.3rem;
-    text-align: center; }
+    font-size: 1.3rem; }
   .especialistas__titulo {
     font-size: 1.2rem; }
   .especialistas__lista {
@@ -1423,35 +1507,58 @@ padding: 1rem 2rem; // Ajusta el padding del botón en .button__ambulancia
     .capacitaciones .curso-lista li, .capacitaciones .certificacion-detalles li {
       font-size: 0.8rem; }
   .contact {
-    padding: 1rem; }
+    padding: 1rem;
+    display: block; }
     .contact__form {
-      max-width: 100%; }
-    .contact__info .contact__logo {
-      max-width: 100px; }
-    .contact__info ul {
+      max-width: 100%;
       padding: 0; }
-    .contact__info li {
-      font-size: 0.8rem; }
-  header {
-    padding: 0.5rem; }
-    header ul > li {
-      margin-bottom: 0.5rem; }
-    header ul ul {
-      position: static;
-      display: none; }
-      header ul ul.show {
-        display: block; }
+    .contact__info {
+      padding-top: 1.8rem; }
+      .contact__info .contact__logo {
+        display: none; }
+      .contact__info h2 {
+        display: none; }
+      .contact__info ul {
+        padding: 0; }
+      .contact__info li {
+        font-size: 0.8rem; }
+  .navbar-collapse {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #00395a;
+    z-index: 1050;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .navbar-toggler {
+    z-index: 1100;
+    background-color: #008ad1;
+    content: "x"; }
+  .dropdown-menu {
+    display: contents; }
+  .btn-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    background: none;
+    border: none; }
+  .nav-item a {
+    font-size: 1.1rem;
+    color: #fff; }
+  header ul li:hover ul {
+    text-align: start; }
   .logo {
     height: 4vh; }
-  .barra__top {
-    flex-direction: column;
-    align-items: center; }
   .barra__redes a {
-    font-size: 18px;
+    font-size: 1.4rem;
     margin: 0 5px; }
   .barra__texto {
-    font-size: 0.9rem;
-    text-align: center; }
+    font-size: 1.2rem; }
   .footer__top {
     padding: 0 1rem;
     flex-direction: column;
@@ -1460,35 +1567,40 @@ padding: 1rem 2rem; // Ajusta el padding del botón en .button__ambulancia
     margin-bottom: 1rem; }
   .footer__social {
     margin-bottom: 1rem; }
-  .footer__social a {
-    font-size: 20px;
-    margin: 0 5px; }
-  .footer__section {
+    .footer__social a {
+      font-size: 20px;
+      margin: 0 5px; }
+  .footer__section h4 {
+    font-size: 11px;
     text-align: center; }
-    .footer__section h4 {
-      font-size: 11px; }
-    .footer__section span {
-      font-size: 11px; }
+  .footer__section span {
+    font-size: 11px;
+    text-align: center;
+    justify-content: center; }
   .footer__bottom {
     font-size: 10px; }
   .chat {
     width: 45px;
     height: 45px; }
   button {
-    font-size: 0.8rem;
     padding: 0.3rem 0.6rem; }
   .button__ambulancia button {
     font-size: 1.2rem;
     padding: 0.6rem 1.2rem; }
   .slider {
     width: 100%;
-    height: 50vh; }
-    .slider .content {
-      margin: 0rem 5rem 0rem 5rem; }
-      .slider .content h3 {
-        font-size: 1.5em; }
-      .slider .content p {
-        font-size: 1.2em; } }
+    height: 40vh; }
+    .slider .slides .slide .content {
+      margin: 0 2rem 0 2rem; }
+      .slider .slides .slide .content h3 {
+        font-size: 1.3rem; }
+  .banner {
+    width: 100%;
+    height: 40vh; }
+    .banner__title {
+      font-size: 1.8rem; }
+    .banner__subtitle {
+      font-size: 1.1rem; } }
 
 @media print {
   p, h1, h2, h3, h4, h5, h6 {
