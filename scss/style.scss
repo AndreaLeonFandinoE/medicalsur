@@ -285,13 +285,13 @@ $servicios-imagenes: (
       margin-bottom: 2rem;
   }
   &__imagen {
-      flex: 0 0 58%;
+      flex: 0 0 50%;
       margin-top: 2rem;
       left: auto;
       right: 9%;
       margin-left: unset;
       position: relative;
-      min-width: 58%;
+      min-width: 50%;
 
       img {
           width: 100%;
