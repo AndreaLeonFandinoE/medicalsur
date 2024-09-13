@@ -974,16 +974,8 @@ li {
           margin-right: 0.5rem;
           color: #008ad1; }
 
-/* Laptops
-@media (min-width: 1024px){
-
-}
-*/
-/*Tablets (pantallas medianas)
-@media (min-width: 768px) and (max-width: 1023px) {
-
-}
-*/
+/* PC grande*/
+/*Tablets, laptops (pantallas medianas)*/
 @media only screen and (max-width: 767px) {
   body {
     line-height: 1.6;
@@ -1015,6 +1007,8 @@ li {
   .servicios__uno, .servicios__dos, .servicios__tres, .servicios__cuatro, .servicios__cinco, .servicios__seis, .servicios__siete, .servicios__ocho, .servicios__nueve, .servicios__diez {
     height: 16rem;
     width: 100%; }
+    .servicios__uno:hover, .servicios__dos:hover, .servicios__tres:hover, .servicios__cuatro:hover, .servicios__cinco:hover, .servicios__seis:hover, .servicios__siete:hover, .servicios__ocho:hover, .servicios__nueve:hover, .servicios__diez:hover {
+      transform: scale(1); }
   .servicios__button button {
     padding: 0.5rem; }
   .titilo__especialistas {
@@ -1035,7 +1029,7 @@ li {
       right: 4%;
       margin-top: 0; }
   .invertido__contenido, .invertido__imagen {
-    left: 4%; }
+    left: 2%; }
   .urgencias__span {
     font-size: 0.8rem;
     padding: 0.2rem; }

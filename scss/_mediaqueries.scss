@@ -1,13 +1,13 @@
-/* Laptops
-@media (min-width: 1024px){
+/* PC grande*/
+@media (min-width: 1440px) and (max-width: 1439px){
 
 }
-*/
-/*Tablets (pantallas medianas)
-@media (min-width: 768px) and (max-width: 1023px) {
+
+/*Tablets, laptops (pantallas medianas)*/
+@media (min-width: 768px) and (max-width: 1430px) {
 
 }
-*/
+
 // Celulares (pantallas pequeñas)
 @media only screen and (max-width: 767px) {
   body {
@@ -61,6 +61,9 @@
   .servicios__uno, .servicios__dos, .servicios__tres, .servicios__cuatro, .servicios__cinco, .servicios__seis, .servicios__siete, .servicios__ocho, .servicios__nueve, .servicios__diez {
   height: 16rem;
   width: 100%;
+    &:hover {
+      transform: scale(1);
+    }
   } 
   .servicios__button button {
   padding: 0.5rem;
@@ -91,7 +94,7 @@
   } 
   .invertido {
   &__contenido, &__imagen {
-    left: 4%;
+    left: 2%;
   }
   }
   .urgencias{
