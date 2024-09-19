@@ -368,7 +368,8 @@ li {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-areas: "servicios__uno servicios__dos servicios__tres servicios__cuatro servicios__cinco" "servicios__seis servicios__siete servicios__ocho servicios__nueve servicios__diez";
-  gap: 1rem; }
+  gap: 1rem;
+  justify-items: center; }
 
 .servicios__uno {
   grid-area: servicios__uno;
@@ -975,8 +976,52 @@ li {
           color: #008ad1; }
 
 /* PC grande*/
+/*PC Medianas (pantallas medianas)*/
+@media (min-width: 1025px) and (max-width: 1432px) {
+  .section__container {
+    margin: 2rem 8rem 8rem 8rem; }
+  .section__cuadros {
+    margin: 2rem 5rem 10rem 5rem; }
+  .intro {
+    margin: 2rem 10rem; }
+    .intro img {
+      padding-bottom: 0; }
+  .servicios__container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "servicios__uno servicios__dos servicios__tres" "servicios__cuatro servicios__cinco servicios__seis" "servicios__siete servicios__ocho servicios__nueve" "servicios__diez servicios__diez servicios__diez"; }
+  .equipo__contenido {
+    margin-top: 2rem; }
+  .equipo__titulo {
+    font-size: 1.7rem; }
+  .equipo__imagen {
+    flex: 0 0 60%;
+    margin-top: 0;
+    min-width: 60%; }
+  .contact {
+    padding: 1rem; }
+    .contact__form {
+      max-width: 100%;
+      padding-right: 1rem; }
+    .contact__info {
+      padding-top: 1rem; }
+  .navbar-nav .dropdown-menu {
+    position: absolute;
+    min-width: 17rem; }
+  .barra__texto {
+    font-size: 1.2rem; }
+  .footer__social a {
+    font-size: 25px; }
+  .slider .slides .slide .content {
+    margin: 0 9rem 0 9rem; }
+    .slider .slides .slide .content h3 {
+      font-size: 1.6rem; }
+  .banner__title {
+    font-size: 2rem; }
+  .banner__subtitle {
+    font-size: 1.5rem; } }
+
 /*Tablets, laptops (pantallas medianas)*/
-@media (min-width: 755px) and (max-width: 1024px) {
+@media (min-width: 716px) and (max-width: 1024px) {
   .section__container {
     margin: 2rem 3rem 8rem 3rem; }
   .section__cuadros {
@@ -996,6 +1041,7 @@ li {
     font-size: 1.5rem;
     margin-bottom: 0; }
   .equipo__imagen {
+    flex: 0 0 58%;
     right: 4%;
     margin-top: 0;
     min-width: 58%; }
@@ -1119,7 +1165,7 @@ li {
     .banner__subtitle {
       font-size: 1.1rem; } }
 
-@media only screen and (max-width: 754px) {
+@media only screen and (max-width: 715px) {
   body {
     line-height: 1.6;
     text-align: left; }

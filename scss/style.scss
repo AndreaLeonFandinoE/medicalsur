@@ -145,6 +145,7 @@ $servicios-imagenes: (
       "servicios__uno servicios__dos servicios__tres servicios__cuatro servicios__cinco"
       "servicios__seis servicios__siete servicios__ocho servicios__nueve servicios__diez";
     gap: 1rem;
+    justify-items: center;
   }
 
   // Itera sobre el mapa para aplicar las imágenes de fondo específicas

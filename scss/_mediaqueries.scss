@@ -1,10 +1,84 @@
 /* PC grande*/
-@media (min-width: 1600px) {
+@media (min-width: 1574px) {
 
 }
 
+/*PC Medianas (pantallas medianas)*/
+@media (min-width: 1025px) and (max-width: 1432px){
+  .section__container {
+    margin: 2rem 8rem 8rem 8rem;
+    }
+    .section__cuadros {
+    margin: 2rem 5rem 10rem 5rem;
+    }
+    .intro{
+      margin: 2rem 10rem;
+        img{
+            padding-bottom: 0;
+        }
+    }
+    .servicios__container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      "servicios__uno servicios__dos servicios__tres"
+      "servicios__cuatro servicios__cinco servicios__seis"
+      "servicios__siete servicios__ocho servicios__nueve"
+      "servicios__diez servicios__diez servicios__diez";
+    } 
+    .equipo{
+      &__contenido {
+        margin-top: 2rem;
+      }
+      &__titulo {
+        font-size: 1.7rem;
+        }
+        &__imagen {
+        flex: 0 0 60%;
+        margin-top: 0;
+        min-width: 60%;
+        }
+    }  
+    .contact {
+      padding: 1rem; 
+      &__form {
+        max-width: 100%; // El formulario ocupa todo el ancho disponible
+        padding-right: 1rem;
+      }
+  
+      &__info {
+        padding-top: 1rem;
+      }
+    }
+    .navbar-nav .dropdown-menu {
+      position: absolute;
+      min-width: 17rem;
+  }
+    .barra__texto {
+    font-size: 1.2rem; 
+    }
+    .footer__social a {
+        font-size: 25px; 
+        } 
+    .slider {
+      .slides .slide .content {
+        margin: 0 9rem 0 9rem; // Ajusta el margen del contenido
+        h3 {
+          font-size: 1.6rem; // Tamaño de fuente para pantallas pequeñas
+        }
+      }
+    }
+    .banner {
+      &__title {
+        font-size: 2rem; // Tamaño de fuente para pantallas pequeñas
+      }
+      &__subtitle {
+        font-size: 1.5rem;
+      }
+    }
+}
+
 /*Tablets, laptops (pantallas medianas)*/
-@media (min-width: 755px) and (max-width: 1024px) {
+@media (min-width: 716px) and (max-width: 1024px) {
   .section__container {
   margin: 2rem 3rem 8rem 3rem;
   }
@@ -36,6 +110,7 @@
       margin-bottom: 0;
       }
       &__imagen {
+      flex: 0 0 58%;
       right: 4%;
       margin-top: 0;
       min-width: 58%;
@@ -225,7 +300,7 @@
 }
 
 // Celulares (pantallas pequeñas)
-@media only screen and (max-width: 754px) {
+@media only screen and (max-width: 715px) {
   body {
     line-height: 1.6;
     text-align: left;
