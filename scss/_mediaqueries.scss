@@ -78,7 +78,7 @@
 }
 
 /*Tablets, laptops (pantallas medianas)*/
-@media (min-width: 716px) and (max-width: 1024px) {
+@media (min-width: 755px) and (max-width: 1024px) {
   .section__container {
   margin: 2rem 3rem 8rem 3rem;
   }
@@ -300,7 +300,7 @@
 }
 
 // Celulares (pantallas pequeñas)
-@media only screen and (max-width: 715px) {
+@media only screen and (max-width: 754px) {
   body {
     line-height: 1.6;
     text-align: left;
