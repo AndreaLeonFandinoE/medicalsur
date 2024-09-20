@@ -275,6 +275,7 @@ $servicios-imagenes: (
       position: relative;
       z-index: 1;
       background-color: $text-color;
+      text-align: left;
   }
   &__titulo {
       font-size: 2rem;

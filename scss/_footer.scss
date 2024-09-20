@@ -5,10 +5,9 @@
     &__top {
         display: flex;
         flex-flow: row wrap;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
-        //padding: 0 4rem 1rem 13rem;
-        padding: 0 18rem 0.5rem 13rem;
+        padding-bottom: 1rem;
         border-bottom: 1px solid $text-color;
     }
     &__logo{
@@ -36,7 +35,7 @@
     &__links {
         display: flex;
         justify-content: space-around;
-        padding: 20px 0;
+        padding: 1rem 0;
     }
     &__section {
 
@@ -52,7 +51,6 @@
         }
     }
     &__bottom {
-        
         font-size: 12px;
         border-top: 1px solid $text-color;
         padding-top: 10px;
@@ -64,8 +62,8 @@
 
 .chat{
     position: fixed;
-    bottom: 20px;  // Ajusta la distancia desde la parte inferior
-    right: 20px;   // Ajusta la distancia desde la derecha
+    bottom: 20px;  
+    right: 20px;   
     z-index: 100;
     
     a {

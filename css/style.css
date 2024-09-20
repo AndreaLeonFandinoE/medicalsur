@@ -68,9 +68,9 @@ header {
   .footer__top {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding: 0 18rem 0.5rem 13rem;
+    padding-bottom: 1rem;
     border-bottom: 1px solid #fff; }
   .footer__logo {
     display: flex;
@@ -90,7 +90,7 @@ header {
   .footer__links {
     display: flex;
     justify-content: space-around;
-    padding: 20px 0; }
+    padding: 1rem 0; }
   .footer__section h4 {
     font-size: 14px;
     margin-bottom: 10px;
@@ -630,7 +630,8 @@ li {
     margin-top: 0;
     position: relative;
     z-index: 1;
-    background-color: #fff; }
+    background-color: #fff;
+    text-align: left; }
   .equipo__titulo {
     font-size: 2rem;
     margin-bottom: 1rem;
@@ -976,6 +977,11 @@ li {
           color: #008ad1; }
 
 /* PC grande*/
+@media (min-width: 1574px) {
+  .equipo__imagen {
+    flex: 0 0 40%;
+    min-width: 40%; } }
+
 /*PC Medianas (pantallas medianas)*/
 @media (min-width: 1025px) and (max-width: 1432px) {
   .section__container {
@@ -994,9 +1000,10 @@ li {
   .equipo__titulo {
     font-size: 1.7rem; }
   .equipo__imagen {
-    flex: 0 0 60%;
+    flex: 0 0 40%;
     margin-top: 0;
-    min-width: 60%; }
+    min-width: 40%;
+    right: 3%; }
   .contact {
     padding: 1rem; }
     .contact__form {

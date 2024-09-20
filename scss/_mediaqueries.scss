@@ -1,6 +1,11 @@
 /* PC grande*/
 @media (min-width: 1574px) {
-
+  .equipo{
+      &__imagen {
+      flex: 0 0 40%;
+      min-width: 40%;
+      }
+  } 
 }
 
 /*PC Medianas (pantallas medianas)*/
@@ -33,9 +38,10 @@
         font-size: 1.7rem;
         }
         &__imagen {
-        flex: 0 0 60%;
+        flex: 0 0 40%;
         margin-top: 0;
-        min-width: 60%;
+        min-width: 40%;
+        right: 3%;
         }
     }  
     .contact {
