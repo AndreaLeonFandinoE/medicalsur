@@ -70,7 +70,7 @@ vertical-align: middle; // Alinea verticalmente el logo
     &__redes{
         a {
             color: $text-color;
-            font-size: 25px;
+            font-size: 1.56rem;
             margin: 0 10px;
 
             &:hover {
@@ -79,7 +79,6 @@ vertical-align: middle; // Alinea verticalmente el logo
         }
     }
     &__texto{
-        color: white;
-        
+        color: $text-color;
     }
 }

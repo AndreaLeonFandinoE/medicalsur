@@ -54,12 +54,12 @@ header {
   align-items: center; }
   .barra__redes a {
     color: #fff;
-    font-size: 25px;
+    font-size: 1.56rem;
     margin: 0 10px; }
     .barra__redes a:hover {
       color: #00395a; }
   .barra__texto {
-    color: white; }
+    color: #fff; }
 
 .footer {
   background-color: #00395a;
@@ -230,12 +230,13 @@ a::selection, button::selection, img::selection, span::selection, p::selection, 
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem 0; }
+  padding: 1rem; }
   .separador__text {
     color: #00395a;
     transition: font-size 0.3s ease-in-out;
     padding: 0;
-    margin: 0; }
+    margin: 0;
+    text-align: center; }
     .separador__text:hover {
       font-size: 2.3rem; }
 
@@ -978,9 +979,18 @@ li {
 
 /* PC grande*/
 @media (min-width: 1574px) {
+  .equipo__contenido {
+    flex: 0 0 35%; }
   .equipo__imagen {
-    flex: 0 0 40%;
-    min-width: 40%; } }
+    flex: 0 0 35%;
+    min-width: 35%;
+    right: 3%; }
+  .invertido__contenido {
+    right: 3%; }
+  .slider h3 {
+    font-size: 1.7rem; }
+  .barra__texto {
+    font-size: 1.56rem; } }
 
 /*PC Medianas (pantallas medianas)*/
 @media (min-width: 1025px) and (max-width: 1432px) {
@@ -996,7 +1006,8 @@ li {
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "servicios__uno servicios__dos servicios__tres" "servicios__cuatro servicios__cinco servicios__seis" "servicios__siete servicios__ocho servicios__nueve" "servicios__diez servicios__diez servicios__diez"; }
   .equipo__contenido {
-    margin-top: 2rem; }
+    margin-top: 2rem;
+    flex: 0 0 40%; }
   .equipo__titulo {
     font-size: 1.7rem; }
   .equipo__imagen {
@@ -1187,7 +1198,7 @@ li {
   .intro {
     margin-bottom: 0; }
     .intro img {
-      height: 9vh; }
+      height: 11vh; }
   .mvv {
     flex-direction: column;
     align-items: center; }

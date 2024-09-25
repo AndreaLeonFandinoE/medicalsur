@@ -1,11 +1,24 @@
 /* PC grande*/
 @media (min-width: 1574px) {
   .equipo{
+     &__contenido {
+        flex: 0 0 35%;
+      }
       &__imagen {
-      flex: 0 0 40%;
-      min-width: 40%;
+      flex: 0 0 35%;
+      min-width: 35%;
+      right: 3%;
       }
   } 
+  .invertido__contenido {
+    right: 3%;
+  }
+  .slider h3 {
+   font-size: 1.7rem;
+  }
+  .barra__texto{
+    font-size: 1.56rem;
+  }
 }
 
 /*PC Medianas (pantallas medianas)*/
@@ -33,6 +46,7 @@
     .equipo{
       &__contenido {
         margin-top: 2rem;
+        flex: 0 0 40%;
       }
       &__titulo {
         font-size: 1.7rem;
@@ -326,7 +340,7 @@
   .intro {
     margin-bottom: 0;
     img {
-      height: 9vh;
+      height: 11vh;
     }
   }
   .mvv {
