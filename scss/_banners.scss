@@ -86,14 +86,14 @@
     padding: 1rem;
   
     &__text {
-      color: $color-azul-principal; // Color del texto
-      transition: font-size 0.3s ease-in-out; // Suaviza el efecto al agrandar
+      color: $color-azul-principal; 
+      transition: font-size 0.3s ease-in-out; 
       padding: 0;
       margin: 0;
       text-align: center;
   
       &:hover {
-        font-size: 2.3rem; // Tamaño de la fuente al pasar el cursor
+        font-size: 2.3rem; 
       }
     }
 }

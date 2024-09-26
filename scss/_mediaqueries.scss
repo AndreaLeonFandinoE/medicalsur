@@ -61,7 +61,7 @@
     .contact {
       padding: 1rem; 
       &__form {
-        max-width: 100%; // El formulario ocupa todo el ancho disponible
+        max-width: 100%; 
         padding-right: 1rem;
       }
   
@@ -81,15 +81,15 @@
         } 
     .slider {
       .slides .slide .content {
-        margin: 0 9rem 0 9rem; // Ajusta el margen del contenido
+        margin: 0 9rem 0 9rem; 
         h3 {
-          font-size: 1.6rem; // Tamaño de fuente para pantallas pequeñas
+          font-size: 1.6rem; 
         }
       }
     }
     .banner {
       &__title {
-        font-size: 2rem; // Tamaño de fuente para pantallas pequeñas
+        font-size: 2rem; 
       }
       &__subtitle {
         font-size: 1.5rem;
@@ -148,76 +148,76 @@
   }
     
   .guardia__imagen {
-  max-height: 200px; // Reduce la altura máxima de la imagen
+  max-height: 200px; 
   } 
-  .translados__item {
-  padding: 0.8rem; // Reduce el padding en celulares
+  .traslados__item {
+  padding: 0.8rem; 
   }
-  .translados dt {
-  font-size: 1.1rem; // Reduce el tamaño de la fuente para celulares
+  .traslados dt {
+  font-size: 1.1rem; 
   }
-  .translados dd {
-  font-size: 0.9rem; // Ajusta el tamaño de la fuente del texto
+  .traslados dd {
+  font-size: 0.9rem; 
   }
   .protegida {
-    flex-direction: column; // Cambia a columna en celulares
-    gap: 1rem; // Reduce el espacio entre los elementos
+    flex-direction: column; 
+    gap: 1rem; 
   }   
   .protegida__imagen {
-  max-width: 100%; // Ancho completo en celulares
+  max-width: 100%; 
   }  
   .health-services p {
-  font-size: 1rem; // Tamaño de fuente ajustado
+  font-size: 1rem;
   }  
   .health-services .service-item {
   dt {
-    font-size: 0.9rem; // Tamaño de fuente ajustado para detalles
+    font-size: 0.9rem; 
   }
   }  
   .internacion h2 {
-  font-size: 1.2rem; // Tamaño de fuente ajustado para títulos
+  font-size: 1.2rem; 
   }  
   .internacion ul li {
-  font-size: 0.9rem; // Tamaño de fuente ajustado para ítems de lista
+  font-size: 0.9rem; 
   }
   .hogar {
-    padding: 1rem; // Reduce aún más el padding
+    padding: 1rem; 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     
     dt {
-      font-size: 1rem; // Ajusta el tamaño de la fuente
+      font-size: 1rem;
       i {
-        font-size: 1rem; // Ajusta el tamaño del ícono
+        font-size: 1rem; 
       }
     }
 
     dd {
-      margin-left: 10px; // Reduce el margen izquierdo
-      font-size: 0.8rem; // Ajusta el tamaño de la fuente
+      margin-left: 10px;
+      font-size: 0.8rem; 
     }
 
     ul, ol {
-      margin-left: 10px; // Reduce el margen izquierdo
-      padding-left: 10px; // Reduce el padding
+      margin-left: 10px; 
+      padding-left: 10px; 
     }
   }
   .capacitaciones {
-  padding: 1rem; // Reduce el padding en celulares
+  padding: 1rem; 
   p {
-    font-size: 0.8rem; // Ajusta el tamaño de la fuente
+    font-size: 0.8rem; 
   }
   .curso-lista, .certificacion-detalles {
-    margin-left: 0.5rem; // Reduce el margen izquierdo
-    padding-left: 0.5rem; // Ajusta el padding
+    margin-left: 0.5rem; 
+    padding-left: 0.5rem; 
   }
   .curso-lista li, .certificacion-detalles li {
-    font-size: 0.8rem; // Ajusta el tamaño de la fuente
+    font-size: 0.8rem; 
   }
   }
   .contact {
     padding: 1rem; 
     &__form {
-      max-width: 100%; // El formulario ocupa todo el ancho disponible
+      max-width: 100%; 
       padding-right: 1rem;
     }
 
@@ -293,25 +293,25 @@
     padding: 0.3rem 0.6rem;
   }
   .button__ambulancia button {
-  font-size: 1.2rem; // Tamaño de fuente del botón en .button__ambulancia
-  padding: 0.6rem 1.2rem; // Ajusta el padding del botón en .button__ambulancia
+  font-size: 1.2rem; 
+  padding: 0.6rem 1.2rem; 
   }
   .slider {
-    width: 100%; // Ajusta el ancho del slider
-    height: 40vh; // Ajusta la altura del slider
+    width: 100%; 
+    height: 40vh;
 
     .slides .slide .content {
-      margin: 0 2rem 0 2rem; // Ajusta el margen del contenido
+      margin: 0 2rem 0 2rem; 
       h3 {
-        font-size: 1.3rem; // Tamaño de fuente para pantallas pequeñas
+        font-size: 1.3rem;
       }
     }
   }
   .banner {
-    width: 100%; // Ajusta el ancho del slider
-    height: 40vh; // Ajusta la altura del slider
+    width: 100%; 
+    height: 40vh;
     &__title {
-      font-size: 1.8rem; // Tamaño de fuente para pantallas pequeñas
+      font-size: 1.8rem;
     }
     &__subtitle {
       font-size: 1.1rem;
@@ -379,23 +379,23 @@
   .servicios__button button {
   padding: 0.5rem;
   }
-  .titilo__especialistas{
+  .titulo__especialistas{
     font-size: 1.3rem;
   }
   .especialistas__titulo {
-  font-size: 1.2rem; // Reduce el tamaño del título para celulares
+  font-size: 1.2rem; 
   } 
   .especialistas__lista {
-  grid-template-columns: 1fr; // Una columna en celulares
-  gap: 10px; // Reduce aún más el espacio entre los ítems
+  grid-template-columns: 1fr; 
+  gap: 10px; 
   }
   .fotos {
-  width: 100%; // Ocupa el ancho completo de la pantalla al hacer hover
+  width: 100%; 
   }
   .equipo{
     flex-direction: column-reverse;
     &__titulo {
-      font-size: 1.5rem; // Reduce el tamaño del título para celulares
+      font-size: 1.5rem; 
       }
       &__imagen {
       position: relative;
@@ -420,79 +420,79 @@
   }
     
   .guardia__imagen {
-  max-height: 200px; // Reduce la altura máxima de la imagen
+  max-height: 200px; 
   } 
-  .translados__item {
-  padding: 0.8rem; // Reduce el padding en celulares
+  .traslados__item {
+  padding: 0.8rem; 
   }
-  .translados dt {
-  font-size: 1.1rem; // Reduce el tamaño de la fuente para celulares
+  .traslados dt {
+  font-size: 1.1rem; 
   }
-  .translados dd {
-  font-size: 0.9rem; // Ajusta el tamaño de la fuente del texto
+  .traslados dd {
+  font-size: 0.9rem; 
   }
   .protegida {
-    flex-direction: column; // Cambia a columna en celulares
-    gap: 1rem; // Reduce el espacio entre los elementos
+    flex-direction: column; 
+    gap: 1rem; 
   }   
   .protegida__imagen {
-  max-width: 100%; // Ancho completo en celulares
+  max-width: 100%; 
   }  
   .health-services p {
-  font-size: 1rem; // Tamaño de fuente ajustado
+  font-size: 1rem; 
   }  
   .health-services .service-item {
   dt {
-    font-size: 0.9rem; // Tamaño de fuente ajustado para detalles
+    font-size: 0.9rem; 
   }
   }  
   .internacion h2 {
-  font-size: 1.2rem; // Tamaño de fuente ajustado para títulos
+  font-size: 1.2rem; 
   }  
   .internacion ul li {
-  font-size: 0.9rem; // Tamaño de fuente ajustado para ítems de lista
+  font-size: 0.9rem; 
   }
   .hogar {
-    padding: 1rem; // Reduce aún más el padding
+    padding: 1rem; 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     
     dt {
-      font-size: 1rem; // Ajusta el tamaño de la fuente
+      font-size: 1rem; 
       i {
-        font-size: 1rem; // Ajusta el tamaño del ícono
+        font-size: 1rem; 
       }
     }
 
     dd {
-      margin-left: 10px; // Reduce el margen izquierdo
-      font-size: 0.8rem; // Ajusta el tamaño de la fuente
+      margin-left: 10px; 
+      font-size: 0.8rem; 
     }
 
     ul, ol {
-      margin-left: 10px; // Reduce el margen izquierdo
-      padding-left: 10px; // Reduce el padding
+      margin-left: 10px; 
+      padding-left: 10px; 
     }
   }
   .capacitaciones {
-  padding: 1rem; // Reduce el padding en celulares
+  padding: 1rem; 
   p {
-    font-size: 0.8rem; // Ajusta el tamaño de la fuente
+    font-size: 0.8rem; 
   }
   .curso-lista, .certificacion-detalles {
-    margin-left: 0.5rem; // Reduce el margen izquierdo
-    padding-left: 0.5rem; // Ajusta el padding
+    margin-left: 0.5rem; 
+    padding-left: 0.5rem;
   }
   .curso-lista li, .certificacion-detalles li {
-    font-size: 0.8rem; // Ajusta el tamaño de la fuente
+    font-size: 0.8rem; 
   }
   }
   .contact {
-    padding: 1rem; // Reduce aún más el padding
+    padding: 1rem; 
     display: block;
 
 
     &__form {
-      max-width: 100%; // El formulario ocupa todo el ancho disponible
+      max-width: 100%;
       padding: 0;
     }
 
@@ -510,7 +510,7 @@
       }
 
       li {
-        font-size: 0.8rem; // Ajusta el tamaño de la fuente
+        font-size: 0.8rem; 
       }
     }
   }
@@ -560,7 +560,7 @@
     text-align: start;
   }
   .logo {
-    height: 4vh; // Reduce aún más el tamaño del logo
+    height: 4vh; 
   }
   
   .barra__redes a {
@@ -609,25 +609,25 @@
     padding: 0.3rem 0.6rem;
   }
   .button__ambulancia button {
-  font-size: 1.2rem; // Tamaño de fuente del botón en .button__ambulancia
-  padding: 0.6rem 1.2rem; // Ajusta el padding del botón en .button__ambulancia
+  font-size: 1.2rem; 
+  padding: 0.6rem 1.2rem; 
   }
   .slider {
-    width: 100%; // Ajusta el ancho del slider
-    height: 40vh; // Ajusta la altura del slider
+    width: 100%; 
+    height: 40vh; 
 
     .slides .slide .content {
-      margin: 0 2rem 0 2rem; // Ajusta el margen del contenido
+      margin: 0 2rem 0 2rem; 
       h3 {
-        font-size: 1.3rem; // Tamaño de fuente para pantallas pequeñas
+        font-size: 1.3rem; 
       }
     }
   }
   .banner {
-    width: 100%; // Ajusta el ancho del slider
-    height: 40vh; // Ajusta la altura del slider
+    width: 100%; 
+    height: 40vh; 
     &__title {
-      font-size: 1.8rem; // Tamaño de fuente para pantallas pequeñas
+      font-size: 1.8rem;
     }
     &__subtitle {
       font-size: 1.1rem;

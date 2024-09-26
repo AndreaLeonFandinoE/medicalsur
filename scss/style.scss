@@ -90,7 +90,7 @@ li {
       left: 0;
       width: 100%;
       height: 100%;
-      background: linear-gradient(to right, rgba(158, 180, 198, 0.164), rgba(148, 153, 159, 0.373)); // Aumenta la opacidad del degradado
+      background: linear-gradient(to right, rgba(158, 180, 198, 0.164), rgba(148, 153, 159, 0.373));
       border-radius: 3.5px;
       z-index: 1;
     }
@@ -157,13 +157,13 @@ $servicios-imagenes: (
       background-position: center;
       border-radius: 0.7rem;
       border: 1px solid $color-azul-terciario;
-      height: 14rem; // Altura uniforme
+      height: 14rem;
       width: 14rem;
       display: flex;
-      align-items: center; // Centra verticalmente el contenido (botón)
-      justify-content: center; // Centra horizontalmente el contenido (botón)
+      align-items: center;
+      justify-content: center;
       transition: background 0.3s, transform 0.3s;
-      padding: 1rem; // Ajuste del padding interno para más consistencia
+      padding: 1rem;
       
       &:hover {
         background-image: linear-gradient(to right, rgba(158, 169, 198, 0), rgba(148, 153, 159, 0)), url(#{$image-path});;
@@ -177,8 +177,8 @@ $servicios-imagenes: (
 
     button {
         background: #00395ae0;
-        padding: 0.60rem; // Aumenta el tamaño del botón para que sea más llamativo
-        border-radius: 0.3rem; // Bordes más redondeados para un estilo más moderno
+        padding: 0.60rem;
+        border-radius: 0.3rem; 
         cursor: pointer;
         transition: background 0.3s, transform 0.3s;
     
@@ -200,23 +200,23 @@ $servicios-imagenes: (
   color: $text-color;
 
   &__titulo {
-      text-align: center; // Centra el título
+      text-align: center; 
       padding: 1rem;
-      font-size: 1.5rem; // Tamaño de fuente ajustado si es necesario
+      font-size: 1.5rem;
   }
 
   &__lista {
       list-style-type: none;
       padding: 0;
       display: grid;
-      grid-template-columns: repeat(3, 1fr); // Tres columnas
-      gap: 20px; // Espacio entre los items
-      align-items: start; // Alinea los items en la parte superior de cada columna
+      grid-template-columns: repeat(3, 1fr); 
+      gap: 20px; 
+      align-items: start; 
   }
 
   &__item {
       display: flex;
-      align-items: center; // Alinea el ícono y el texto verticalmente
+      align-items: center; 
       transition: transform 0.3s ease;
       text-align: start;
 
@@ -227,7 +227,7 @@ $servicios-imagenes: (
   }
 
   &__icon {
-      font-size: 1.5rem; // Tamaño del ícono
+      font-size: 1.5rem;
       color: $color-azul-secundario;
       margin-right: 10px;
       transition: color 0.3s ease;
@@ -236,6 +236,10 @@ $servicios-imagenes: (
           color: $color-rojo;
       }
   }
+}
+
+.titulo__especialistas{
+  color: $color-azul-principal;
 }
 
 /*Slider de imagenes en Nosotros*/
@@ -265,9 +269,10 @@ $servicios-imagenes: (
   flex-direction: row;
   flex-wrap: unset;
   padding-top: 2rem;
+  color: $color-azul-principal;
 
   &__contenido {
-      flex: 0 0 50%; // El contenido textual ocupa el espacio disponible
+      flex: 0 0 50%; 
       padding: 1.5rem;
       border-radius: 8px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -301,9 +306,9 @@ $servicios-imagenes: (
       }
   }
   .invertido {
-    flex-direction: row-reverse; // Invertir el orden de los hijos
+    flex-direction: row-reverse; 
     &__contenido {
-        text-align: left; // Asegurar que el texto esté alineado a la izquierda
+        text-align: left; 
         margin-top: 2rem;
         right: 9%;
     }
@@ -325,6 +330,10 @@ $servicios-imagenes: (
   justify-content: center;
   gap: 20px;
   margin-bottom: 20px;
+  color: $color-azul-principal;
+  &__container {
+    color: $color-azul-principal;
+  }
   &__span {
     max-width: 54%;
     padding: 1rem;
@@ -350,7 +359,7 @@ $servicios-imagenes: (
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 40px; // Espacio entre los círculos
+    gap: 40px;
     margin: 2rem;
 
     .codigo {
@@ -370,15 +379,15 @@ $servicios-imagenes: (
     }
     
     .codigo-rojo {
-      color: $color-rojo; // Define el color rojo aquí
+      color: $color-rojo; 
     }
     
     .codigo-amarillo {
-      color: yellow // Define el color amarillo aquí
+      color: yellow 
     }
     
     .codigo-verde {
-      color: green; // Define el color verde aquí
+      color: green; 
     }
   }
 }
@@ -387,7 +396,7 @@ $servicios-imagenes: (
 .guardia {
     display: flex;
     justify-content: space-between;
-    gap: 1.5rem; // Espacio entre los elementos
+    gap: 1.5rem; 
   
   &__imagen {
       width: 100%;
@@ -404,12 +413,12 @@ $servicios-imagenes: (
   &__caption {
       margin-top: 10px;
       text-align: center;
-      color: $color-azul-principal; // Ajusta según tu paleta de colores
+      color: $color-azul-principal; 
   }
 }
 
 /*Pag Servicio 3*/
-.translados {
+.traslados {
   &__item {
       margin-bottom: 2rem;
       padding: 1.5rem;
@@ -678,8 +687,8 @@ $servicios-imagenes: (
       align-items: center;
 
       i {
-        margin-right: 0;  // Quita el margen derecho para íconos debajo del texto
-        margin-bottom: 0.5rem; // Añade un margen inferior para separar el icono del texto
+        margin-right: 0;  
+        margin-bottom: 0.5rem; 
         color: $color-azul-principal;
       }
     }
@@ -713,7 +722,7 @@ $servicios-imagenes: (
           border: 1px solid $color-azul-principal;
           font-size: 1rem;
           color: $color-azul-principal;
-          box-sizing: border-box; // Asegura que el texto esté dentro del input
+          box-sizing: border-box;
         }
 
         textarea {

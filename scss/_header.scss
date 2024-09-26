@@ -7,7 +7,7 @@ header {
     position: sticky;
     z-index: 1000;
     align-items: center;
-    padding: 0 1rem; // Añade un poco de padding a los lados para que el contenido no toque los bordes
+    padding: 0 1rem;
     
     a {
       color: $text-color;
@@ -34,13 +34,13 @@ header {
           text-align: center;
           min-width: 21.5rem;
           position: absolute;
-          top: 100%; // Asegura que el submenú se muestre debajo del elemento principal
+          top: 100%;
           left: 0;
         }
       }
   
       & > li {
-        margin-right: 1rem; // Espacio entre los elementos del menú
+        margin-right: 1rem; 
       }
   
       ul {
@@ -58,7 +58,7 @@ header {
   
 .logo {
 height: 6vh;
-vertical-align: middle; // Alinea verticalmente el logo
+vertical-align: middle; 
 }
 
 .barra{
@@ -80,5 +80,6 @@ vertical-align: middle; // Alinea verticalmente el logo
     }
     &__texto{
         color: $text-color;
+        font-weight: bold;
     }
 }
